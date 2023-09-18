@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <h1 class="pubdate-page-title">Publication Date</h1>
+  {{ $pages := where .Site.RegularPages "Params.pubdate" "!=" nil }}
+  {{ $sortedPages := $pages.ByParam "pubdate" }}
+  {{ $reversedPages := slice }}
+  {{ range $sortedPages }}
+    {{ $tmp := slice . }}
+    {{ $reversedPages = $tmp | append $reversedPages }}
+  {{ end }}
+
+  {{ $currentYear := "" }}
+  {{ range $reversedPages }}
+    {{ $year := dateFormat "2006" .Params.pubdate }}
+    {{ if ne $year $currentYear }}
+      {{ if $currentYear }}
+        </section> <!-- Close previous year section -->
+      {{ end }}
+      <section>
+        <h2 class="year-header">{{ $year }}</h2>
+      {{ end }}
+      <article class="pubdate-article-block">
+        <span class="pubdate-small">{{ dateFormat "01/02" .Params.pubdate }}</span>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="pubdate-tag-container">
+          <p>
+            {{ range .Params.tags }}
+              <span class="pubdate-tag-block">{{ . }}</span>
+            {{ end }}
+          </p>
+        </div>
+      </article>
+      {{ $currentYear = $year }}
+  {{ end }}
+  </section> <!-- Close last year section -->
+{{ end }}

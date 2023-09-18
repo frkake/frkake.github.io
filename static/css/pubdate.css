@@ -1,0 +1,34 @@
+/* デフォルト（ライトモード）のスタイル */
+.pubdate-article-block {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.pubdate-page-title {
+    margin-bottom: 40px;
+}
+
+.pubdate-tag-container {
+    text-align: right;
+}
+
+.pubdate-tag-block {
+    background-color: #eae9e9;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+/* ダークモード */
+body.dark .pubdate-article-block {
+    background-color: #333333;
+}
+
+body.dark .pubdate-tag-block {
+    background-color: #444444;
+}
+
