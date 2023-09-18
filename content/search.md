@@ -1,0 +1,8 @@
++++
+title = 'Search'
+date = 2023-09-18T21:01:14+09:00
+summary = "search"
+layout = "search"
+draft = true
+placeholder = "検索する文字列を入力"
++++

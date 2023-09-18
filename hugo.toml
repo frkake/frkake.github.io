@@ -1,0 +1,116 @@
+baseURL = 'http://blog.takumi-iida.com/'
+languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+title = 'へらない本棚'
+theme = 'papermod'
+enableEmoji = true
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[minify]
+    disableXML = true
+    minifyOutput = true
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[params]
+    title = "へらない本棚"
+    description = "hogehoge"
+    keywords = ["Portfolio", "Blog", ]
+    # author = "Takumi Iida"
+    images = ["images/iida_takumi_italy.jpg", ]
+    DateFormat = "2006-01-02"
+    defaultTheme = "auto"
+    defaultThemeLight = false
+
+    ShowReadingTime = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowShareButtons = true
+    ShowWordCount = false
+    ShareButtons = ["twitter", "facebook", "linkedin", "reddit", ]
+
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = false
+    hidemeta = false
+    hideSummary = true
+    showtoc = false
+    tocopen = false
+
+    [params.label]
+        text = "へらない本棚"
+        icon = ""
+
+    [params.profileMode]
+        enabled = true
+        title = "Takumi Iida"
+        subtitle = "Computer Vision Researcher/Engineer"
+        imageUrl = "images/iida_takumi_italy.jpg"
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/bibpile"
+
+    [[params.socialIcons]]
+        name = "twitter"
+        url = "https://twitter.com/bibpile"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/takumi-iida/"
+    [[params.socialIcons]]
+        name = "facebook"
+        url = "https://www.facebook.com/tkmiida/"
+    
+    [params.fuseOpts]
+        isCaseSensitive = false
+        shouldSort = true
+        location = 0
+        threshold = 0.4
+        distance = 1000
+        # maxPatternLength = 128
+        minMatchCharLength = 0
+        keys = ["title", "tags", "summary", "content", ]
+    
+    [params.assets]
+        favicon = "images/steamed_rice_brown.svg"
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[module]
+[[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/bootstrap'
+[[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/font-awesome'
+[[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/simple-icons'
+
+# メニュー設定
+[[menu.main]]
+    name = "About Me"
+    url = "/profile/aboutme"
+    weight = 1
+
+[[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 3
+
+[[menu.main]]
+    name = "Search"
+    url = "search"
+    weight = 4
+
+[[menu.main]]
+    name = "Publication Date"
+    url = "pubdate"
+    weight = 5
