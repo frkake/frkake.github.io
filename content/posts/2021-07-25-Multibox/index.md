@@ -8,9 +8,17 @@ math = true
 draft = false
 +++
 
-- PDF [{{< icons/icon font-awesome-solid file-pdf >}}](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Erhan_Scalable_Object_Detection_2014_CVPR_paper.pdf)
-<!-- - Code [{{< icons/icon bootstrap github >}}](https://github.com/sermanet/OverFeat)
-- Video [{{< icons/icon bootstrap youtube >}}](https://www.youtube.com/watch?v=3U-bZgKFS7g) -->
+{{< cite >}}
+@InProceedings{Erhan_2014_CVPR,
+author = {Erhan, Dumitru and Szegedy, Christian and Toshev, Alexander and Anguelov, Dragomir},
+title = {Scalable Object Detection using Deep Neural Networks},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2014}
+}
+{{< /cite >}}
+
+{{< links paper="https://openaccess.thecvf.com/content_cvpr_2014/html/Erhan_Scalable_Object_Detection_2014_CVPR_paper.html" video="https://www.youtube.com/watch?v=3U-bZgKFS7g" >}}
 
 MultiBoxは、画像中に複数インスタンスが会った場合でも、Confidence付きのbboxを複数出力可能なモデルです。これも重要論文に数えられるんですが、解説がなかなかありません。おそらく単純な方法だからだとおもうんですが、一応読んでみました。軽くさらっていきます。
 ![](2021-07-26-00-03-19.png)

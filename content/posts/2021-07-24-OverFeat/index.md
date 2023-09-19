@@ -1,16 +1,25 @@
 +++
-title = "(OverFeat) OverFeat： Integrated Recognition, Localization and Detection using Convolutional Networks, ICLR, 2014"
+title = "(OverFeat) OverFeat： Integrated Recognition, Localization and Detection using Convolutional Networks, arXiv:2014"
 date = 2021-07-25T04:03:55
 pubdate = 2013-12-21T09:52:33
 category = "paper"
-tags = ["Object Detection", "1-stage", "Sliding Window", "ICLR", ]
+tags = ["Object Detection", "1-stage", "Sliding Window", ]
 math = true
 draft = false
 +++
 
-- PDF [{{< icons/icon font-awesome-solid file-pdf >}}](https://arxiv.org/abs/1312.6229)
-- Code [{{< icons/icon bootstrap github >}}](https://github.com/sermanet/OverFeat)
-- Video [{{< icons/icon bootstrap youtube >}}](https://www.youtube.com/watch?v=3U-bZgKFS7g)
+{{< cite >}}
+@misc{sermanet2014overfeat,
+      title={OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks}, 
+      author={Pierre Sermanet and David Eigen and Xiang Zhang and Michael Mathieu and Rob Fergus and Yann LeCun},
+      year={2014},
+      eprint={1312.6229},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+{{< /cite >}}
+
+{{< links paper="https://arxiv.org/abs/1312.6229" code="https://github.com/sermanet/OverFeat" video="https://www.youtube.com/watch?v=3U-bZgKFS7g" >}}
 
 ![](2021-07-25-04-32-44.png)
 

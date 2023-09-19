@@ -1,0 +1,46 @@
+<!-- layouts/shortcodes/links.html -->
+<div class="links-grid">
+    {{ with .Get "project" }}
+    <div class="link-item">
+        <a href="{{ . }}" target="_blank">
+            <i class="fas fa-project-diagram"></i>
+            <p>Project</p>
+        </a>
+    </div>
+    {{ else }}
+        <div class="link-item hidden"></div>
+    {{ end }}
+
+    {{ with .Get "paper" }}
+    <div class="link-item">
+    <a href="{{ . }}" target="_blank">
+        <i class="fa-solid fa-file-pdf"></i>
+        <p>Paper</p>
+    </a>
+    </div>
+    {{ else }}
+        <div class="link-item hidden"></div>
+    {{ end }}
+
+    {{ with .Get "code" }}
+    <div class="link-item">
+        <a href="{{ . }}" target="_blank">
+            <i class="fab fa-github"></i>
+            <p>Code</p>
+        </a>
+    </div>
+    {{ else }}
+        <div class="link-item hidden"></div>
+    {{ end }}
+
+    {{ with .Get "video" }}
+    <div class="link-item">
+        <a href="{{ . }}" target="_blank">
+            <i class="fas fa-video"></i>
+            <p>Video</p>
+        </a>
+    </div>
+    {{ else }}
+        <div class="link-item hidden"></div>
+    {{ end }}
+</div>

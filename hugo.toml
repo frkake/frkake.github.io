@@ -2,7 +2,7 @@ baseURL = 'http://blog.takumi-iida.com/'
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
-title = 'へらない本棚'
+title = 'Less is more'
 theme = 'papermod'
 enableEmoji = true
 enableInlineShortcodes = true
@@ -16,8 +16,8 @@ enableRobotsTXT = true
     home = ["HTML", "RSS", "JSON"]
 
 [params]
-    title = "へらない本棚"
-    description = "hogehoge"
+    title = "Less is more"
+    description = ""
     keywords = ["Portfolio", "Blog", ]
     # author = "Takumi Iida"
     images = ["images/iida_takumi_italy.jpg", ]
@@ -42,13 +42,14 @@ enableRobotsTXT = true
     tocopen = false
 
     [params.label]
-        text = "へらない本棚"
-        icon = ""
+        text = "Less is more"
+        icon = "images/steamed_rice_brown.svg"
 
     [params.profileMode]
         enabled = true
         title = "Takumi Iida"
         subtitle = "Computer Vision Researcher/Engineer"
+        description = ""
         imageUrl = "images/iida_takumi_italy.jpg"
 
     [[params.socialIcons]]
@@ -91,13 +92,13 @@ enableRobotsTXT = true
 
 # メニュー設定
 [[menu.main]]
-    name = "About Me"
-    url = "/profile/aboutme"
+    name = "About"
+    url = "aboutme"
     weight = 1
 
 [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
+    name = "Posts"
+    url = "posts/"
     weight = 2
 
 [[menu.main]]
