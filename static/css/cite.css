@@ -1,0 +1,20 @@
+/* ライトモードの場合 */
+.cite-block {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+  /* ダークモードの場合 */
+body.dark .cite-block {
+    background-color: #333333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* リストの下側のマージンを調整 */
+.cite-block ul {
+    margin-bottom: 0.8em;
+}

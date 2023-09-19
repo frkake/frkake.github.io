@@ -8,9 +8,17 @@ math = true
 draft = false
 +++
 
-- PDF [{{< icons/icon font-awesome-solid file-pdf >}}](https://arxiv.org/abs/1311.2524)
-- Code (Caffe) [{{< icons/icon bootstrap github >}}](https://github.com/rbgirshick/rcnn)
-<!-- - Video [{{< icons/icon bootstrap youtube >}}](https://www.youtube.com/watch?v=3U-bZgKFS7g) -->
+{{< cite >}}
+@InProceedings{Girshick_2014_CVPR,
+author = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
+title = {Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2014}
+}
+{{< /cite >}}
+
+{{< links paper="https://arxiv.org/abs/1311.2524" code="https://github.com/rbgirshick/rcnn" >}}
 
 CNNと領域提案手法を統合した先駆け的論文。従来のSoTAから大きく性能が向上したが、一方で多段階のパイプラインに難ありで、実行時間も長いのが難点。  
 ![](2021-07-24-05-36-58.png)
