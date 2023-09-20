@@ -1,13 +1,13 @@
 +++
 type = "biography"
-title = "Biography"
+title = "Takumi Iida"
 biography = "Computer Vision Engineer/Researcher"
 image = "/images/iida_takumi_italy.jpg"
 twitter = "https://twitter.com/bibpile"
 github = "https://github.com/bibpile"
 linkedin = "https://linkedin.com/in/bibpile"
 facebook = "https://www.facebook.com/tkmiida/"
-interests = ["Artificial Intelligence", "Robotics"]
+interests = ["Computer Vision", "Lane Detection", "PyTorch", "Deep Learning"]
 [[education]]
 course = "Master of Electronic System"
 university = "Ritsumeikan University"
