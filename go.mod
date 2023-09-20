@@ -1,6 +1,6 @@
 module github.com/bibpile/homepage
 
-go 1.23
+go 1.21
 
 require (
 	github.com/hugomods/bootstrap v0.11.3 // indirect
