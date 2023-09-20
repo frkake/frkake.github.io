@@ -20,7 +20,7 @@ enableRobotsTXT = true
     title = "Less is more"
     description = ""
     keywords = ["Portfolio", "Blog", ]
-    images = ["images/iida_takumi_italy.jpg", ]
+    images = ["/images/iida_takumi_italy.jpg", ]
     DateFormat = "2006-01-02"
     defaultTheme = "auto"
     defaultThemeLight = false
@@ -44,14 +44,14 @@ enableRobotsTXT = true
 
     [params.label]
         text = "Less is more"
-        icon = "images/steamed_rice_brown.svg"
+        icon = "/images/steamed_rice_brown.svg"
 
     [params.profileMode]
         enabled = false
         title = "Takumi Iida"
         subtitle = "Computer Vision Researcher/Engineer"
         description = ""
-        imageUrl = "images/iida_takumi_italy.jpg"
+        imageUrl = "/images/iida_takumi_italy.jpg"
 
     [[params.socialIcons]]
         name = "github"
@@ -78,7 +78,7 @@ enableRobotsTXT = true
         keys = ["title", "tags", "summary", "content", ]
     
     [params.assets]
-        favicon = "images/steamed_rice_brown.svg"
+        favicon = "/images/steamed_rice_brown.svg"
 
 [markup.goldmark.renderer]
     unsafe = true
@@ -123,7 +123,7 @@ enableRobotsTXT = true
 
 [[languages.ja.menu.main]]
     name = "検索"
-    url = "search"
+    url = "/search"
     weight = 4
 
 [[languages.ja.menu.main]]
