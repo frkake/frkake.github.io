@@ -52,4 +52,34 @@
         </ul>
     </div>
 </div>
+
+
+{{ if .Params.experience }}
+<div class="experience-section">
+<h3 class="experience-title">Experience</h3>
+<div class="experience-timeline">
+    {{ range $index, $element := .Params.experience }}
+    <div class="experience-item {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }}">
+    <div class="timeline-dot"></div>
+    <div class="experience-card">
+        <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
+        <div class="experience-details">
+        <h4>{{ .institute }}</h4>
+        <p class="role">{{ .role }}</p>
+        <p class="time-location">
+            <span class="duration">{{ .duration }}</span>, 
+            <span class="location">{{ .location }}</span>
+        </p>
+        </div>
+    </div>
+    </div>
+    {{ end }}
+</div>
+</div>
+{{ end }}
+
+
+
+
+
 {{ end }}
