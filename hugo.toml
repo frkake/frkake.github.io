@@ -113,7 +113,7 @@ enableRobotsTXT = true
 
 [[languages.ja.menu.main]]
     name = "記事"
-    url = "posts/"
+    url = "posts"
     weight = 2
 
 [[languages.ja.menu.main]]
