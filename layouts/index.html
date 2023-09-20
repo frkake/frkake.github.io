@@ -1,0 +1,7 @@
+{{ if eq .Site.Params.profileMode.enabled false }}
+    {{ $.Scratch.Set "redirectURL" "aboutme" }}
+{{ else }}
+    {{ $.Scratch.Set "redirectURL" "posts" }}
+{{ end }}
+
+<meta http-equiv="refresh" content="0; url={{ .Site.BaseURL }}{{ $.Scratch.Get "redirectURL" }}">

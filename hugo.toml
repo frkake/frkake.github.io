@@ -1,6 +1,7 @@
 baseURL = 'http://blog.takumi-iida.com/'
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
 title = 'Less is more'
 theme = 'papermod'
@@ -19,7 +20,6 @@ enableRobotsTXT = true
     title = "Less is more"
     description = ""
     keywords = ["Portfolio", "Blog", ]
-    # author = "Takumi Iida"
     images = ["images/iida_takumi_italy.jpg", ]
     DateFormat = "2006-01-02"
     defaultTheme = "auto"
@@ -40,13 +40,14 @@ enableRobotsTXT = true
     hideSummary = true
     showtoc = false
     tocopen = false
+    hideFooter = true
 
     [params.label]
         text = "Less is more"
         icon = "images/steamed_rice_brown.svg"
 
     [params.profileMode]
-        enabled = true
+        enabled = false
         title = "Takumi Iida"
         subtitle = "Computer Vision Researcher/Engineer"
         description = ""
@@ -90,28 +91,48 @@ enableRobotsTXT = true
 [[module.imports]]
     path = 'github.com/hugomods/icons/vendors/simple-icons'
 
-# メニュー設定
-[[menu.main]]
-    name = "About"
+[languages]
+    [languages.ja]
+        title = "Less is more"
+        weight = 1
+        languageCode = "ja-jp"
+        languageName = "日本語"
+        contentDir = "content/ja"
+    [languages.en]
+        title = "Less is more"
+        weight = 2
+        languageCode = "en-us"
+        languageName = "English"
+        contentDir = "content/en"
+
+
+[[languages.ja.menu.main]]
+    name = "プロフィール"
     url = "aboutme"
     weight = 1
 
-[[menu.main]]
-    name = "Posts"
+[[languages.ja.menu.main]]
+    name = "記事"
     url = "posts/"
     weight = 2
 
-[[menu.main]]
-    name = "Tags"
-    url = "tags/"
+[[languages.ja.menu.main]]
+    name = "タグ"
+    url = "tags"
     weight = 3
 
-[[menu.main]]
-    name = "Search"
+[[languages.ja.menu.main]]
+    name = "検索"
     url = "search"
     weight = 4
 
-[[menu.main]]
-    name = "Publication Date"
+[[languages.ja.menu.main]]
+    name = "ソート"
     url = "pubdate"
     weight = 5
+
+
+[[languages.en.menu.main]]
+    name = "About"
+    url = "aboutme"
+    weight = 1

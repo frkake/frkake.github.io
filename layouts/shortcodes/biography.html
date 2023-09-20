@@ -1,0 +1,33 @@
+<div class="biography-section">
+    <!-- Profile Image and Social Links -->
+    <div class="profile-container">
+    <div class="profile-image-container">
+        <img src="{{ .Get "image" }}" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="social-links">
+        <a href="{{ .Get "twitter" }}"><i class="fab fa-twitter"></i></a>
+        <a href="{{ .Get "github" }}"><i class="fab fa-github"></i></a>
+        <a href="{{ .Get "linkedin" }}"><i class="fab fa-linkedin"></i></a>
+        <a href="{{ .Get "facebook" }}"><i class="fab fa-facebook"></i></a>
+        <!-- Add more social links here -->
+    </div>
+    </div>
+
+    <!-- Biography -->
+    <div class="info-row">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "description" }}</p>
+    </div>
+
+    <!-- Interests and Education -->
+    <div class="additional-info">
+    <div class="interests">
+        <h3>Interests</h3>
+        <p>{{ .Get "interests" }}</p>
+    </div>
+    <div class="education">
+        <h3>Education</h3>
+        <p>{{ .Get "education" }}</p>
+    </div>
+    </div>
+</div>

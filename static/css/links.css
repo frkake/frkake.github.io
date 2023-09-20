@@ -22,14 +22,12 @@
     margin-top: 8px;
 }
 
-/* static/css/links.css */
 .link-item a, .link-item a i, .link-item a i::before {
     text-decoration: none !important;
     border-bottom: none !important;
     outline: none !important;
 }
 
-/* static/css/links.css */
 .link-item a.fas, .link-item a.fas::before {
     text-decoration: none !important;
     border-bottom: none !important;

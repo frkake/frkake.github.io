@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h1 class="pubdate-page-title">Publication Date</h1>
+  <h1 class="pubdate-page-title">記事で紹介した論文の出版年</h1>
   {{ $pages := where .Site.RegularPages "Params.pubdate" "!=" nil }}
   {{ $sortedPages := $pages.ByParam "pubdate" }}
   {{ $reversedPages := slice }}
@@ -16,11 +16,11 @@
         </section> <!-- Close previous year section -->
       {{ end }}
       <section>
-        <h2 class="year-header">{{ $year }}</h2>
+        <h2 class="year-header" style="margin-bottom: 10px;">{{ $year }}</h2>
       {{ end }}
       <article class="pubdate-article-block">
         <span class="pubdate-small">{{ dateFormat "01/02" .Params.pubdate }}</span>
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <h3 style="margin-bottom: 5px;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <div class="pubdate-tag-container">
           <p>
             {{ range .Params.tags }}
