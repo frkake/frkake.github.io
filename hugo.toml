@@ -123,7 +123,7 @@ enableRobotsTXT = true
 
 [[languages.ja.menu.main]]
     name = "検索"
-    url = "search"
+    url = "/search"
     weight = 4
 
 [[languages.ja.menu.main]]
