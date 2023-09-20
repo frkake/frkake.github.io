@@ -1,6 +1,6 @@
 +++
 type = "biography"
-title = "Biography"
+title = "飯田啄巳"
 biography = "コンピュータビジョン エンジニア/リサーチャー"
 image = "/images/iida_takumi_italy.jpg"
 twitter = "https://twitter.com/bibpile"
@@ -8,7 +8,7 @@ github = "https://github.com/bibpile"
 linkedin = "https://linkedin.com/in/bibpile"
 facebook = "https://www.facebook.com/tkmiida/"
 
-interests = ["Artificial Intelligence", "Robotics"]
+interests = ["コンピュータビジョン", "レーン検出", "PyTorch", "深層学習"]
 [[education]]
 course = "理工学研究科電子システム専攻"
 university = "立命館大学大学院"
