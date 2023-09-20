@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="biography-section">
+<!-- Profile Image and Social Links -->
+<div class="profile-container">
+    <div class="profile-image-container">
+    <img src="{{ .Params.image }}" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="social-links">
+    <a href="{{ .Params.twitter }}"><i class="fab fa-twitter"></i></a>
+    <a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>
+    <a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>
+    <a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>
+    <!-- Add more social links here -->
+    </div>
+</div>
+
+<!-- Biography -->
+<div class="info-row">
+    <h2>{{ .Params.title }}</h2>
+    <p>{{ .Params.biography }}</p>
+    <!-- Description -->
+    <p class="description">{{ .Params.description }}</p>
+</div>
+
+<!-- Interests and Education -->
+<div class="additional-info">
+    <div class="interests">
+        <h3>Interests</h3>
+        <ul class="interests-list">
+        {{ range .Params.interests }}
+        <li>
+            <i class="fas fa-check-circle interests-icon"></i>
+            <div class="interest-content">{{ . }}</div>
+        </li>
+        {{ end }}
+        </ul>
+    </div>
+
+    <div class="education">
+        <h3>Education</h3>
+        <ul class="education-list">
+        {{ range .Params.education }}
+        <li>
+            <i class="fas fa-graduation-cap education-icon"></i>
+            <div class="education-content">
+            <div class="course">{{ .course }}</div>
+            <div class="university">{{ .university }}</div>
+            <div class="years">{{ .years }}</div>
+            </div>
+        </li>
+        {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

@@ -98,27 +98,42 @@
                 </button>
                 {{- end }}
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.AllTranslations }}
+                {{- $currentPath := .File.Path }}
+                {{- $currentLang := .Lang }}
+                {{- $allTranslations := site.Home.AllTranslations }}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle) }}
+                
                 <ul class="lang-switch">
                     {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
+                    {{- range $allTranslations }}
+                    {{- $otherLang := .Lang }}
+                    {{- if ne $currentLang $otherLang }}
+                    {{- $otherPath := replace $currentPath (print "content/" $currentLang "/") (print "content/" $otherLang "/") }}
+                    {{- $otherPage := .Site.GetPage $otherPath }}
                     <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                        {{- if $otherPage }}
+                        <a href="{{ $otherPage.Permalink }}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
                             aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
                             {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
                             {{- .Language.LanguageName | emojify -}}
                             {{- else }}
                             {{- .Lang | title -}}
-                            {{- end -}}
+                            {{- end }}
                         </a>
+                        {{- else }}
+                        <a href="{{ .Permalink }}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end }}
+                        </a>
+                        {{- end }}
                     </li>
-                    {{- end -}}
-                    {{- end}}
+                    {{- end }}
+                    {{- end }}
                 </ul>
-                {{- end }}
             </div>
         </div>
         {{- $currentPage := . }}

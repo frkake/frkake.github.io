@@ -1,0 +1,107 @@
+.biography-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+}
+
+.profile-container {
+    margin-bottom: 40px;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image {
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    height: 100%;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.info-row {
+    margin-bottom: 20px;
+}
+
+.info-row h2 {
+    margin-bottom: 10px;
+}
+
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.interests, .education {
+    width: 45%;
+}
+
+.interest-content, .education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0.5em;
+}
+
+.interests-list, .education-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.interests-list li, .education-list li {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+.interests-icon, .education-icon {
+    position: absolute;
+    left: 0;
+    top: 50;
+    transform: translateY(40%);
+    height: 1em;
+    line-height: 1em;
+}
+
+.course {
+    flex: 1;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.university {
+    flex: 1;
+    font-size: smaller;
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+}
+
+.years {
+    flex: 1;
+    font-size: smaller;
+    color: gray;
+    text-align: left;
+    width: 100%;
+}
