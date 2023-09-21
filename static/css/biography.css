@@ -167,7 +167,7 @@
     font-size: 0.8em;
 }
 
-.experience-details .time-location .duration, .time-location {
+.experience-details .time-location .duration, .location {
     font-weight: 300;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .first-item .timeline-dot {
-    background-color: #525252;
+    background-color: #727272;
     width: 20px;
     height: 20px;
     left: -7px;
@@ -224,7 +224,7 @@
 }
 
 .dark .first-item .timeline-dot {
-    background-color: #ffffff;
+    background-color: #d4d4d4;
 }
 
 .experience-item {
