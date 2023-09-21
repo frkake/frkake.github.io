@@ -78,7 +78,7 @@ enableRobotsTXT = true
         keys = ["title", "tags", "summary", "content", ]
     
     [params.assets]
-        favicon = "/images/steamed_rice_brown.svg"
+        favicon = "images/steamed_rice_brown.svg"
 
 [markup.goldmark.renderer]
     unsafe = true
