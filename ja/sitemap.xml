@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://blog.takumi-iida.com/search/</loc>
+    <loc>http://blog.takumi-iida.com/ja/search/</loc>
     <lastmod>2023-09-18T21:01:14+09:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/general/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/general/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/</loc>
+    <loc>http://blog.takumi-iida.com/ja/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -18,13 +18,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="http://blog.takumi-iida.com/"
+                href="http://blog.takumi-iida.com/ja/"
                 />
   </url><url>
-    <loc>http://blog.takumi-iida.com/posts/</loc>
+    <loc>http://blog.takumi-iida.com/ja/posts/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -34,46 +34,46 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="http://blog.takumi-iida.com/tags/"
+                href="http://blog.takumi-iida.com/ja/tags/"
                 />
   </url><url>
-    <loc>http://blog.takumi-iida.com/posts/introduction/</loc>
+    <loc>http://blog.takumi-iida.com/ja/posts/introduction/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/posts/2021-07-25-multibox/</loc>
+    <loc>http://blog.takumi-iida.com/ja/posts/2021-07-25-multibox/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/cvpr/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/cvpr/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/object-detection/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/object-detection/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/region-proposal/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/region-proposal/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/posts/2021-07-24-overfeat/</loc>
+    <loc>http://blog.takumi-iida.com/ja/posts/2021-07-24-overfeat/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/1-stage/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/1-stage/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/sliding-window/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/sliding-window/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/posts/2021-07-24-r-cnn/</loc>
+    <loc>http://blog.takumi-iida.com/ja/posts/2021-07-24-r-cnn/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/2-stage/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/2-stage/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/selective-search/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/selective-search/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/tags/svm/</loc>
+    <loc>http://blog.takumi-iida.com/ja/tags/svm/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>http://blog.takumi-iida.com/categories/</loc>
+    <loc>http://blog.takumi-iida.com/ja/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -82,12 +82,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="http://blog.takumi-iida.com/categories/"
+                href="http://blog.takumi-iida.com/ja/categories/"
                 />
   </url><url>
-    <loc>http://blog.takumi-iida.com/pubdate/</loc>
+    <loc>http://blog.takumi-iida.com/ja/pubdate/</loc>
   </url><url>
-    <loc>http://blog.takumi-iida.com/aboutme/</loc>
+    <loc>http://blog.takumi-iida.com/ja/aboutme/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -96,7 +96,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="http://blog.takumi-iida.com/aboutme/"
+                href="http://blog.takumi-iida.com/ja/aboutme/"
                 />
   </url>
 </urlset>
