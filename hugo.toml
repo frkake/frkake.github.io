@@ -1,7 +1,7 @@
 baseURL = 'http://blog.takumi-iida.com/'
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
 title = 'Less is more'
 theme = 'papermod'
@@ -27,11 +27,10 @@ enableRobotsTXT = true
 
     ShowReadingTime = false
     ShowPostNavLinks = true
-    ShowBreadCrumbs = false
+    ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
     ShowShareButtons = true
     ShowWordCount = false
-
     ShareButtons = ["twitter", "facebook", "linkedin", "reddit", ]
 
     disableSpecial1stPost = false
