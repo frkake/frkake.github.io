@@ -79,6 +79,10 @@ enableRobotsTXT = true
     
     [params.assets]
         favicon = "/images/steamed_rice_brown.ico"
+        favicon16x16 = "/images/steamed_rice_brown.png"
+        favicon32x32 = "/images/steamed_rice_brown.png"
+        apple_touch_icon = "/images/steamed_rice_brown.png"
+        safari_pinned_tab = "/images/steamed_rice_brown.png"
 
 [markup.goldmark.renderer]
     unsafe = true
