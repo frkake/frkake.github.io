@@ -1,4 +1,4 @@
-baseURL = 'http://blog.takumi-iida.com/'
+baseURL = 'https://blog.takumi-iida.com/'
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
