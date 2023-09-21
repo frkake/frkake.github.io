@@ -78,7 +78,11 @@ enableRobotsTXT = true
         keys = ["title", "tags", "summary", "content", ]
     
     [params.assets]
-        favicon = "images/steamed_rice_brown.svg"
+        favicon = "/images/steamed_rice_brown.svg"
+        favicon16x16 = "/images/steamed_rice_brown.svg"
+        favicon32x32 = "/images/steamed_rice_brown.svg"
+        apple_touch_icon = "/images/steamed_rice_brown.svg"
+        safari_pinned_tab = "/images/steamed_rice_brown.svg"
 
 [markup.goldmark.renderer]
     unsafe = true
