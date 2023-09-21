@@ -122,17 +122,26 @@ enableRobotsTXT = true
     weight = 3
 
 [[languages.ja.menu.main]]
-    name = "検索"
-    url = "search"
+    name = "ソート"
+    url = "pubdate"
     weight = 4
 
 [[languages.ja.menu.main]]
-    name = "ソート"
-    url = "pubdate"
+    name = "検索"
+    url = "search"
     weight = 5
-
 
 [[languages.en.menu.main]]
     name = "About"
     url = "aboutme"
     weight = 1
+
+# [[languages.en.menu.main]]
+#     name = "Tags"
+#     url = "tags"
+#     weight = 3
+
+# [[languages.en.menu.main]]
+#     name = "Search"
+#     url = "search"
+#     weight = 5
