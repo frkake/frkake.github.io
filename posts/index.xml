@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>(MultiBox) Scalable Object Detection using Deep Neural Networks, CVPR, 2014</title>
+      <title>MultiBox</title>
       <link>https://blog.takumi-iida.com/posts/2021-07-25-multibox/</link>
       <pubDate>Mon, 26 Jul 2021 00:47:15 +0000</pubDate>
       
@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>(OverFeat) OverFeat： Integrated Recognition, Localization and Detection using Convolutional Networks, arXiv:2014</title>
+      <title>OverFeat</title>
       <link>https://blog.takumi-iida.com/posts/2021-07-24-overfeat/</link>
       <pubDate>Sun, 25 Jul 2021 04:03:55 +0000</pubDate>
       
@@ -40,7 +40,7 @@
     </item>
     
     <item>
-      <title>(R-CNN) Rich feature hierarchies for accurate object detection and semantic segmentation, CVPR, 2014</title>
+      <title>R-CNN</title>
       <link>https://blog.takumi-iida.com/posts/2021-07-24-r-cnn/</link>
       <pubDate>Sat, 24 Jul 2021 04:08:08 +0000</pubDate>
       
