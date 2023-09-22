@@ -1,5 +1,5 @@
 +++
-title = "(OverFeat) OverFeat： Integrated Recognition, Localization and Detection using Convolutional Networks, arXiv:2014"
+title = "OverFeat"
 date = 2021-07-25T04:03:55
 pubdate = 2013-12-21T09:52:33
 category = "paper"
