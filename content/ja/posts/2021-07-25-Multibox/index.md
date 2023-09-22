@@ -1,5 +1,5 @@
 +++
-title = "(MultiBox) Scalable Object Detection using Deep Neural Networks, CVPR, 2014"
+title = "MultiBox"
 date = 2021-07-26T00:47:15
 pubdate = 2013-12-08T19:40:51
 category = "paper"

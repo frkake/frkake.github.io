@@ -27,7 +27,7 @@ enableRobotsTXT = true
 
     ShowReadingTime = false
     ShowPostNavLinks = true
-    ShowBreadCrumbs = true
+    ShowBreadCrumbs = false
     ShowCodeCopyButtons = true
     ShowShareButtons = true
     ShowWordCount = false

@@ -1,5 +1,5 @@
 +++
-title = "(R-CNN) Rich feature hierarchies for accurate object detection and semantic segmentation, CVPR, 2014"
+title = "R-CNN"
 date = 2021-07-24T04:08:08
 pubdate = 2013-11-11T18:43:49
 category = "paper"
