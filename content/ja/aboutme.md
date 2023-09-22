@@ -37,7 +37,7 @@ location = "京都"
 [[experience]]
 logo = "/images/sensetime.png"
 institute = "株式会社センスタイムジャパン"
-role = "エンジニア（インターン）"
+role = "インターン"
 duration = "2019.6 - 2019.9"
 location = "京都"
 
