@@ -43,6 +43,7 @@ Hugoもちょっと触ってみたいと思ったので、触ってみたら結�
 - [Hugo-extended](https://gohugo.io/installation/linux/)<br>
     バイナリファイルを[ダウンロード](https://github.com/gohugoio/hugo/releases)
 - [PaperMod](https://adityatelange.github.io/hugo-PaperMod/)
+- [hugo-embed-pdf](https://hugo-embed-pdf.netlify.app/)
 - [Hugo Icons Module](https://icons.hugomods.com/en/)
 
 起動コマンド忘れそうなのでメモ。
