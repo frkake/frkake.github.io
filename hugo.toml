@@ -4,9 +4,9 @@ defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
 title = 'Less is more'
-theme = 'papermod'
-enableEmoji = true
+theme = ["hugo-embed-pdf-shortcode", "papermod", ]
 enableInlineShortcodes = true
+enableEmoji = true
 enableRobotsTXT = true
 
 [minify]
