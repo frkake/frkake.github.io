@@ -7,11 +7,11 @@
     <img src="{{ .Params.image }}" alt="Profile Image" class="profile-image">
     </div>
     <div class="social-links">
-    <a href="{{ .Params.twitter }}"><i class="fab fa-twitter"></i></a>
-    <a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>
-    <a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>
-    <a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>
-    <a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>
+        {{ if .Params.twitter }}<a href="{{ .Params.twitter }}"><i class="fab fa-twitter"></i></a>{{ end }}
+        {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>{{ end }}
+        {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
+        {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
+        {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
     </div>
 </div>
 
