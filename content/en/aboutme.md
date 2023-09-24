@@ -7,6 +7,8 @@ twitter = "https://twitter.com/bibpile"
 github = "https://github.com/bibpile"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"
 facebook = "https://www.facebook.com/tkmiida/"
+resume = "/pdf/[Takumi Iida] Resume.pdf"
+
 interests = ["Computer Vision", "Lane Detection", "PyTorch", "Deep Learning"]
 [[education]]
 course = "Master of Electronic System"
