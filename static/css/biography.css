@@ -55,24 +55,24 @@
     margin-bottom: 30px;
 }
 
-.interests, .education {
+.skills, .education {
     width: 45%;
 }
 
-.interest-content, .education-content {
+.skills-content, .education-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 0.5em;
 }
 
-.interests-list, .education-list {
+.skills-list, .education-list {
     list-style: none;
     padding-left: 0;
     margin-top: 10px;
 }
 
-.interests-list li, .education-list li {
+.skills-list li, .education-list li {
     position: relative;
     margin-bottom: 1em;
     padding-left: 1.5em;
@@ -87,7 +87,7 @@
     line-height: 1em;
 }
 
-.interests-indicator {
+.skills-indicator {
     position: absolute;
     left: 0;
     top: 50%;
@@ -100,7 +100,7 @@
     margin-right: 10px;
 }
 
-.dark .interests-indicator {
+.dark .skills-indicator {
     background: conic-gradient(#8e8e8e calc(var(--percentage, 0) * 1%), #373737 0);
 }
 
