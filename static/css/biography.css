@@ -78,7 +78,7 @@
     padding-left: 1.5em;
 }
 
-.interests-icon, .education-icon {
+.education-icon {
     position: absolute;
     left: 0;
     top: 50;
@@ -86,6 +86,38 @@
     height: 1em;
     line-height: 1em;
 }
+
+.interests-indicator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: conic-gradient(#7b7b7b calc(var(--percentage, 0) * 1%), #e3e3e3 0);
+    margin-right: 10px;
+}
+
+.dark .interests-indicator {
+    background: conic-gradient(#8e8e8e calc(var(--percentage, 0) * 1%), #373737 0);
+}
+
+.percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.dark .percentage-label {
+    color: #ffffff;
+}
+
 
 .course {
     flex: 1;
