@@ -9,7 +9,7 @@ linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
-interests = [
+skills = [
     {name = "Fallen Object Detection", percentage=80},
     {name = "Lane Detection", percentage=70},
     {name = "PyTorch", percentage=70},

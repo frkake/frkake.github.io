@@ -23,17 +23,17 @@
     <p class="description">{{ .Params.description }}</p>
 </div>
 
-<!-- Interests and Education -->
+<!-- Skills and Education -->
 <div class="additional-info">
-    <div class="interests">
-        <h3>Interests</h3>
-        <ul class="interests-list">
-        {{ range .Params.interests }}
+    <div class="skills">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+        {{ range .Params.skills }}
         <li>
-            <div class="interests-indicator" style="--percentage: {{ .percentage }}">
+            <div class="skills-indicator" style="--percentage: {{ .percentage }}">
                 <span class="percentage-label">{{.percentage}}</span>
             </div>
-            <div class="interest-content">{{ .name }}</div>
+            <div class="skills-content">{{ .name }}</div>
         </li>
         {{ end }}
         </ul>
