@@ -96,7 +96,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: conic-gradient(#7b7b7b calc(var(--percentage, 0) * 1%), #e3e3e3 0);
+    background: conic-gradient(#727272 calc(var(--percentage, 0) * 1%), #e3e3e3 0);
     margin-right: 10px;
 }
 

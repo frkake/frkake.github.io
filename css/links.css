@@ -22,14 +22,7 @@
     margin-top: 8px;
 }
 
-.link-item a, .link-item a i, .link-item a i::before {
-    text-decoration: none !important;
-    border-bottom: none !important;
-    outline: none !important;
-}
-
-.link-item a.fas, .link-item a.fas::before {
-    text-decoration: none !important;
-    border-bottom: none !important;
-    outline: none !important;
+.post-content .link-item a,
+.post-content .link-item a:hover {
+    box-shadow: none;
 }
