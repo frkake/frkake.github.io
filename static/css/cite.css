@@ -18,3 +18,29 @@ body.dark .cite-block {
 .cite-block ul {
     margin-bottom: 0.8em;
 }
+
+.cite-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cite-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: start; /* タイトルと内容を上端で揃える */
+}
+
+.cite-title {
+    font-weight: bold;
+    color: #333; /* ダークモードでは異なる色に変えることができます */
+    margin-right: 15px; /* タイトルと内容の間のスペース */
+    flex-shrink: 0; /* タイトルの領域を縮小させない */
+    width: 110px; /* タイトルの固定幅 */
+}
+
+.cite-content {
+    color: #666; /* ダークモードでは変更することができます */
+    flex-grow: 1; /* 必要に応じて内容の領域を拡大 */
+}
+

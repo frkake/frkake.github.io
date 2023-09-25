@@ -32,20 +32,42 @@ document.addEventListener("DOMContentLoaded", function() {
         let year, month;
         if (yearMatch && monthMatch) {
             year = yearMatch[1];
-            month = monthMatch[1];
+            month = convertMonthToNumber(monthMatch[1]);
         } else if (eprintMatch) {
             year = "20" + eprintMatch[1].substring(0, 2);  // "1312" -> "2013"
             month = eprintMatch[1].substring(2, 4);  // "1312" -> "12"
         }
         
         // リスト形式で書誌情報を整頓
-        let markdownText = '<ul>';
-        markdownText += `<li><strong>著者：</strong>${authorMatch ? authorMatch[1] : ''}</li>`;
-        markdownText += `<li><strong>タイトル：</strong>${titleMatch ? titleMatch[1] : ''}</li>`;
-        markdownText += `<li><strong>会議：</strong>${booktitle}</li>`;
-        markdownText += `<li><strong>出版年月日：</strong>${year ? year : ''}-${month ? month : ''}</li>`;
+        let markdownText = '<ul class="cite-list">';
+        markdownText += formatListItem("著者", authorMatch ? authorMatch[1] : '');
+        markdownText += formatListItem("タイトル", titleMatch ? titleMatch[1] : '');
+        markdownText += formatListItem("会議", booktitle);
+        markdownText += formatListItem("出版年月日", `${year ? year : ''}-${month ? month : ''}`);
         markdownText += '</ul>';
         
         markdownCite.innerHTML = markdownText;
     });
 });
+
+function convertMonthToNumber(monthStr) {
+    const monthMap = {
+        'January': '01', 'Jan': '01',
+        'February': '02', 'Feb': '02',
+        'March': '03', 'Mar': '03',
+        'April': '04', 'Apr': '04',
+        'May': '05',
+        'June': '06', 'Jun': '06',
+        'July': '07', 'Jul': '07',
+        'August': '08', 'Aug': '08',
+        'September': '09', 'Sep': '09',
+        'October': '10', 'Oct': '10',
+        'November': '11', 'Nov': '11',
+        'December': '12', 'Dec': '12'
+    };
+    return monthMap[monthStr] || monthStr;  // 未知の月はそのまま返す
+}
+
+function formatListItem(title, content) {
+    return `<li><strong class="cite-title">${title}：</strong><span class="cite-content">${content}</span></li>`;
+}
