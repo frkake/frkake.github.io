@@ -30,8 +30,10 @@
         <ul class="interests-list">
         {{ range .Params.interests }}
         <li>
-            <i class="fas fa-check-circle interests-icon"></i>
-            <div class="interest-content">{{ . }}</div>
+            <div class="interests-indicator" style="--percentage: {{ .percentage }}">
+                <span class="percentage-label">{{.percentage}}</span>
+            </div>
+            <div class="interest-content">{{ .name }}</div>
         </li>
         {{ end }}
         </ul>

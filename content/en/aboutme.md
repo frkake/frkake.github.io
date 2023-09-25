@@ -9,7 +9,12 @@ linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
-interests = ["Computer Vision", "Lane Detection", "PyTorch", "Deep Learning"]
+interests = [
+    {name = "Fallen Object Detection", percentage=80},
+    {name = "Lane Detection", percentage=70},
+    {name = "PyTorch", percentage=70},
+    {name = "Rust", percentage=20},
+]
 [[education]]
 course = "Master of Electronic System"
 university = "Ritsumeikan University"
