@@ -40,7 +40,14 @@ body.dark .cite-block {
 }
 
 .cite-content {
-    color: #666; /* ダークモードでは変更することができます */
-    flex-grow: 1; /* 必要に応じて内容の領域を拡大 */
+    color: #333;
+    flex-grow: 1;
 }
 
+body.dark .cite-title {
+    color: #ccc;
+}
+
+body.dark .cite-content {
+    color: #ccc;
+}
