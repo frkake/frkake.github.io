@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Image Protection on Less is more</title>
+    <link>https://blog.takumi-iida.com/tags/image-protection/</link>
+    <description>Recent content in Image Protection on Less is more</description>
+    <image>
+      <title>Less is more</title>
+      <url>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</url>
+      <link>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 23 Sep 2023 02:13:14 +0900</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/image-protection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Glaze</title>
+      <link>https://blog.takumi-iida.com/posts/2023-09-23/</link>
+      <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
+      
+      <guid>https://blog.takumi-iida.com/posts/2023-09-23/</guid>
+      <description>@inproceedings {291164, author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao}, title = {Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models}, booktitle = {32nd USENIX Security Symposium (USENIX Security 23)}, year = {2023}, isbn = {978-1-939133-37-3}, address = {Anaheim, CA}, pages = {2187--2204}, url = {https://www.usenix.org/conference/usenixsecurity23/presentation/shan}, publisher = {USENIX Association}, month = {Aug} } Project Paper アー</description>
+    </item>
+    
+  </channel>
+</rss>
