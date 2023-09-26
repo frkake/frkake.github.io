@@ -1,4 +1,3 @@
-/* ライトモードの場合 */
 .cite-block {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -6,7 +5,6 @@
     padding: 15px;
 }
 
-  /* ダークモードの場合 */
 body.dark .cite-block {
     background-color: #333333;
     border-radius: 10px;
@@ -14,7 +12,6 @@ body.dark .cite-block {
     padding: 15px;
 }
 
-/* リストの下側のマージンを調整 */
 .cite-block ul {
     margin-bottom: 0.8em;
 }
@@ -28,15 +25,15 @@ body.dark .cite-block {
 .cite-list li {
     margin-bottom: 12px;
     display: flex;
-    align-items: start; /* タイトルと内容を上端で揃える */
+    align-items: start;
 }
 
 .cite-title {
     font-weight: bold;
-    color: #333; /* ダークモードでは異なる色に変えることができます */
-    margin-right: 15px; /* タイトルと内容の間のスペース */
-    flex-shrink: 0; /* タイトルの領域を縮小させない */
-    width: 110px; /* タイトルの固定幅 */
+    color: #333;
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 110px;
 }
 
 .cite-content {
