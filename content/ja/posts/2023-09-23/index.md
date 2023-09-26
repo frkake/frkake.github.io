@@ -62,10 +62,7 @@ Glazeは学習されても模倣されないような画像を生成すること
 
 ## Glaze
 
-{{< tile-images cols=2 >}}
-![Glaze](image-3.png)
-![Style-Transferの結果](image-4.png)
-{{< /tile-images >}}
+![Glazeの全体像](image-3.png)
 
 1. Style Transferを使って、Victimのオリジナル画像を様々なスタイルに変換<br>
     ![Style-Transferの結果](image-4.png)
