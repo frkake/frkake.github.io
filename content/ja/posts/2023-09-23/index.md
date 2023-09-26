@@ -2,6 +2,7 @@
 title = 'Glaze'
 date = 2023-09-23T02:13:14+09:00
 pubdate = 2023-08-01
+tags = ["Adversarial Examples", "Text-to-Image", "Style Transfer", "Art", "Image Protection", ]
 +++
 
 {{< cite >}}

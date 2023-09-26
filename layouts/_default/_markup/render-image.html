@@ -1,0 +1,6 @@
+<figure class="centered-figure">
+    <a href="{{ .Destination }}" class="magnific-image">
+        <img src="{{ .Destination }}" alt="{{ with .Text }}{{ . }}{{ else }}{{ with .Title }}{{ . }}{{ end }}{{ end }}">
+    </a>
+    <figcaption>{{ with .Title }}{{ . }}{{ else }}{{ with .Text }}{{ . }}{{ end }}{{ end }}</figcaption>
+</figure>
