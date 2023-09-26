@@ -13,7 +13,7 @@
     {{ $year := dateFormat "2006" .Params.pubdate }}
     {{ if ne $year $currentYear }}
       {{ if $currentYear }}
-        </section> <!-- Close previous year section -->
+        </section>
       {{ end }}
       <section>
         <h2 class="year-header" style="margin-bottom: 10px;">{{ $year }}</h2>
@@ -31,5 +31,5 @@
       </article>
       {{ $currentYear = $year }}
   {{ end }}
-  </section> <!-- Close last year section -->
+  </section>
 {{ end }}
