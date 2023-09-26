@@ -24,6 +24,7 @@ enableRobotsTXT = true
     DateFormat = "2006-01-02"
     defaultTheme = "auto"
     defaultThemeLight = false
+    draft = false
 
     ShowReadingTime = false
     ShowPostNavLinks = true
@@ -41,6 +42,8 @@ enableRobotsTXT = true
     showtoc = false
     tocopen = false
     hideFooter = true
+
+    math = true
 
     [params.label]
         text = "Less is more"
