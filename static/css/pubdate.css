@@ -1,6 +1,13 @@
-/* デフォルト（ライトモード）のスタイル */
+body {
+    background-color: #f5f5f5;
+}
+
+body.dark {
+    background-color: #1d1e20;
+}
+
 .pubdate-article-block {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -15,7 +22,7 @@
 }
 
 .pubdate-tag-block {
-    background-color: #eae9e9;
+    background-color: #f5f5f5;
     padding: 5px;
     margin: 2px;
     border-radius: 5px;
@@ -23,12 +30,11 @@
     font-size: 0.8em;
 }
 
-/* ダークモード */
 body.dark .pubdate-article-block {
-    background-color: #333333;
+    background-color: #2e2e33;
 }
 
 body.dark .pubdate-tag-block {
-    background-color: #444444;
+    background-color: #1d1e20;
 }
 
