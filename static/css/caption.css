@@ -29,3 +29,12 @@ figure.centered-figure figcaption {
     max-width: 100%;
     height: auto;
 }
+
+/* Dark */
+body.dark figure.centered-figure figcaption {
+    color: #ffffff;
+}
+
+body.dark .tile-image img {
+    filter: brightness(0.8);
+}
