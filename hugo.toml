@@ -25,6 +25,7 @@ enableRobotsTXT = true
     defaultTheme = "auto"
     defaultThemeLight = false
     draft = false
+    env = "production"
 
     ShowReadingTime = false
     ShowPostNavLinks = true
