@@ -52,3 +52,44 @@ Hugoもちょっと触ってみたいと思ったので、触ってみたら結�
 # 起動
 $ hugo server -D
 ```
+
+### ShortCode
+
+<!-- お知らせブロック -->
+- お知らせブロック
+  {{< notice info >}}
+A notice disclaimer
+{{< /notice >}}
+
+  {{< notice note >}}
+A notice disclaimer
+{{< /notice >}}
+
+  {{< notice tip >}}
+A notice disclaimer
+{{< /notice >}}
+
+  {{< notice warning >}}
+A notice disclaimer
+{{< /notice >}}
+
+- BibTexの引用
+    {{< cite >}}
+    @misc{liang2023adversarial,
+        title={Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples}, 
+        author={Chumeng Liang and Xiaoyu Wu and Yang Hua and Jiaru Zhang and Yiming Xue and Tao Song and Zhengui Xue and Ruhui Ma and Haibing Guan},
+        year={2023},
+        eprint={2302.04578},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+    }
+    {{< /cite >}}
+- いろんなリンク
+    {{< links code="https://github.com/mist-project/mist" paper="https://arxiv.org/abs/2302.04578" project="https://mist-project.github.io/index_en.html" video="https://icml.cc/virtual/2023/oral/25469">}}
+
+- キャプション付きで画像をタイル状に並べる
+  {{< tile-images cols=2 >}}
+  ![画像1](image.png)
+  ![画像2](image-1.png)
+  ![画像3](image-3.png)
+  {{< /tile-images >}}

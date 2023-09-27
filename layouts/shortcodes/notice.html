@@ -1,0 +1,23 @@
+<div class="notice {{ .Get 0 }}">
+    <div class="notice-header">
+        <div class="notice-icon">
+            {{ with .Get 0 }}
+                {{ if eq . "info" }}
+                    <i class="fas fa-info-circle"></i>
+                {{ else if eq . "note" }}
+                    <i class="fas fa-sticky-note"></i>
+                {{ else if eq . "tip" }}
+                    <i class="fas fa-lightbulb"></i>
+                {{ else if eq . "warning" }}
+                    <i class="fas fa-exclamation-triangle"></i>
+                {{ end }}
+            {{ end }}
+        </div>
+        <div class="notice-title">
+            {{ .Get 0 | title }}
+        </div>
+    </div>
+    <div class="notice-content">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

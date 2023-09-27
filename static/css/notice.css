@@ -1,0 +1,131 @@
+/* Light Mode */
+.notice {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notice-header {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.notice-icon {
+    flex-shrink: 0;
+    width: 24px;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.notice-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.notice-content {
+    padding: 15px 20px;
+    color: #4a5568;
+    line-height: 1.5;
+    border-top: 1px solid #edf2f7;
+}
+
+.notice.note .notice-header {
+    background-color: #a3bffa;
+}
+.notice.note .notice-content {
+    background-color: #e8eaf6;  /* Lighter shade of #a3bffa */
+}
+
+.notice.info .notice-header {
+    background-color: #9ae6b4;
+}
+.notice.info .notice-content {
+    background-color: #e5f4eb;  /* Lighter shade of #9ae6b4 */
+}
+
+.notice.tip .notice-header {
+    background-color: #fbd38d;
+}
+.notice.tip .notice-content {
+    background-color: #fef2e7;  /* Lighter shade of #fbd38d */
+}
+
+.notice.warning .notice-header {
+    background-color: #feb2b2;
+}
+.notice.warning .notice-content {
+    background-color: #fee2e2;  /* Lighter shade of #feb2b2 */
+}
+
+/* Dark Mode */
+.dark .notice {
+    border: 1px solid #33343d;  /* Slightly darker border */
+    border-radius: 6px;
+    font-size: 1em;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);  /* Reduced shadow */
+}
+
+.dark .notice-header {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    color: #cbd5e0;  /* Slightly dimmed text color */
+    font-weight: 500;
+}
+
+.dark .notice-icon {
+    flex-shrink: 0;
+    width: 24px;
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.dark .notice-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.dark .notice-content {
+    padding: 15px 20px;
+    color: #e2e8f0;
+    line-height: 1.5;
+    border-top: 1px solid #33343d;  /* Slightly darker border-top */
+    background-color: #1a1c23;  /* Closer to typical dark mode background */
+}
+
+.dark .notice.note .notice-header {
+    background-color: #4b5175;  /* More muted shade */
+}
+.dark .notice.note .notice-content {
+    background-color: #2e3141;  /* Closer to dark mode background */
+}
+
+.dark .notice.info .notice-header {
+    background-color: #2d6f58;  /* More muted shade */
+}
+.dark .notice.info .notice-content {
+    background-color: #1f4a3c;  /* Closer to dark mode background */
+}
+
+.dark .notice.tip .notice-header {
+    background-color: #a15d2a;  /* More muted shade */
+}
+.dark .notice.tip .notice-content {
+    background-color: #703f1a;  /* Closer to dark mode background */
+}
+
+.dark .notice.warning .notice-header {
+    background-color: #a74342;  /* More muted shade */
+}
+.dark .notice.warning .notice-content {
+    background-color: #702a29;  /* Closer to dark mode background */
+}
