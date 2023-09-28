@@ -417,8 +417,12 @@ body.dark {
         font-size: 0.9em; /* リストのテキストサイズを小さく調整 */
     }
 
-    .timeline-dot, .first-item .timeline-dot {
-        left: 0.3px; /* ドットの位置を調整 */
+    .first-item .timeline-dot {
+        left: 0.5px; /* ドットの位置を調整 */
+    }
+
+    .timeline-dot {
+        left: 0; /* ドットの位置を調整 */
     }
 
     .experience-item {
