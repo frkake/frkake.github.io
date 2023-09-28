@@ -422,7 +422,7 @@ body.dark {
     }
 
     .timeline-dot {
-        left: 0; /* ドットの位置を調整 */
+        left: 1; /* ドットの位置を調整 */
     }
 
     .experience-item {
