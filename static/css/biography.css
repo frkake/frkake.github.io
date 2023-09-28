@@ -385,6 +385,9 @@ body.dark {
         left: 3.5px;
     }
 
+    .percentage-label {
+        font-size: 8px;
+    }
 }
 
 /* スマートフォン向けの調整 */
@@ -430,6 +433,6 @@ body.dark {
     }
 
     .percentage-label {
-        font-size: 7px; /* フォントサイズをさらに小さく調整 */
+        font-size: 8px; /* フォントサイズをさらに小さく調整 */
     }
 }
