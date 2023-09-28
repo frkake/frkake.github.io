@@ -336,3 +336,53 @@ body.dark {
 .experience-timeline::before {
     left: 1.5px;
 }
+
+/* Mobile Responsive Adjustments */
+@media only screen and (max-width: 768px) { /* This targets screens up to 768px, which is common for tablets and below */
+
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .social-links a {
+        font-size: 30px;
+        margin: 0 5px;
+    }
+
+    .additional-info {
+        flex-direction: column;
+    }
+
+    .skills, .education {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .experience-logo {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .experience-grid {
+        flex-direction: column;
+    }
+
+    .experience-timeline::before, .experience-item::before, .first-item::before, .last-item::before {
+        left: 10px;
+    }
+
+    .experience-item {
+        padding-left: 25px;
+    }
+
+    .timeline-dot, .first-item .timeline-dot {
+        left: 3.5px;
+    }
+
+}
