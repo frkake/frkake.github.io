@@ -22,7 +22,7 @@ enableRobotsTXT = false
     keywords = ["Portfolio", "Blog", ]
     images = ["/images/iida_takumi_italy.jpg", ]
     DateFormat = "2006-01-02"
-    defaultTheme = "light"
+    defaultTheme = "auto"
     draft = false
 
     ShowReadingTime = false
