@@ -117,7 +117,7 @@ body.dark {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
     color: #000000;
 }
@@ -384,10 +384,6 @@ body.dark {
     .timeline-dot, .first-item .timeline-dot {
         left: 3.5px;
     }
-
-    .percentage-label {
-        font-size: 8px;
-    }
 }
 
 /* スマートフォン向けの調整 */
@@ -430,9 +426,5 @@ body.dark {
 
     .experience-item {
         padding-left: 15px; /* 経験項目のパディングを調整 */
-    }
-
-    .percentage-label {
-        font-size: 8px; /* フォントサイズをさらに小さく調整 */
     }
 }
