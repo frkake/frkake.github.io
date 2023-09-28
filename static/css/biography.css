@@ -192,7 +192,7 @@ body.dark {
 
 .experience-details h4 {
     margin: 0;
-    font-size: 0.em;
+    font-size: 1em;
     font-family: "Georgia", serif;
     text-align: left;
 }
@@ -406,7 +406,7 @@ body.dark {
     }
 
     .experience-details h4 {
-        font-size: 16px; /* 以前のスタイルで0.emとなっていましたが、これはおそらくタイポでしょう。修正します。 */
+        font-size: 16px;
     }
 
     .experience-details .role, .experience-details .time-location {
@@ -414,7 +414,7 @@ body.dark {
     }
 
     .skills-list li, .education-list li {
-        font-size: 0.8em; /* リストのテキストサイズを小さく調整 */
+        font-size: 0.9em; /* リストのテキストサイズを小さく調整 */
     }
 
     .timeline-dot, .first-item .timeline-dot {
@@ -425,4 +425,7 @@ body.dark {
         padding-left: 15px; /* 経験項目のパディングを調整 */
     }
 
+    .percentage-label {
+        font-size: 7px; /* フォントサイズをさらに小さく調整 */
+    }
 }
