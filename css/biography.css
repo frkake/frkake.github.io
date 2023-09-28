@@ -414,7 +414,7 @@ body.dark {
     }
 
     .skills-list li, .education-list li {
-        font-size: 0.9em; /* リストのテキストサイズを小さく調整 */
+        font-size: 0.85em; /* リストのテキストサイズを小さく調整 */
     }
 
     .timeline-dot, .first-item .timeline-dot {
