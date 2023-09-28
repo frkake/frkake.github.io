@@ -418,7 +418,7 @@ body.dark {
     }
 
     .timeline-dot, .first-item .timeline-dot {
-        left: 0.5px; /* ドットの位置を調整 */
+        left: 0.3px; /* ドットの位置を調整 */
     }
 
     .experience-item {
