@@ -386,3 +386,43 @@ body.dark {
     }
 
 }
+
+/* スマートフォン向けの調整 */
+@media only screen and (max-width: 480px) { /* 480px以下はスマートフォン向け */
+
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links a {
+        font-size: 25px;
+        margin: 0 3px;
+    }
+
+    .experience-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .experience-details h4 {
+        font-size: 16px; /* 以前のスタイルで0.emとなっていましたが、これはおそらくタイポでしょう。修正します。 */
+    }
+
+    .experience-details .role, .experience-details .time-location {
+        font-size: 0.7em;
+    }
+
+    .skills-list li, .education-list li {
+        font-size: 0.9em; /* リストのテキストサイズを小さく調整 */
+    }
+
+    .timeline-dot, .first-item .timeline-dot {
+        left: 0.5px; /* ドットの位置を調整 */
+    }
+
+    .experience-item {
+        padding-left: 15px; /* 経験項目のパディングを調整 */
+    }
+
+}
