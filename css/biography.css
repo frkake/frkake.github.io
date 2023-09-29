@@ -425,7 +425,7 @@ body.dark {
     }
 
     .first-item .timeline-dot {
-        left: 2px; /* ドットの位置を調整 */
+        left: 1.5px; /* ドットの位置を調整 */
     }
 
     .timeline-dot {
