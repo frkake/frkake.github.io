@@ -42,7 +42,7 @@ location = "Kyoto"
 [[experience]]
 logo = "/images/sensetime.png"
 institute = "SenseTime Japan, Ltd. "
-role = "Internship"
+role = "Intern"
 duration = "2019.6 - 2019.9"
 location = "Kyoto"
 
@@ -67,4 +67,4 @@ role = "Inten"
 duration = "2018.8 - 2018.8"
 location = "Yokohama"
 +++
-+++
+
