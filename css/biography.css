@@ -299,7 +299,7 @@ body.dark {
     bottom: 0;
     width: 1px;
     left: 1.5px;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #e3e3e3 50%, #e3e3e3 100%);
+    background-image: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #e3e3e3 50%, #e3e3e3 100%);
     z-index: 0;
 }
 
@@ -312,7 +312,7 @@ body.dark {
 
 .first-item::before {
     left: 1.5px;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #e3e3e3 50%, #e3e3e3 100%);
+    background-image: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #e3e3e3 50%, #e3e3e3 100%);
 }
 
 .dark .first-item::before {
@@ -321,7 +321,7 @@ body.dark {
 
 .last-item::before {
     left: 1.5px;
-    background-image: linear-gradient(to bottom, #e3e3e3 0%, #e3e3e3 50%, #ffffff 50%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #e3e3e3 0%, #e3e3e3 50%, #f5f5f5 50%, #f5f5f5 100%);
     background-size: 3px 8px;
 }
 
