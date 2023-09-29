@@ -62,7 +62,7 @@ location = "東京"
 
 [[experience]]
 logo = "/images/hitachi.png"
-institute = "日立製作所"
+institute = "株式会社日立製作所"
 role = "インターン"
 duration = "2018.8 - 2018.8"
 location = "横浜"
