@@ -70,7 +70,7 @@ location = "横浜"
 [[qualification]]
 name = "画像処理検定エキスパート"
 date = "2023.07"
-institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
+institute = "画像情報教育振興協会 (CG-ARTS)"
 
 [[qualification]]
 name = "TOEIC L&R 815"
@@ -78,9 +78,9 @@ date = "2023.05"
 institute = "Educational Testing Service (ETS)"
 
 [[qualification]]
-name = "JDLA Deep Learning For GENERAL (G検定)"
+name = "JDLA Deep Learning For GENERAL"
 date = "2018.06"
-institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
+institute = "日本ディープラーニング協会 (JDLA)"
 
 [[qualification]]
 name = "応用情報技術者試験"
