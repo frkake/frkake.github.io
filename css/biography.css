@@ -355,11 +355,6 @@ body.dark {
     margin-bottom: 10px;
 }
 
-.qualification-date {
-    float: right;
-    font-weight: normal;
-}
-
 
 /* Mobile Responsive Adjustments */
 @media only screen and (max-width: 768px) { /* This targets screens up to 768px, which is common for tablets and below */
@@ -425,10 +420,6 @@ body.dark {
 
     .experience-card {
         margin-left: 10px;
-    }
-
-    .dark .experience-card {
-        background-color: #2e2e33;
     }
 
     .experience-logo {
