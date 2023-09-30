@@ -56,9 +56,8 @@
     </div>
 </div>
 
-
 {{ if .Params.experience }}
-<div class="experience-section">
+<div class="info-row">
 <h3 class="experience-title">Experience</h3>
 <div class="experience-timeline">
     {{ range $index, $element := .Params.experience }}
@@ -75,6 +74,20 @@
         </p>
         </div>
     </div>
+    </div>
+    {{ end }}
+</div>
+</div>
+{{ end }}
+
+{{ if .Params.qualification }}
+<div class="info-row">
+<div class="qualification-section">
+    <h3 class="qualification-title">Qualification</h3>
+    {{ range .Params.qualification }}
+    <div class="qualification-item">
+        <p><strong>{{ .name }}</strong><span class="qualification-date">{{ .date }}</span></p>
+        <p>{{ .institute }}</p>
     </div>
     {{ end }}
 </div>

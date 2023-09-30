@@ -150,18 +150,6 @@ body.dark {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-.experience-info {
-    margin-top: 30px;
-    text-align: left;
-}
-
 .experience-title {
     margin-bottom: 10px;
 }
@@ -169,17 +157,26 @@ body.dark {
 .experience-card {
     display: flex;
     align-items: center;
-    background-color: #fbfbfb;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    /* padding: 10px; */
+    padding-top: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     z-index: 0;
     position: relative;
 }
 
+.first-item .experience-card {
+    border-top: none;
+}
+
 .dark .experience-card {
-    background-color: #2e2e33;
+    background-color: #1d1e20;
+}
+
+.dark .first-item .experience-card {
+    border-top: none;
 }
 
 .experience-logo {
@@ -337,6 +334,33 @@ body.dark {
     left: 1.5px;
 }
 
+.qualification-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.qualification-item {
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.qualification-item p {
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+
+.qualification-section h2 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.qualification-date {
+    float: right;
+    font-weight: normal;
+}
+
+
 /* Mobile Responsive Adjustments */
 @media only screen and (max-width: 768px) { /* This targets screens up to 768px, which is common for tablets and below */
 
@@ -434,5 +458,29 @@ body.dark {
 
     .experience-item {
         padding-left: 15px; /* 経験項目のパディングを調整 */
+    }
+
+    .qualification-title {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .qualification-item {
+        padding: 3px 5px;
+        margin: 3px 0;
+    }
+
+    .qualification-item p {
+        margin: 2px 0;
+        font-size: 0.8em;
+    }
+
+    .qualification-section h2 {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    .qualification-date {
+        font-size: 0.8em;
     }
 }
