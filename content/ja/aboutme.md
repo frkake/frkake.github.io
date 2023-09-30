@@ -66,4 +66,40 @@ institute = "株式会社日立製作所"
 role = "インターン"
 duration = "2018.8 - 2018.8"
 location = "横浜"
+
+[[qualification]]
+name = "画像処理検定エキスパート"
+date = "2023.07"
+institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
+
+[[qualification]]
+name = "TOEIC L&R 815"
+date = "2023.05"
+institute = "Educational Testing Service (ETS)"
+
+[[qualification]]
+name = "JDLA Deep Learning For GENERAL (G検定)"
+date = "2018.06"
+institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
+
+[[qualification]]
+name = "応用情報技術者試験"
+date = "2016.10"
+institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+
+[[qualification]]
+name = "基本情報技術者試験"
+date = "2014.10"
+institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+
+[[qualification]]
+name = "ITパスポート試験"
+date = "2011.10"
+institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+
+[[publication]]
+title = "paper name"
+author = "authors"
+conference = "conference name"
+date = "2023.09.27"
 +++
