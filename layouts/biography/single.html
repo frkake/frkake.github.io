@@ -86,8 +86,9 @@
     <h3 class="qualification-title">Qualification</h3>
     {{ range .Params.qualification }}
     <div class="qualification-item">
-        <p><strong>{{ .name }}</strong><span class="qualification-date">{{ .date }}</span></p>
+        <p><strong>{{ .name }}</strong>
         <p>{{ .institute }}</p>
+        <p>{{ .date }}</p>
     </div>
     {{ end }}
 </div>
