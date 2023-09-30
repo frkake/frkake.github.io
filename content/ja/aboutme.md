@@ -85,17 +85,17 @@ institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
 [[qualification]]
 name = "応用情報技術者試験"
 date = "2016.10"
-institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+institute = "情報処理推進機構 (IPA)"
 
 [[qualification]]
 name = "基本情報技術者試験"
 date = "2014.10"
-institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+institute = "情報処理推進機構 (IPA)"
 
 [[qualification]]
 name = "ITパスポート試験"
 date = "2011.10"
-institute = "IPA 独立行政法人 情報処理推進機構 (IPA)"
+institute = "情報処理推進機構 (IPA)"
 
 [[publication]]
 title = "paper name"
