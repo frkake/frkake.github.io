@@ -66,5 +66,41 @@ institute = "Hitachi, Ltd. "
 role = "Inten"
 duration = "2018.8 - 2018.8"
 location = "Yokohama"
+
+[[qualification]]
+name = "Image Processing Engineer Certification Test (Expert)"
+date = "Jul 2023"
+institute = "Computer Graphic Arts Society (CG-ARTS)"
+
+[[qualification]]
+name = "TOEIC L&R 815"
+date = "May 2023"
+institute = "Educational Testing Service (ETS)"
+
+[[qualification]]
+name = "JDLA Deep Learning For GENERAL"
+date = "Jun 2018"
+institute = "Japan Deep Learning Association (JDLA)"
+
+[[qualification]]
+name = "Applied Information Technology Engineer Examination"
+date = "Oct 2016"
+institute = "Information-technology Promotion Agency (IPA)"
+
+[[qualification]]
+name = "Fundamental Information Technology Engineer Examination"
+date = "Oct 2014"
+institute = "Information-technology Promotion Agency (IPA)"
+
+[[qualification]]
+name = "Information Technology Passport Examination"
+date = "Oct 2011"
+institute = "Information-technology Promotion Agency (IPA)"
+
+[[publication]]
+title = "paper name"
+author = "authors"
+conference = "conference name"
+date = "2023.09.27"
 +++
 
