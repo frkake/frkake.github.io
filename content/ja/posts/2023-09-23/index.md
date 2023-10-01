@@ -114,5 +114,5 @@ $$ \min _{\delta_x}\left\|\Phi(\Omega(x, T)), \Phi\left(x+\delta_x\right)\right\
 
 ## 感想
 
-- スタイルだけでOKなのか
+- スタイルだけでOKなのか。コンテンツはトレースされそう。
 - AEsの傾向はそのまま維持されてそう
