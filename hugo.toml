@@ -18,7 +18,7 @@ enableRobotsTXT = false
 
 [params]
     title = "Less is more"
-    description = ""
+    description = "Description"
     keywords = ["Portfolio", "Blog", ]
     images = ["/images/iida_takumi_italy.jpg", ]
     DateFormat = "2006-01-02"

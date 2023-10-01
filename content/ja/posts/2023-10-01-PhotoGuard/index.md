@@ -1,7 +1,7 @@
 +++
 title = 'PhotoGuard'
 date = 2023-10-01T21:11:56
-pubdate = 2023-02-02
+pubdate = 2023-07-01T00:00:00
 tags = ["ICML", "Adversarial Examples", "Diffusion Model", "Art"]
 +++
 
@@ -65,7 +65,7 @@ LDMのImage Encoder $\mathbf{\epsilon}$ に対してPGD攻撃する。<br>
 
 ![画像編集で実験した場合の結果。「二人の頭部」は編集しないようなバイナリマスクが与えられている。](image-3.png)
 
-![60の異なるテキストで編集した場合の結果。（今回は攻撃なので）**値が悪いほうが良い。**元画像の類似性。](image-6.png)
+![60の異なるテキストで編集した場合の結果。（今回は攻撃なので）値が悪いほうが良い。元画像の類似性。](image-6.png)
 
 ![プロンプトとの類似性](image-5.png)
 

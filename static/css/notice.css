@@ -1,6 +1,6 @@
 /* Light Mode */
 .notice {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     overflow: hidden;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     padding: 0px 5px;
-    color: #ffffff;
+    color: #000; /* Darker text color for better visibility */
     font-weight: 500;
 }
 
@@ -32,37 +32,37 @@
 
 .notice-content {
     padding: 15px 20px;
-    color: #4a5568;
+    color: #333; /* Darker text color for better visibility */
     line-height: 1.5;
-    border-top: 1px solid #edf2f7;
+    border-top: 1px solid #e2e2e2; /* Softer border color */
 }
 
 .notice.note .notice-header {
-    background-color: #a3bffa;
+    background-color: #c0c8e1; /* Muted shade of blue */
 }
 .notice.note .notice-content {
-    background-color: #e8eaf6;  /* Lighter shade of #a3bffa */
+    background-color: #e2e4f1;  /* Lighter shade of #c0c8e1 */
 }
 
 .notice.info .notice-header {
-    background-color: #9ae6b4;
+    background-color: #b8d6c3; /* Muted shade of green */
 }
 .notice.info .notice-content {
-    background-color: #e5f4eb;  /* Lighter shade of #9ae6b4 */
+    background-color: #e1ede5;  /* Lighter shade of #b8d6c3 */
 }
 
 .notice.tip .notice-header {
-    background-color: #fbd38d;
+    background-color: #f3dcb2; /* Muted shade of yellow */
 }
 .notice.tip .notice-content {
-    background-color: #fef2e7;  /* Lighter shade of #fbd38d */
+    background-color: #fef5e0;  /* Lighter shade of #f3dcb2 */
 }
 
 .notice.warning .notice-header {
-    background-color: #feb2b2;
+    background-color: #f7b3b3; /* Muted shade of red */
 }
 .notice.warning .notice-content {
-    background-color: #fee2e2;  /* Lighter shade of #feb2b2 */
+    background-color: #fdf2f2;  /* Lighter shade of #f7b3b3 */
 }
 
 /* Dark Mode */
