@@ -96,11 +96,5 @@ institute = "Information-technology Promotion Agency (IPA)"
 name = "Information Technology Passport Examination"
 date = "Oct 2011"
 institute = "Information-technology Promotion Agency (IPA)"
-
-[[publication]]
-title = "paper name"
-author = "authors"
-conference = "conference name"
-date = "2023.09.27"
 +++
 

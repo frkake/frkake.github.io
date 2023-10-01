@@ -70,7 +70,7 @@ location = "横浜"
 [[qualification]]
 name = "画像処理検定エキスパート"
 date = "2023.07"
-institute = "画像情報教育振興協会 (CG-ARTS)"
+institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
 
 [[qualification]]
 name = "TOEIC L&R 815"
@@ -80,26 +80,48 @@ institute = "Educational Testing Service (ETS)"
 [[qualification]]
 name = "JDLA Deep Learning For GENERAL"
 date = "2018.06"
-institute = "日本ディープラーニング協会 (JDLA)"
+institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
 
 [[qualification]]
 name = "応用情報技術者試験"
 date = "2016.10"
-institute = "情報処理推進機構 (IPA)"
+institute = "独立行政法人 情報処理推進機構 (IPA)"
 
 [[qualification]]
 name = "基本情報技術者試験"
 date = "2014.10"
-institute = "情報処理推進機構 (IPA)"
+institute = "独立行政法人 情報処理推進機構 (IPA)"
 
 [[qualification]]
 name = "ITパスポート試験"
 date = "2011.10"
-institute = "情報処理推進機構 (IPA)"
+institute = "独立行政法人 情報処理推進機構 (IPA)"
 
 [[publication]]
-title = "paper name"
-author = "authors"
-conference = "conference name"
-date = "2023.09.27"
+title = "LanesPose: 骨格推定によるレーン検出"
+authors = ["玄元奏", "飯田啄巳", "小西嘉典"]
+bold = "飯田啄巳"
+conference = "画像の認識・理解シンポジウム (MIRU)"
+date = "2023"
+
+[[publication]]
+title = "Efficient Unknown Object Detection with Discrepancy Networks for Semantic Segmentation"
+authors = ["Ryo Kamoi", "Takumi Iida", "Kaname Tomite"]
+bold = "Takumi Iida"
+conference = "NeurIPS 2021 Workshop on Machine Learning for Autonomous Driving"
+date = "2021"
+
+[[publication]]
+title = "Detecting Backdoor Attacks on Deep Neural Networks by Saliency Map Clustering"
+authors = ["Takumi Iida", "Kota Yoshida", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2020"
+
+[[publication]]
+title = "Bedside Event Real-time Recognition Using Low Resolution Infrared Array Sensor with Recurrent Convolutional Neural Network"
+authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shirahata", "Mitsuru Shiozaki", "Takaya Kubota", "Masafumi Kimata", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2018"
 +++

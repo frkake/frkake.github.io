@@ -82,7 +82,6 @@
 
 {{ if .Params.qualification }}
 <div class="info-row">
-<div class="qualification-section">
     <h3 class="qualification-title">Qualification</h3>
     {{ range .Params.qualification }}
     <div class="qualification-item">
@@ -92,7 +91,24 @@
     </div>
     {{ end }}
 </div>
-</div>
 {{ end }}
+
+<!-- {{ if .Params.publication }}
+<div class="info-row">
+    <h3 class="publication-title">Publications</h3>
+    {{ range $pub := .Params.publication }}
+    <div class="publication-item">
+        <p>
+            {{ $boldAuthor := $pub.bold }}
+            {{ range $index, $author := $pub.authors }}
+                {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
+                {{ if lt $index (sub (len $pub.authors) 1) }}, {{ end }}
+            {{ end }}
+            , "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
+        </p>
+    </div>
+    {{ end }}
+</div>
+{{ end }} -->
 
 {{ end }}
