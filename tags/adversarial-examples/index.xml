@@ -11,22 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 27 Sep 2023 02:13:14 +0900</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/adversarial-examples/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Oct 2023 21:11:45 +0000</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/adversarial-examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AdvDM</title>
-      <link>https://blog.takumi-iida.com/posts/2023-09-27/</link>
-      <pubDate>Wed, 27 Sep 2023 02:13:14 +0900</pubDate>
+      <link>https://blog.takumi-iida.com/posts/2023-09-27-advdm/</link>
+      <pubDate>Sun, 01 Oct 2023 21:11:45 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/posts/2023-09-27/</guid>
+      <guid>https://blog.takumi-iida.com/posts/2023-09-27-advdm/</guid>
       <description>@misc{liang2023adversarial, title={Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples}, author={Chumeng Liang and Xiaoyu Wu and Yang Hua and Jiaru Zhang and Yiming Xue and Tao Song and Zhengui Xue and Ruhui Ma and Haibing Guan}, year={2023}, eprint={2302.04578}, archivePrefix={arXiv}, primaryClass={cs.CV} } Project Paper Code Video モンテカルロ法を用いて生成過程の潜在変数を</description>
     </item>
     
     <item>
       <title>Glaze</title>
-      <link>https://blog.takumi-iida.com/posts/2023-09-23/</link>
+      <link>https://blog.takumi-iida.com/posts/2023-09-23-glaze/</link>
       <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/posts/2023-09-23/</guid>
+      <guid>https://blog.takumi-iida.com/posts/2023-09-23-glaze/</guid>
       <description>@inproceedings {291164, author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao}, title = {Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models}, booktitle = {32nd USENIX Security Symposium (USENIX Security 23)}, year = {2023}, isbn = {978-1-939133-37-3}, address = {Anaheim, CA}, pages = {2187--2204}, url = {https://www.usenix.org/conference/usenixsecurity23/presentation/shan}, publisher = {USENIX Association}, month = {Aug} } Project Paper アー</description>
     </item>
     
