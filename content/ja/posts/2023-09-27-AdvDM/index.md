@@ -1,6 +1,6 @@
 +++
 title = 'AdvDM'
-date = 2023-09-27T02:13:14+09:00
+date = 2023-10-01T21:11:45
 pubdate = 2023-02-02
 tags = ["ICML", "Adversarial Examples", "Diffusion Model", "Art"]
 +++
