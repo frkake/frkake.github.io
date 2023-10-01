@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (eprintMatch) {
             year = "20" + eprintMatch[1].substring(0, 2);  // "1312" -> "2013"
             month = eprintMatch[1].substring(2, 4);  // "1312" -> "12"
+        } else if (yearMatch && !monthMatch) {
+            year = yearMatch[1];
+            month = '';
         }
         
         // リスト形式で書誌情報を整頓
