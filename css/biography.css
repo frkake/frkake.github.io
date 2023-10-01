@@ -158,7 +158,7 @@ body.dark {
     display: flex;
     align-items: center;
     background-color: #f5f5f5;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #e3e3e3;
     /* padding: 10px; */
     padding-top: 20px;
     margin-top: 10px;
@@ -172,6 +172,7 @@ body.dark {
 }
 
 .dark .experience-card {
+    border-top: 1px solid #787878;
     background-color: #1d1e20;
 }
 
@@ -347,14 +348,25 @@ body.dark {
 
 .qualification-item p {
     margin: 4px 0;
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
+    line-height: 1.2;
 }
 
-.qualification-section h2 {
-    text-align: left;
+.publication-title {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
+.publication-item {
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-align: left;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.dark .publication-item {
+    border-bottom: 1px solid #787878;
+}
 
 /* Mobile Responsive Adjustments */
 @media only screen and (max-width: 768px) { /* This targets screens up to 768px, which is common for tablets and below */
@@ -466,8 +478,18 @@ body.dark {
         font-size: 0.8em;
     }
 
-    .qualification-section h2 {
-        font-size: 1em;
+    .publication-title {
+        margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .publication-item {
+        padding: 3px 5px;
+        margin: 3px 0;
+    }
+
+    .publication-item p {
+        margin: 2px 0;
+        font-size: 0.8em;
     }
 }
