@@ -53,7 +53,7 @@ Hugoもちょっと触ってみたいと思ったので、触ってみたら結�
 $ hugo server -D
 ```
 
-### ShortCode
+### Custom ShortCode
 
 <!-- お知らせブロック -->
 - お知らせブロック
@@ -93,3 +93,15 @@ A notice disclaimer
   ![画像2](image-1.png)
   ![画像3](image-3.png)
   {{< /tile-images >}}
+
+### テーマのカスタマイズ
+
+- ホーム
+  - Biography: layouts/biography/single.html
+- 記事一覧: layouts/_default/list.html
+- ソート: laytout/_default/sorted-by-pubdate.html
+- 画像添付: layouts/_default/_markup/render-link.html
+  - `[ココ](link)`がキャプションになるようにした
+- 数式レンダラ: layouts/partial/math.html
+- BibTexの引用: layouts/partial/cite.html, static/js/cite.js
+  - 出版年月を数値表記にするためJSを使用
