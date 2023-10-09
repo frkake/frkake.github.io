@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // BibTeXを解析してMarkdown形式に変換（簡易的な例）
         const titleMatch = bibtex.match(/title\s*=\s*{([^}]+)}/);
         const booktitleMatch = bibtex.match(/booktitle\s*=\s*{([^}]+)}/);
+        const publisher = bibtex.match(/publisher\s*=\s*{([^}]+)}/);
         const yearMatch = bibtex.match(/year\s*=\s*{([^}]+)}/);
         const monthMatch = bibtex.match(/month\s*=\s*{([^}]+)}/);
         const eprintMatch = bibtex.match(/eprint\s*=\s*{([^}]+)}/);
@@ -25,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
             booktitle = booktitleMatch[1];
         } else if (archivePrefixMatch && archivePrefixMatch[1] === 'arXiv') {
             booktitle = 'arXiv';
+        } else if (publisher) {
+            booktitle = publisher[1];
         } else {
             booktitle = '';
         }
@@ -44,8 +47,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // リスト形式で書誌情報を整頓
         let markdownText = '<ul class="cite-list">';
         markdownText += formatListItem("著者", authorMatch ? authorMatch[1] : '');
-        markdownText += formatListItem("タイトル", titleMatch ? titleMatch[1] : '');
-        markdownText += formatListItem("会議", booktitle);
+        if (titleMatch) {
+            markdownText += formatListItem("タイトル", titleMatch[1]);
+        }
+        if (booktitle) {
+            markdownText += formatListItem("会議", booktitle);
+        }
         markdownText += formatListItem("出版年月日", `${year ? year : ''}-${month ? month : ''}`);
         markdownText += '</ul>';
         
