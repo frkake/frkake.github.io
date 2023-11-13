@@ -58,7 +58,7 @@ logo = "/images/denso.png"
 institute = "株式会社デンソー"
 role = "インターン"
 duration = "2019.2 - 2019.2"
-location = "東京"
+location = "品川"
 
 [[experience]]
 logo = "/images/hitachi.png"
