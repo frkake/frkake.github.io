@@ -58,7 +58,7 @@ logo = "/images/denso.png"
 institute = "DENSO Corp. "
 role = "Inten"
 duration = "2019.2 - 2019.2"
-location = "Tokyo"
+location = "Shinagawa"
 
 [[experience]]
 logo = "/images/hitachi.png"
