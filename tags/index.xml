@@ -11,7 +11,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 01 Oct 2023 21:11:56 +0000</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Gaussian Splatting</title>
+      <link>https://blog.takumi-iida.com/tags/3d-gaussian-splatting/</link>
+      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
+      
+      <guid>https://blog.takumi-iida.com/tags/3d-gaussian-splatting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neural rendering</title>
+      <link>https://blog.takumi-iida.com/tags/neural-rendering/</link>
+      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
+      
+      <guid>https://blog.takumi-iida.com/tags/neural-rendering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rendering</title>
+      <link>https://blog.takumi-iida.com/tags/rendering/</link>
+      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
+      
+      <guid>https://blog.takumi-iida.com/tags/rendering/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Adversarial Examples</title>
       <link>https://blog.takumi-iida.com/tags/adversarial-examples/</link>
