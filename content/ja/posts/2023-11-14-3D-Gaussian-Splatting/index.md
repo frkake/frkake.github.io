@@ -2,7 +2,7 @@
 title = '3D Gaussian Splatting'
 date = 2023-11-13T12:53:11
 pubdate = 2023-03-01T00:00:00
-tags = ["rendering", "neural rendering", "3D Gaussian Splatting", ]
+tags = ["Rendering", "Neural rendering", "3D Gaussian Splatting", ]
 +++
 
 {{< cite >}}
