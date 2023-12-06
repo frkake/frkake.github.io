@@ -88,6 +88,101 @@ Dynamic rangeはビルダ（キャリブレーション）かQATで計算でき�
 
 TODO: [ここはもう少し詳しく書く](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#working-with-int8)
 
+TensorRTの量子化はSymmetric Uniform Quantization（Siggned INT8）。  
+量子化前後の変換は単純な乗算で表現できる。 
+
+量子化対象：アクティベーション、重み  
+アクティベーション向けの量子化は、キャリブレーションアルゴリズムに依存する。
+重み向けの量子化は、 
+
+$$
+s=\frac{\max \left(\operatorname{abs}\left(x_{\min }\right), \operatorname{abs}\left(x_{\max }\right)\right)}{127}
+$$
+
+で計算される。
+
+**量子化**  
+
+このスケールsが与えられたとき、量子化/逆量子化演算は $ x_q=\[-128, 127\] $ の整数値、$ x $をアクティベーションの浮動小数点とすると、
+
+$$
+x_q=\text { quantize }(x, s):=\operatorname{roundWithTiesToEven}\left(\operatorname{clip}\left(\frac{x}{s},-128,127\right)\right)
+$$
+
+`roundWithTiesToEven`は、最も近い偶数になる。23.5や24.5は24、-23.5や-24.5は-24になる。
+
+ただし、OrinのDLA向けだとちょっと丸め関数が違うらしい
+
+$$
+x_q=\text { quantize }(x, s)=\text { roundWithTiesToNearestEven }\left(\operatorname{clip}\left(\frac{x}{s},-128,127\right)\right)
+$$
+
+![丸め関数](image-1.png)
+
+**逆量子化**
+
+$$
+x=\operatorname{dequantize}\left(x_q, s\right)=x_q * s
+$$
+
+
+量子化演算を有効にするには Builder config でINT8フラグを有効にする必要がある。
+
+#### 暗黙的量子化
+
+各量子化テンソルに紐づいたスケールを使って暗黙的な量子化や逆量子化を行う。  
+
+暗黙的量子化の場合、TensorRTはまずグラフを最適化するときには浮動小数点モデルとして扱い、レイヤがINT8で高速になる場合にINT8で実行する。それ以外はFP32かFP16。  
+APIレベルでレイヤごとに明示的に精度を設定しても、TensorRTのグラフ最適化中に別のレイヤと融合することがあるのでレイヤごとの精度の情報が失われることがある。  
+INT8が使われるかどうかが制御しづらい。
+
+#### 明示的量子化
+
+スケーリング演算を使って量子化、逆量子化が明示的に `iQuantizeLayer`と`IDeqantizeLayer`ノード（Q/DQノード）によって行われる。   
+明示的量子化ではINT8で量子化することを明示的に指定できる。  
+
+PyTorchやTensorFlowからエクスポートされるONNXにはQ/DQノード（Qノードの後にDQノードが続く、Fake-Quantization）が明示的に使われることがある。  
+TensorRTではそれらのQ/DQレイヤのセマンティクスを保持するので、性能劣化が少ない。（意訳）  
+しかし、内部の浮動小数点演算の順序が変わる可能性があるので、ビット単位で結果が一致することはない。
+
+![Implicit vs Explicit Quantization](image.png)
+
+#### 量子化スケール
+
+次の2種類の粒度でスケーリングできる。
+
+- テンソルごとのスケール：単一のスケール値でテンソル全体をスケーリング
+- チャネルごとのスケール：指定された軸にそってスケール値をブロードキャストしてスケーリング
+
+重みはどちらかの方法でスケール、アクティベーションはテンソルごとのスケーリングのみ。
+
+例）重みのチャネルごとのスケーリング。2D Convカーネルの重みのshapeが `KCRS`で`K`が出力チャネル数だとすると、  
+出力チャネルに対してスケーリングすることに注意する。ただし、Deconvolutionは入力チャネルに対してスケーリングする。
+
+```python
+for k in range(K):
+  for c in range(C):
+    for r in range(R):
+      for s in range(S):
+        weight[k, c, r, s] = clamp(round(weight[k, c, r, s] / scale[k]), -128, 127)
+```
+
+↑の例で逆量子化の場合は
+
+```python
+for k in range(K):
+  for c in range(C):
+    for r in range(R):
+      for s in range(S):
+        output[k, c, r, s] = input[k, c, r, s] * scale[k]
+```
+
+#### Dynamic Range
+
+Dynamic rangeは量子化されたテンソルによってカバーされる範囲で、外部で求められた暗黙的な量子化に使われる。 
+dynamic rangeは(min, max)が設定できるが、TensorRTはSymmetric Uniform Quantizationしかサポートしていないので、 `max(abs(min_float), abs(max_float))` でスケールされる（大きい方）。
+
+
 ### 2.7 Dynamic shape
 
 TensorRTは入力形状に基づいてモデルを最適化するが、実行時に動的な形状をサポートしている。`OptimizationProfile`最小、最大入力形状を指定する。
@@ -115,3 +210,9 @@ TensorRTモデルの実行やデバッグをするためのツール。
 * ONNXモデルをコマンドラインから変更
   * サブグラフの抽出
   * 単純化やサニタイズ化 (simplify and sanitize)
+
+
+### I/O Formats
+
+TODO: [ここはもう少し詳しく書く](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#reformat-free-network-tensors)
+
