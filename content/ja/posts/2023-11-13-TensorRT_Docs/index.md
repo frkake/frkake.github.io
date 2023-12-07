@@ -141,11 +141,43 @@ INT8が使われるかどうかが制御しづらい。
 スケーリング演算を使って量子化、逆量子化が明示的に `iQuantizeLayer`と`IDeqantizeLayer`ノード（Q/DQノード）によって行われる。   
 明示的量子化ではINT8で量子化することを明示的に指定できる。  
 
+![Implicit vs Explicit Quantization](image.png)
+
+Q/DQレイヤのあるネットワークをINT8でビルドするときはフラグを立てる必要がある。
+
+```cpp
+config->setFlag(BuilderFlag::kINT8);
+```
+
+明示的量子化では、ネットワークはINT8に双方向に型変換を行うので、INT8を型成約としてはいけない。
+
+**重み**
+
+Q/DQモデルの重みはFP32で指定される。`IQuantizeLayer`のスケールを使ってTensorRTが重みを量子化する。量子化された重みは`Engine`ファイルに格納される。
+
+**ONNX**
+
 PyTorchやTensorFlowからエクスポートされるONNXにはQ/DQノード（Qノードの後にDQノードが続く、Fake-Quantization）が明示的に使われることがある。  
 TensorRTではそれらのQ/DQレイヤのセマンティクスを保持するので、性能劣化が少ない。（意訳）  
 しかし、内部の浮動小数点演算の順序が変わる可能性があるので、ビット単位で結果が一致することはない。
 
-![Implicit vs Explicit Quantization](image.png)
+ONNXのopset=10から`QuantizeLinear`と`DequantizeLinear`が追加され、TensorRTはこれを`IQuantizeLayer`と`IDequantizeLayer`にマッピングする。  
+opset=13(PyTorch=1.8以降)では量子化する軸が追加され、チャネルごとの量子化ができるようになった。  
+
+注意：ONNXのGEMM演算はチャネルごとに量子化できる。PyTorchの `torch.nn.Linear`レイヤはONNXでは(K, C)の重みと`transB`属性（GEMM演算をする前に重みの転置を行う）を持つGEMM演算に置き換えられる。TensorFlowでは事前に転置済みの(C, K)のGEMMになる。$K=出力チャネル数, C=入力チャネル数$
+- PyTorch: $ y = xW^T $
+- ONNX: $ y = xW $
+
+PyTorchの重みはTensorRTで転置されるので、その重みは転置前にTensorRTによって量子化される。そのため、PyTorchからエクスポートされるONNX QATモデルは0次元目（$K=0$）でチャネルごとの量子化を行う。一方で、TensorFlowだと1次元目（$K=1$）でチャネルごとの量子化を行う。
+
+TensorRTは量子化済みオペレータをサポートしていない。  
+つまり、ONNXの量子化済みオペレータ
+- `QLinearConv`/ `QLinearMatmul`
+- `ConvInteger` / `MatmulInteger`
+に遭遇したらインポートエラーを吐く。
+
+
+
 
 #### 量子化スケール
 
@@ -221,9 +253,6 @@ dynamic rangeは(min, max)が設定できるが、TensorRTはSymmetric Uniform Q
 Note: ビルダがINT8の入出力を使うと設定されていても、TensorRTはキャリブレーションデータはFP32であることを想定している（入出力はFP32）。このときはINT8のI/OをFP32にキャスト（[128.0F, 127.0F]の範囲）する必要がある。
 
 Note: キャリブレーションは決定的で、TensorRTに同じデータ、同じ順序、同じデバイスで入力されたら、同じスケール値が出る。
-
-#### Explicit Quantization
-
 
 
 
