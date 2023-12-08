@@ -69,8 +69,9 @@ location = "Yokohama"
 
 [[qualification]]
 name = "Image Processing Engineer Certification Test (Expert)"
-date = "Jul 2023"
+date = "Aug 2023"
 institute = "Computer Graphic Arts Society (CG-ARTS)"
+number = "2302400126"
 
 [[qualification]]
 name = "TOEIC L&R 815"
@@ -86,6 +87,7 @@ institute = "Japan Deep Learning Association (JDLA)"
 name = "Applied Information Technology Engineer Examination"
 date = "Oct 2016"
 institute = "Information-technology Promotion Agency (IPA)"
+number = "AP-2016-10-06502"
 
 [[qualification]]
 name = "Fundamental Information Technology Engineer Examination"
