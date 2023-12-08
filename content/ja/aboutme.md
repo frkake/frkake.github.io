@@ -69,8 +69,9 @@ location = "横浜"
 
 [[qualification]]
 name = "画像処理検定エキスパート"
-date = "2023.07"
+date = "2023.08"
 institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
+number = "2302400126"
 
 [[qualification]]
 name = "TOEIC L&R 815"
@@ -86,6 +87,7 @@ institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
 name = "応用情報技術者試験"
 date = "2016.10"
 institute = "独立行政法人 情報処理推進機構 (IPA)"
+number = "AP-2016-10-06502"
 
 [[qualification]]
 name = "基本情報技術者試験"

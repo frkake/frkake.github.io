@@ -88,6 +88,7 @@
         <p><strong>{{ .name }}</strong>
         <p>{{ .institute }}</p>
         <p>{{ .date }}</p>
+        {{ if .number }}<p><font color=#87808b size="4">No. {{ .number }}</font></p>{{ end }}
     </div>
     {{ end }}
 </div>
