@@ -82,6 +82,7 @@ institute = "Educational Testing Service (ETS)"
 name = "JDLA Deep Learning For GENERAL"
 date = "Jun 2018"
 institute = "Japan Deep Learning Association (JDLA)"
+number = "6914272004"
 
 [[qualification]]
 name = "Applied Information Technology Engineer Examination"
@@ -93,10 +94,12 @@ number = "AP-2016-10-06502"
 name = "Fundamental Information Technology Engineer Examination"
 date = "Oct 2014"
 institute = "Information-technology Promotion Agency (IPA)"
+number = "FE-2014-10-09168"
 
 [[qualification]]
 name = "Information Technology Passport Examination"
 date = "Oct 2011"
 institute = "Information-technology Promotion Agency (IPA)"
+number = "IP-2011-10-18024"
 +++
 

@@ -82,6 +82,7 @@ institute = "Educational Testing Service (ETS)"
 name = "JDLA Deep Learning For GENERAL"
 date = "2018.06"
 institute = "一般社団法人 日本ディープラーニング協会 (JDLA)"
+number = "6914272004"
 
 [[qualification]]
 name = "応用情報技術者試験"
@@ -93,11 +94,13 @@ number = "AP-2016-10-06502"
 name = "基本情報技術者試験"
 date = "2014.10"
 institute = "独立行政法人 情報処理推進機構 (IPA)"
+number = "FE-2014-10-09168"
 
 [[qualification]]
 name = "ITパスポート試験"
 date = "2011.10"
 institute = "独立行政法人 情報処理推進機構 (IPA)"
+number = "IP-2011-10-18024"
 
 [[publication]]
 title = "LanesPose: 骨格推定によるレーン検出"
