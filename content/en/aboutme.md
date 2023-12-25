@@ -56,16 +56,22 @@ location = "Kyoto"
 [[experience]]
 logo = "/images/denso.png"
 institute = "DENSO Corp. "
-role = "Inten"
+role = "Intern"
 duration = "2019.2 - 2019.2"
 location = "Shinagawa"
 
 [[experience]]
 logo = "/images/hitachi.png"
 institute = "Hitachi, Ltd. "
-role = "Inten"
+role = "Intern"
 duration = "2018.8 - 2018.8"
 location = "Yokohama"
+
+[[qualification]]
+name = "Computer Graphics Engineer Certification Test (Expert)"
+date = "Dec 2023"
+institute = "Computer Graphic Arts Society (CG-ARTS)"
+number = "2312300081"
 
 [[qualification]]
 name = "Image Processing Engineer Certification Test (Expert)"

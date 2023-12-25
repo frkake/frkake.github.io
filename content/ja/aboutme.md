@@ -68,7 +68,13 @@ duration = "2018.8 - 2018.8"
 location = "横浜"
 
 [[qualification]]
-name = "画像処理検定エキスパート"
+name = "CGエンジニア検定 エキスパート"
+data = "2023.12"
+institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
+number = "2312300081"
+
+[[qualification]]
+name = "画像処理検定 エキスパート"
 date = "2023.08"
 institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
 number = "2302400126"
