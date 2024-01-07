@@ -15,6 +15,7 @@ skills = [
     {name = "PyTorch", percentage=70},
     {name = "Rust", percentage=20},
 ]
+
 [[education]]
 course = "理工学研究科電子システム専攻"
 university = "立命館大学大学院"
@@ -83,6 +84,7 @@ number = "2302400126"
 name = "TOEIC L&R 815"
 date = "2023.05"
 institute = "Educational Testing Service (ETS)"
+uri = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
 
 [[qualification]]
 name = "JDLA Deep Learning For GENERAL"

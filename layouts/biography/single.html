@@ -85,7 +85,7 @@
     <h3 class="qualification-title">Qualification</h3>
     {{ range .Params.qualification }}
     <div class="qualification-item">
-        <p><strong>{{ .name }}</strong>
+        <p><strong>{{ .name }}</strong>{{ if .uri }} [<u><font color=#87808b size="4"><a href="{{ .uri }}">URI</a></font></u>]{{ end }}</p>
         <p>{{ .institute }}</p>
         <p>{{ .date }}</p>
         {{ if .number }}<p><font color=#87808b size="4">No. {{ .number }}</font></p>{{ end }}
