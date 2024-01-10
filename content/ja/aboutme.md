@@ -138,14 +138,27 @@ bold = "Takumi Iida"
 conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
 date = "2018"
 
-[[slide]]
+[[post]]
 title = "ゼロショット物体検出の研究動向"
 event = "【SenseTime Japan × Sansan】画像処理勉強会"
-slidelink = "https://speakerdeck.com/sensetime_japan/zerosiyotutowu-ti-jian-chu-falseyan-jiu-dong-xiang"
+postlink = "https://speakerdeck.com/sensetime_japan/zerosiyotutowu-ti-jian-chu-falseyan-jiu-dong-xiang"
 eventlink = "https://sansan.connpass.com/event/230636/"
 
-[[slide]]
+[[post]]
 title = "INTERN 2.5のまとめ＆関連論文"
 event = "MIRU2023企業展示 & SSII企業展示"
-slidelink = "https://speakerdeck.com/sensetime_japan/intern-2-dot-5nomatome-and-guan-lian-lun-wen"
+postlink = "https://speakerdeck.com/sensetime_japan/intern-2-dot-5nomatome-and-guan-lian-lun-wen"
+
+[[post]]
+title = "OKdoの格安LiDARで遊んでみた"
+event = "SenseTime Japanアドベントカレンダー2021"
+postlink = "https://tech.sensetime.jp/?p=1616"
+
+[[post]]
+title = "Zero-Shot Detectionの研究まとめ"
+postlink = "https://tech.sensetime.jp/?p=1080"
+
+[[post]]
+title = "CVPR2020でセンスタイムが発表した、仮想試着を行うACGPNの論文を紹介します"
+postlink = "https://tech.sensetime.jp/?p=596"
 +++
