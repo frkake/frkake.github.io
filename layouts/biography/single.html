@@ -112,19 +112,19 @@
 </div>
 {{ end }} -->
 
-{{ if .Params.slide }}
+{{ if .Params.post }}
 <div class="info-row">
-    <h3 class="slide-title">Slides</h3>
-    {{ range .Params.slide }}
-    <div class="slide-item">
+    <h3 class="outpost-title">Post</h3>
+    {{ range .Params.post }}
+    <div class="outpost-item">
         <p>
-            <u><a href="{{ .slidelink }}">{{ .title }}</a></u>
+            <u><a href="{{ .postlink }}">{{ .title }}</a></u>
         </p>
         {{ if .eventlink }}
         <p class="event-details">
             <font size="2">@</font><u><a href="{{ .eventlink }}">{{ .event }}</a></u>
         </p>
-        {{ else }}
+        {{ else if .event }}
         <p class="event-details">
             <font size="2">@</font>{{ .event }}
         </p>

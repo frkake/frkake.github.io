@@ -2,6 +2,7 @@
 type = "biography"
 title = "Takumi Iida"
 biography = "Computer Vision Engineer/Researcher"
+description = "Japanese page has more information!"
 image = "/images/iida_takumi_italy.jpg"
 twitter = "https://twitter.com/bibpile"
 github = "https://github.com/bibpile"
