@@ -368,6 +368,32 @@ body.dark {
     border-bottom: 1px solid #787878;
 }
 
+.slide-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slide-item {
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.event-details {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 1;
+
+    color: #87808b;
+    font-size: 12px;
+}
+
+.event-details a {
+    color: inherit;
+    text-decoration-color: inherit;
+}
+
 /* Mobile Responsive Adjustments */
 @media only screen and (max-width: 768px) { /* This targets screens up to 768px, which is common for tablets and below */
 
