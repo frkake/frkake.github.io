@@ -85,7 +85,7 @@
     <h3 class="qualification-title">Qualification</h3>
     {{ range .Params.qualification }}
     <div class="qualification-item">
-        <p><strong>{{ .name }}</strong>{{ if .uri }} [<u><font color=#87808b size="4"><a href="{{ .uri }}">URI</a></font></u>]{{ end }}</p>
+        <p><strong>{{ .name }}</strong>{{ if .link }} [<u><font color=#87808b size="4"><a href="{{ .link }}">link</a></font></u>]{{ end }}</p>
         <p>{{ .institute }}</p>
         <p>{{ .date }}</p>
         {{ if .number }}<p><font color=#87808b size="4">No. {{ .number }}</font></p>{{ end }}
@@ -111,5 +111,27 @@
     {{ end }}
 </div>
 {{ end }} -->
+
+{{ if .Params.slide }}
+<div class="info-row">
+    <h3 class="slide-title">Slides</h3>
+    {{ range .Params.slide }}
+    <div class="slide-item">
+        <p>
+            <u><a href="{{ .slidelink }}">{{ .title }}</a></u>
+        </p>
+        {{ if .eventlink }}
+        <p class="event-details">
+            <font size="2">@</font><u><a href="{{ .eventlink }}">{{ .event }}</a></u>
+        </p>
+        {{ else }}
+        <p class="event-details">
+            <font size="2">@</font>{{ .event }}
+        </p>
+        {{ end }}
+    </div>
+    {{ end }}
+{{ end }}
+
 
 {{ end }}

@@ -84,7 +84,7 @@ number = "2302400126"
 name = "TOEIC L&R 815"
 date = "2023.05"
 institute = "Educational Testing Service (ETS)"
-uri = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
+link = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
 
 [[qualification]]
 name = "JDLA Deep Learning For GENERAL"
@@ -137,4 +137,15 @@ authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shiraha
 bold = "Takumi Iida"
 conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
 date = "2018"
+
+[[slide]]
+title = "ゼロショット物体検出の研究動向"
+event = "【SenseTime Japan × Sansan】画像処理勉強会"
+slidelink = "https://speakerdeck.com/sensetime_japan/zerosiyotutowu-ti-jian-chu-falseyan-jiu-dong-xiang"
+eventlink = "https://sansan.connpass.com/event/230636/"
+
+[[slide]]
+title = "INTERN 2.5のまとめ＆関連論文"
+event = "MIRU2023企業展示 & SSII企業展示"
+slidelink = "https://speakerdeck.com/sensetime_japan/intern-2-dot-5nomatome-and-guan-lian-lun-wen"
 +++
