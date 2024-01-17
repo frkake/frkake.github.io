@@ -110,6 +110,14 @@ date = "2011.10"
 institute = "独立行政法人 情報処理推進機構 (IPA)"
 number = "IP-2011-10-18024"
 
+[[patent]]
+title = "一种图像处理方法、装置、设备及存储介质"
+translation = "落下物検知装置、落下物データ生成方法、および 落下物 学習用データ生成プログラム"
+authors = ["饭田啄巳", "松永英树", ]
+bold = "饭田啄巳"
+patent_number = "CN116935353A"
+application_number = "CN202310868168.3"
+
 [[publication]]
 title = "LanesPose: 骨格推定によるレーン検出"
 authors = ["玄元奏", "飯田啄巳", "小西嘉典"]

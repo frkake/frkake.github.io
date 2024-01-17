@@ -112,6 +112,29 @@
 </div>
 {{ end }} -->
 
+{{ if .Params.patent }}
+<div class="info-row">
+    <h3 class="patent-title">Patents</h3>
+    {{ range $pat := .Params.patent }}
+    <div class="patent-item">
+        <p>
+            <strong>{{ .title }}</strong>
+            {{ if .translation }}<p><font size="2" margin-top="0">Translated: {{ .translation }}</font></p>{{ end }}
+            {{ $boldAuthor := $pat.bold }}
+            <p>Authors: 
+                {{ range $index, $author := $pat.authors }}
+                    {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
+                    {{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
+                {{ end }}
+            </p>
+            {{ if .patent_number }}<p><font color=#87808b size="4">Publication No. {{ .patent_number }}</font></p>{{ end }}
+            {{ if .application_number }}<p><font color=#87808b size="4">Application No. {{ .application_number }}</font></p>{{ end }}
+        </p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
+
 {{ if .Params.post }}
 <div class="info-row">
     <h3 class="outpost-title">Post</h3>
