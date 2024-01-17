@@ -69,6 +69,14 @@ role = "Intern"
 duration = "2018.8 - 2018.8"
 location = "Yokohama"
 
+[[patent]]
+title = "一种图像处理方法、装置、设备及存储介质"
+translation = "Image processing method, device, program"
+authors = ["饭田啄巳", "松永英树", ]
+bold = "饭田啄巳"
+patent_number = "CN116935353A"
+application_number = "CN202310868168.3"
+
 [[qualification]]
 name = "Computer Graphics Engineer Certification Test (Expert)"
 date = "Dec 2023"
