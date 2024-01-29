@@ -77,6 +77,34 @@ bold = "饭田啄巳"
 patent_number = "CN116935353A"
 application_number = "CN202310868168.3"
 
+[[publication]]
+title = "LanesPose: 骨格推定によるレーン検出"
+authors = ["玄元奏", "飯田啄巳", "小西嘉典"]
+bold = "飯田啄巳"
+conference = "画像の認識・理解シンポジウム (MIRU)"
+date = "2023"
+
+[[publication]]
+title = "Efficient Unknown Object Detection with Discrepancy Networks for Semantic Segmentation"
+authors = ["Ryo Kamoi", "Takumi Iida", "Kaname Tomite"]
+bold = "Takumi Iida"
+conference = "NeurIPS 2021 Workshop on Machine Learning for Autonomous Driving"
+date = "2021"
+
+[[publication]]
+title = "Detecting Backdoor Attacks on Deep Neural Networks by Saliency Map Clustering"
+authors = ["Takumi Iida", "Kota Yoshida", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2020"
+
+[[publication]]
+title = "Bedside Event Real-time Recognition Using Low Resolution Infrared Array Sensor with Recurrent Convolutional Neural Network"
+authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shirahata", "Mitsuru Shiozaki", "Takaya Kubota", "Masafumi Kimata", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2018"
+
 [[qualification]]
 name = "Computer Graphics Engineer Certification Test (Expert)"
 date = "Dec 2023"
