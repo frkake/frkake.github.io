@@ -14,7 +14,7 @@ skills = [
     {name = "Fallen Object Detection", percentage=80},
     {name = "Lane Detection", percentage=70},
     {name = "PyTorch", percentage=70},
-    # {name = "CG", percentage=40},
+    {name = "CG", percentage=40},
     {name = "Rust", percentage=20},
 ]
 
