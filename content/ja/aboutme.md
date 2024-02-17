@@ -13,7 +13,7 @@ skills = [
     {name = "落下物検知", percentage=80},
     {name = "レーン検出", percentage=70},
     {name = "PyTorch", percentage=70},
-    {name = "CG", percentage=40},
+    # {name = "CG", percentage=40},
     {name = "Rust", percentage=20},
 ]
 
