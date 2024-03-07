@@ -10,6 +10,7 @@
         {{ if .Params.twitter }}<a href="{{ .Params.twitter }}"><i class="fa-brands fa-square-x-twitter"></i></a>{{ end }}
         {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>{{ end }}
         {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
+        {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}"><i class="fab fa-speaker-deck"></i></a>{{ end }}
         {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
         {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
     </div>
@@ -127,7 +128,7 @@
                     {{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
                 {{ end }}
             </p>
-            {{ if .patent_number }}<p><font color=#87808b size="4">Publication No. {{ .patent_number }}</font></p>{{ end }}
+            {{ if .patent_number }}<p><font color=#87808b size="4">Patent No. {{ .patent_number }}</font></p>{{ end }}
             {{ if .application_number }}<p><font color=#87808b size="4">Application No. {{ .application_number }}</font></p>{{ end }}
         </p>
     </div>
@@ -137,7 +138,7 @@
 
 {{ if .Params.post }}
 <div class="info-row">
-    <h3 class="outpost-title">Post</h3>
+    <h3 class="outpost-title">External Post</h3>
     {{ range .Params.post }}
     <div class="outpost-item">
         <p>

@@ -3,10 +3,11 @@ type = "biography"
 title = "飯田啄巳"
 biography = "コンピュータビジョン エンジニア/リサーチャー"
 image = "/images/iida_takumi_italy.jpg"
-twitter = "https://twitter.com/bibpile"
-github = "https://github.com/bibpile"
+twitter = "https://twitter.com/frkake"
+github = "https://github.com/frkake"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
+speakerdeck = "https://speakerdeck.com/frkake"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
@@ -27,11 +28,18 @@ course = "理工学部電子情報工学科"
 university = "立命館大学"
 years = "2014-2018"
 
+# [[experience]]
+# logo = "/images/lpixel.jpg"
+# institute = "エルピクセル株式会社"
+# role = "機械学習エンジニア"
+# duration = "2024.4 - 現在"
+# location = "東京 (京都からリモート)"
+
 [[experience]]
 logo = "/images/sensetime.png"
 institute = "株式会社センスタイムジャパン"
 role = "リサーチャー"
-duration = "2020.4 - 現在"
+duration = "2020.4 - 2023.3"
 location = "京都"
 
 [[experience]]
@@ -60,14 +68,14 @@ logo = "/images/denso.png"
 institute = "株式会社デンソー"
 role = "インターン"
 duration = "2019.2 - 2019.2"
-location = "品川"
+location = "東京"
 
 [[experience]]
 logo = "/images/hitachi.png"
 institute = "株式会社日立製作所"
 role = "インターン"
 duration = "2018.8 - 2018.8"
-location = "横浜"
+location = "神奈川"
 
 [[qualification]]
 name = "CGエンジニア検定 エキスパート"

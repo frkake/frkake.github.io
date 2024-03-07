@@ -4,10 +4,11 @@ title = "Takumi Iida"
 biography = "Computer Vision Engineer/Researcher"
 description = "Japanese page has more information!"
 image = "/images/iida_takumi_italy.jpg"
-twitter = "https://twitter.com/bibpile"
-github = "https://github.com/bibpile"
+twitter = "https://twitter.com/frkake"
+github = "https://github.com/frkake"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
+speakerdeck = "https://speakerdeck.com/frkake"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
@@ -28,47 +29,54 @@ course = "Bachelor of Electronic and Computer Engineering"
 university = "Ritsumeikan University"
 years = "2014-2018"
 
+# [[experience]]
+# logo = "/images/lpixel.jpg"
+# institute = "LPIXEL Inc. "
+# role = "Machine Learning Engineer"
+# duration = "Apr.2024 - Present"
+# location = "Tokyo (Work from Kyoto)"
+
 [[experience]]
 logo = "/images/sensetime.png"
 institute = "SenseTime Japan, Ltd. "
 role = "Researcher"
-duration = "Apr 2020 - Present"
+duration = "Apr.2020 - Mar.2024"
 location = "Kyoto"
 
 [[experience]]
 logo = "/images/datagrid.png"
 institute = "DATAGRID Inc. "
 role = "Part-time"
-duration = "Dec 2019 - Mar 2020"
+duration = "Dec.2019 - Mar.2020"
 location = "Kyoto"
 
 [[experience]]
 logo = "/images/sensetime.png"
 institute = "SenseTime Japan, Ltd. "
 role = "Intern"
-duration = "2019.6 - 2019.9"
+duration = "Jun.2019 - Sep.2019"
 location = "Kyoto"
 
 [[experience]]
 logo = "/images/hacarus.png"
 institute = "Hacarus Inc. "
 role = "Part-time"
-duration = "2019.1 - 2019.4"
+duration = "Jan.2019 - Apr.2019"
 location = "Kyoto"
 
 [[experience]]
 logo = "/images/denso.png"
 institute = "DENSO Corp. "
 role = "Intern"
-duration = "2019.2 - 2019.2"
-location = "Shinagawa"
+duration = "Feb.2019 - Feb.2019"
+location = "Tokyo"
 
 [[experience]]
 logo = "/images/hitachi.png"
 institute = "Hitachi, Ltd. "
 role = "Intern"
-duration = "2018.8 - 2018.8"
-location = "Yokohama"
+duration = "Aug.2018 - Aug.2018"
+location = "Kanagawa"
 
 [[patent]]
 title = "一种图像处理方法、装置、设备及存储介质"
