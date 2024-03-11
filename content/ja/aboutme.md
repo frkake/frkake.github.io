@@ -28,12 +28,12 @@ course = "理工学部電子情報工学科"
 university = "立命館大学"
 years = "2014-2018"
 
-# [[experience]]
-# logo = "/images/lpixel.jpg"
-# institute = "エルピクセル株式会社"
-# role = "機械学習エンジニア"
-# duration = "2024.4 - 現在"
-# location = "東京 (京都からリモート)"
+[[experience]]
+logo = "/images/lpixel.jpg"
+institute = "エルピクセル株式会社"
+role = "機械学習エンジニア"
+duration = "2024.4 - 現在"
+location = "東京 (京都からリモート)"
 
 [[experience]]
 logo = "/images/sensetime.png"
