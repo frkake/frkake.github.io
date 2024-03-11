@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>General on Less is more</title>
-    <link>https://blog.takumi-iida.com/tags/general/</link>
+    <link>https://takumi-iida.com/tags/general/</link>
     <description>Recent content in General on Less is more</description>
     <image>
       <title>Less is more</title>
-      <url>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</url>
-      <link>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</link>
+      <url>https://takumi-iida.com/images/iida_takumi_italy.jpg</url>
+      <link>https://takumi-iida.com/images/iida_takumi_italy.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 18 Sep 2023 18:04:19 +0900</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Sep 2023 18:04:19 +0900</lastBuildDate><atom:link href="https://takumi-iida.com/tags/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>移行しました</title>
-      <link>https://blog.takumi-iida.com/posts/2023-09-18-introduction/</link>
+      <link>https://takumi-iida.com/posts/2023-09-18-introduction/</link>
       <pubDate>Mon, 18 Sep 2023 18:04:19 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/posts/2023-09-18-introduction/</guid>
+      <guid>https://takumi-iida.com/posts/2023-09-18-introduction/</guid>
       <description>動機とか 以前はJekyllを使って自前サイトを作っていたのですが、なんか微妙に感じていました。 Hugoもちょっと触ってみたいと思ったので、触</description>
     </item>
     

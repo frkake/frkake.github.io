@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>3D Gaussian Splatting on Less is more</title>
-    <link>https://blog.takumi-iida.com/tags/3d-gaussian-splatting/</link>
+    <link>https://takumi-iida.com/tags/3d-gaussian-splatting/</link>
     <description>Recent content in 3D Gaussian Splatting on Less is more</description>
     <image>
       <title>Less is more</title>
-      <url>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</url>
-      <link>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</link>
+      <url>https://takumi-iida.com/images/iida_takumi_italy.jpg</url>
+      <link>https://takumi-iida.com/images/iida_takumi_italy.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/3d-gaussian-splatting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/3d-gaussian-splatting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Gaussian Splatting</title>
-      <link>https://blog.takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</link>
+      <link>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</link>
       <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</guid>
+      <guid>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</guid>
       <description>@Article{kerbl3Dgaussians, author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkhler, Thomas and Drettakis, George}, title = {3D Gaussian Splatting for Real-Time Radiance Field Rendering}, journal = {ACM Transactions on Graphics}, number = {4}, volume = {42}, month = {July}, year = {2023}, url = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/} } Project Code 高解像度(1080p)で学習時間が短く、描画</description>
     </item>
     

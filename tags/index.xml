@@ -2,184 +2,184 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Less is more</title>
-    <link>https://blog.takumi-iida.com/tags/</link>
+    <link>https://takumi-iida.com/tags/</link>
     <description>Recent content in Tags on Less is more</description>
     <image>
       <title>Less is more</title>
-      <url>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</url>
-      <link>https://blog.takumi-iida.com/images/iida_takumi_italy.jpg</link>
+      <url>https://takumi-iida.com/images/iida_takumi_italy.jpg</url>
+      <link>https://takumi-iida.com/images/iida_takumi_italy.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://blog.takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Gaussian Splatting</title>
-      <link>https://blog.takumi-iida.com/tags/3d-gaussian-splatting/</link>
+      <link>https://takumi-iida.com/tags/3d-gaussian-splatting/</link>
       <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/3d-gaussian-splatting/</guid>
+      <guid>https://takumi-iida.com/tags/3d-gaussian-splatting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neural rendering</title>
-      <link>https://blog.takumi-iida.com/tags/neural-rendering/</link>
+      <link>https://takumi-iida.com/tags/neural-rendering/</link>
       <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/neural-rendering/</guid>
+      <guid>https://takumi-iida.com/tags/neural-rendering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rendering</title>
-      <link>https://blog.takumi-iida.com/tags/rendering/</link>
+      <link>https://takumi-iida.com/tags/rendering/</link>
       <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/rendering/</guid>
+      <guid>https://takumi-iida.com/tags/rendering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adversarial Examples</title>
-      <link>https://blog.takumi-iida.com/tags/adversarial-examples/</link>
+      <link>https://takumi-iida.com/tags/adversarial-examples/</link>
       <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/adversarial-examples/</guid>
+      <guid>https://takumi-iida.com/tags/adversarial-examples/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Art</title>
-      <link>https://blog.takumi-iida.com/tags/art/</link>
+      <link>https://takumi-iida.com/tags/art/</link>
       <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/art/</guid>
+      <guid>https://takumi-iida.com/tags/art/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diffusion Model</title>
-      <link>https://blog.takumi-iida.com/tags/diffusion-model/</link>
+      <link>https://takumi-iida.com/tags/diffusion-model/</link>
       <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/diffusion-model/</guid>
+      <guid>https://takumi-iida.com/tags/diffusion-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ICML</title>
-      <link>https://blog.takumi-iida.com/tags/icml/</link>
+      <link>https://takumi-iida.com/tags/icml/</link>
       <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/icml/</guid>
+      <guid>https://takumi-iida.com/tags/icml/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Image Protection</title>
-      <link>https://blog.takumi-iida.com/tags/image-protection/</link>
+      <link>https://takumi-iida.com/tags/image-protection/</link>
       <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/image-protection/</guid>
+      <guid>https://takumi-iida.com/tags/image-protection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Style Transfer</title>
-      <link>https://blog.takumi-iida.com/tags/style-transfer/</link>
+      <link>https://takumi-iida.com/tags/style-transfer/</link>
       <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/style-transfer/</guid>
+      <guid>https://takumi-iida.com/tags/style-transfer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text-to-Image</title>
-      <link>https://blog.takumi-iida.com/tags/text-to-image/</link>
+      <link>https://takumi-iida.com/tags/text-to-image/</link>
       <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/text-to-image/</guid>
+      <guid>https://takumi-iida.com/tags/text-to-image/</guid>
       <description></description>
     </item>
     
     <item>
       <title>General</title>
-      <link>https://blog.takumi-iida.com/tags/general/</link>
+      <link>https://takumi-iida.com/tags/general/</link>
       <pubDate>Mon, 18 Sep 2023 18:04:19 +0900</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/general/</guid>
+      <guid>https://takumi-iida.com/tags/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CVPR</title>
-      <link>https://blog.takumi-iida.com/tags/cvpr/</link>
+      <link>https://takumi-iida.com/tags/cvpr/</link>
       <pubDate>Mon, 26 Jul 2021 00:47:15 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/cvpr/</guid>
+      <guid>https://takumi-iida.com/tags/cvpr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Object Detection</title>
-      <link>https://blog.takumi-iida.com/tags/object-detection/</link>
+      <link>https://takumi-iida.com/tags/object-detection/</link>
       <pubDate>Mon, 26 Jul 2021 00:47:15 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/object-detection/</guid>
+      <guid>https://takumi-iida.com/tags/object-detection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Region Proposal</title>
-      <link>https://blog.takumi-iida.com/tags/region-proposal/</link>
+      <link>https://takumi-iida.com/tags/region-proposal/</link>
       <pubDate>Mon, 26 Jul 2021 00:47:15 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/region-proposal/</guid>
+      <guid>https://takumi-iida.com/tags/region-proposal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>1-stage</title>
-      <link>https://blog.takumi-iida.com/tags/1-stage/</link>
+      <link>https://takumi-iida.com/tags/1-stage/</link>
       <pubDate>Sun, 25 Jul 2021 04:03:55 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/1-stage/</guid>
+      <guid>https://takumi-iida.com/tags/1-stage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sliding Window</title>
-      <link>https://blog.takumi-iida.com/tags/sliding-window/</link>
+      <link>https://takumi-iida.com/tags/sliding-window/</link>
       <pubDate>Sun, 25 Jul 2021 04:03:55 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/sliding-window/</guid>
+      <guid>https://takumi-iida.com/tags/sliding-window/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2-stage</title>
-      <link>https://blog.takumi-iida.com/tags/2-stage/</link>
+      <link>https://takumi-iida.com/tags/2-stage/</link>
       <pubDate>Sat, 24 Jul 2021 04:08:08 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/2-stage/</guid>
+      <guid>https://takumi-iida.com/tags/2-stage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selective Search</title>
-      <link>https://blog.takumi-iida.com/tags/selective-search/</link>
+      <link>https://takumi-iida.com/tags/selective-search/</link>
       <pubDate>Sat, 24 Jul 2021 04:08:08 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/selective-search/</guid>
+      <guid>https://takumi-iida.com/tags/selective-search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SVM</title>
-      <link>https://blog.takumi-iida.com/tags/svm/</link>
+      <link>https://takumi-iida.com/tags/svm/</link>
       <pubDate>Sat, 24 Jul 2021 04:08:08 +0000</pubDate>
       
-      <guid>https://blog.takumi-iida.com/tags/svm/</guid>
+      <guid>https://takumi-iida.com/tags/svm/</guid>
       <description></description>
     </item>
     

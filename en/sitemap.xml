@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.takumi-iida.com/en/categories/</loc>
+    <loc>https://takumi-iida.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://blog.takumi-iida.com/categories/"
+                href="https://takumi-iida.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://blog.takumi-iida.com/en/categories/"
+                href="https://takumi-iida.com/en/categories/"
                 />
   </url><url>
-    <loc>https://blog.takumi-iida.com/en/</loc>
+    <loc>https://takumi-iida.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://blog.takumi-iida.com/"
+                href="https://takumi-iida.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://blog.takumi-iida.com/en/"
+                href="https://takumi-iida.com/en/"
                 />
   </url><url>
-    <loc>https://blog.takumi-iida.com/en/tags/</loc>
+    <loc>https://takumi-iida.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://blog.takumi-iida.com/tags/"
+                href="https://takumi-iida.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://blog.takumi-iida.com/en/tags/"
+                href="https://takumi-iida.com/en/tags/"
                 />
   </url><url>
-    <loc>https://blog.takumi-iida.com/en/aboutme/</loc>
+    <loc>https://takumi-iida.com/en/aboutme/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://blog.takumi-iida.com/aboutme/"
+                href="https://takumi-iida.com/aboutme/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://blog.takumi-iida.com/en/aboutme/"
+                href="https://takumi-iida.com/en/aboutme/"
                 />
   </url>
 </urlset>
