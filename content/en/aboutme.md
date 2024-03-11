@@ -29,12 +29,12 @@ course = "Bachelor of Electronic and Computer Engineering"
 university = "Ritsumeikan University"
 years = "2014-2018"
 
-# [[experience]]
-# logo = "/images/lpixel.jpg"
-# institute = "LPIXEL Inc. "
-# role = "Machine Learning Engineer"
-# duration = "Apr.2024 - Present"
-# location = "Tokyo (Work from Kyoto)"
+[[experience]]
+logo = "/images/lpixel.jpg"
+institute = "LPIXEL Inc. "
+role = "Machine Learning Engineer"
+duration = "Apr.2024 - Present"
+location = "Tokyo (Work from Kyoto)"
 
 [[experience]]
 logo = "/images/sensetime.png"
