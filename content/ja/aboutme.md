@@ -33,7 +33,7 @@ logo = "/images/lpixel.jpg"
 institute = "エルピクセル株式会社"
 role = "機械学習エンジニア"
 duration = "2024.4 - 現在"
-location = "東京 (京都からリモート)"
+location = "リモート"
 
 [[experience]]
 logo = "/images/sensetime.png"
@@ -119,13 +119,13 @@ date = "2011.10"
 institute = "独立行政法人 情報処理推進機構 (IPA)"
 number = "IP-2011-10-18024"
 
-[[patent]]
-title = "一种图像处理方法、装置、设备及存储介质"
-translation = "落下物検知装置、落下物データ生成方法、および 落下物 学習用データ生成プログラム"
-authors = ["饭田啄巳", "松永英树", ]
-bold = "饭田啄巳"
-patent_number = "CN116935353A"
-application_number = "CN202310868168.3"
+[[publication]]
+title = "PCT: Perspective Cue Training Framework for Multi-Camera BEV Segmentation"
+authors = ["Haruya Ishikawa", "Takumi Iida", "Yoshinori Konishi", "Yoshimitsu Aoki"]
+bold = "Takumi Iida"
+conference = "arXiv"
+link = "https://arxiv.org/abs/2403.12530"
+date = "2024"
 
 [[publication]]
 title = "LanesPose: 骨格推定によるレーン検出"
@@ -139,6 +139,7 @@ title = "Efficient Unknown Object Detection with Discrepancy Networks for Semant
 authors = ["Ryo Kamoi", "Takumi Iida", "Kaname Tomite"]
 bold = "Takumi Iida"
 conference = "NeurIPS 2021 Workshop on Machine Learning for Autonomous Driving"
+link = "https://ml4ad.github.io/files/papers2021/Efficient%20Unknown%20Object%20Detection%20with%20Discrepancy%20Networks%20for%20Semantic%20Segmentation.pdf"
 date = "2021"
 
 [[publication]]
@@ -154,6 +155,14 @@ authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shiraha
 bold = "Takumi Iida"
 conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
 date = "2018"
+
+[[patent]]
+title = "一种图像处理方法、装置、设备及存储介质"
+translation = "落下物検知装置、落下物データ生成方法、および 落下物 学習用データ生成プログラム"
+authors = ["饭田啄巳", "松永英树", ]
+bold = "饭田啄巳"
+patent_number = "CN116935353A"
+# application_number = "CN202310868168.3"
 
 [[post]]
 title = "ゼロショット物体検出の研究動向"
@@ -178,4 +187,5 @@ postlink = "https://tech.sensetime.jp/?p=1080"
 [[post]]
 title = "CVPR2020でセンスタイムが発表した、仮想試着を行うACGPNの論文を紹介します"
 postlink = "https://tech.sensetime.jp/?p=596"
+
 +++
