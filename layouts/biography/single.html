@@ -86,7 +86,11 @@
     <h3 class="qualification-title">Qualification</h3>
     {{ range .Params.qualification }}
     <div class="qualification-item">
-        <p><strong>{{ .name }}</strong>{{ if .link }} [<u><font color=#87808b size="4"><a href="{{ .link }}">link</a></font></u>]{{ end }}</p>
+        <p><strong>
+            {{ if .link }}<u><a href="{{ .link }}"><font color=#000080>{{ end }}
+                {{ .name }}
+            {{ if .link }}</font></a></u>{{ end }}
+        </strong></p>
         <p>{{ .institute }}</p>
         <p>{{ .date }}</p>
         {{ if .number }}<p><font color=#87808b size="4">No. {{ .number }}</font></p>{{ end }}
@@ -100,14 +104,19 @@
     <h3 class="publication-title">Publications</h3>
     {{ range $pub := .Params.publication }}
     <div class="publication-item">
+        {{ if $pub.link }}
+        <a href="{{ $pub.link }}"><font color=#000080 size="4">
+        {{ end }}
         <p>
             {{ $boldAuthor := $pub.bold }}
             {{ range $index, $author := $pub.authors }}
                 {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
                 {{ if lt $index (sub (len $pub.authors) 1) }}, {{ end }}
             {{ end }}
-            , "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
+            , 
+            "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
         </p>
+        {{ if $pub.link }}</font></a>{{ end }}
     </div>
     {{ end }}
 </div>

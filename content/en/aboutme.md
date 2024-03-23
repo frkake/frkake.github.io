@@ -34,7 +34,7 @@ logo = "/images/lpixel.jpg"
 institute = "LPIXEL Inc. "
 role = "Machine Learning Engineer"
 duration = "Apr.2024 - Present"
-location = "Tokyo (Work from Kyoto)"
+location = "Remote (Kyoto)"
 
 [[experience]]
 logo = "/images/sensetime.png"
@@ -78,42 +78,6 @@ role = "Intern"
 duration = "Aug.2018 - Aug.2018"
 location = "Kanagawa"
 
-[[patent]]
-title = "一种图像处理方法、装置、设备及存储介质"
-translation = "Image processing method, device, program"
-authors = ["饭田啄巳", "松永英树", ]
-bold = "饭田啄巳"
-patent_number = "CN116935353A"
-application_number = "CN202310868168.3"
-
-[[publication]]
-title = "LanesPose: 骨格推定によるレーン検出"
-authors = ["玄元奏", "飯田啄巳", "小西嘉典"]
-bold = "飯田啄巳"
-conference = "画像の認識・理解シンポジウム (MIRU)"
-date = "2023"
-
-[[publication]]
-title = "Efficient Unknown Object Detection with Discrepancy Networks for Semantic Segmentation"
-authors = ["Ryo Kamoi", "Takumi Iida", "Kaname Tomite"]
-bold = "Takumi Iida"
-conference = "NeurIPS 2021 Workshop on Machine Learning for Autonomous Driving"
-date = "2021"
-
-[[publication]]
-title = "Detecting Backdoor Attacks on Deep Neural Networks by Saliency Map Clustering"
-authors = ["Takumi Iida", "Kota Yoshida", "Takeshi Fujino"]
-bold = "Takumi Iida"
-conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
-date = "2020"
-
-[[publication]]
-title = "Bedside Event Real-time Recognition Using Low Resolution Infrared Array Sensor with Recurrent Convolutional Neural Network"
-authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shirahata", "Mitsuru Shiozaki", "Takaya Kubota", "Masafumi Kimata", "Takeshi Fujino"]
-bold = "Takumi Iida"
-conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
-date = "2018"
-
 [[qualification]]
 name = "Computer Graphics Engineer Certification Test (Expert)"
 date = "Dec 2023"
@@ -155,5 +119,50 @@ name = "Information Technology Passport Examination"
 date = "Oct 2011"
 institute = "Information-technology Promotion Agency (IPA)"
 number = "IP-2011-10-18024"
+
+[[publication]]
+title = "PCT: Perspective Cue Training Framework for Multi-Camera BEV Segmentation"
+authors = ["Haruya Ishikawa", "Takumi Iida", "Yoshinori Konishi", "Yoshimitsu Aoki"]
+bold = "Takumi Iida"
+conference = "arXiv"
+link = "https://arxiv.org/abs/2403.12530"
+date = "2024"
+
+[[publication]]
+title = "LanesPose: 骨格推定によるレーン検出"
+authors = ["玄元奏", "飯田啄巳", "小西嘉典"]
+bold = "飯田啄巳"
+conference = "画像の認識・理解シンポジウム (MIRU)"
+date = "2023"
+
+[[publication]]
+title = "Efficient Unknown Object Detection with Discrepancy Networks for Semantic Segmentation"
+authors = ["Ryo Kamoi", "Takumi Iida", "Kaname Tomite"]
+bold = "Takumi Iida"
+conference = "NeurIPS 2021 Workshop on Machine Learning for Autonomous Driving"
+link = "https://ml4ad.github.io/files/papers2021/Efficient%20Unknown%20Object%20Detection%20with%20Discrepancy%20Networks%20for%20Semantic%20Segmentation.pdf"
+date = "2021"
+
+[[publication]]
+title = "Detecting Backdoor Attacks on Deep Neural Networks by Saliency Map Clustering"
+authors = ["Takumi Iida", "Kota Yoshida", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2020"
+
+[[publication]]
+title = "Bedside Event Real-time Recognition Using Low Resolution Infrared Array Sensor with Recurrent Convolutional Neural Network"
+authors = ["Takumi Iida", "Kota Yoshida", "Takumi Hashimoto", "Masayoshi Shirahata", "Mitsuru Shiozaki", "Takaya Kubota", "Masafumi Kimata", "Takeshi Fujino"]
+bold = "Takumi Iida"
+conference = "RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing (NCSP)"
+date = "2018"
+
+[[patent]]
+title = "一种图像处理方法、装置、设备及存储介质"
+translation = "Image processing method, device, program"
+authors = ["饭田啄巳", "松永英树", ]
+bold = "饭田啄巳"
+patent_number = "CN116935353A"
+# application_number = "CN202310868168.3"
 +++
 
