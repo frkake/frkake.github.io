@@ -172,7 +172,7 @@ body.dark {
 }
 
 .dark .experience-card {
-    border-top: 1px solid #787878;
+    border-top: 1px solid #2e2e2e;
     background-color: #1d1e20;
 }
 
@@ -352,6 +352,15 @@ body.dark {
     line-height: 1.2;
 }
 
+.qualification-item a {
+    color: #000080;
+    font-size: 4;
+}
+
+.dark .qualification-item a {
+    color: #7373b5;
+}
+
 .publication-title {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -365,7 +374,16 @@ body.dark {
 }
 
 .dark .publication-item {
-    border-bottom: 1px solid #787878;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.publication-item a {
+    color: #000080;
+    font-size: 4;
+}
+
+.dark .publication-item a {
+    color: #7373b5;
 }
 
 .patent-title {
@@ -380,15 +398,20 @@ body.dark {
     /* border-bottom: 1px solid #787878; */
 }
 
-.outpost-title {
+.externalpost-title {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.outpost-item {
+.externalpost-item {
     padding: 5px 10px;
     margin: 5px 0;
     text-align: left;
+}
+
+.externalpost-item a {
+    color: #000080;
+    font-size: 4;
 }
 
 .event-details {
