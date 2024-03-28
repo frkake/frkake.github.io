@@ -12,6 +12,13 @@
         {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
         {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}"><i class="fab fa-speaker-deck"></i></a>{{ end }}
         {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
+        {{ if .Params.gscholar }}<a href="{{ .Params.gscholar}}"><i class="fas fa-graduation-cap"></i></a>{{ end }}
+        {{ if .Params.orcid }}<a href="{{ .Params.orcid }}"><i class="fab fa-orcid"></i></a>{{ end }}
+        {{ if .Params.researchgate }}<a href="{{ .Params.researchgate }}"><i class="fab fa-researchgate"></i></a>{{ end }}
+        {{ if .Params.academia }}<a href="{{ .Params.academia }}"><i class="fab fa-academia"></i></a>{{ end }}
+        {{ if .Params.slideshare }}<a href="{{ .Params.slideshare }}"><i class="fab fa-slideshare"></i></a>{{ end }}
+        {{ if .Params.youtube }}<a href="{{ .Params.youtube }}"><i class="fab fa-youtube"></i></a>{{ end }}
+        {{ if .Params.instagram }}<a href="{{ .Params.instagram }}"><i class="fab fa-instagram"></i></a>{{ end }}
         {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
     </div>
 </div>
@@ -87,9 +94,9 @@
     {{ range .Params.qualification }}
     <div class="qualification-item">
         <p><strong>
-            {{ if .link }}<u><a href="{{ .link }}"><font color=#000080>{{ end }}
+            {{ if .link }}<a href="{{ .link }}">{{ end }}
                 {{ .name }}
-            {{ if .link }}</font></a></u>{{ end }}
+            {{ if .link }}</a>{{ end }}
         </strong></p>
         <p>{{ .institute }}</p>
         <p>{{ .date }}</p>
@@ -99,13 +106,13 @@
 </div>
 {{ end }}
 
-<!-- {{ if .Params.publication }}
+{{ if .Params.publication }}
 <div class="info-row">
     <h3 class="publication-title">Publications</h3>
     {{ range $pub := .Params.publication }}
     <div class="publication-item">
         {{ if $pub.link }}
-        <a href="{{ $pub.link }}"><font color=#000080 size="4">
+        <a href="{{ $pub.link }}">
         {{ end }}
         <p>
             {{ $boldAuthor := $pub.bold }}
@@ -116,11 +123,11 @@
             , 
             "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
         </p>
-        {{ if $pub.link }}</font></a>{{ end }}
+        {{ if $pub.link }}</a>{{ end }}
     </div>
     {{ end }}
 </div>
-{{ end }} -->
+{{ end }}
 
 {{ if .Params.patent }}
 <div class="info-row">
@@ -147,9 +154,9 @@
 
 {{ if .Params.post }}
 <div class="info-row">
-    <h3 class="outpost-title">External Post</h3>
+    <h3 class="externalpost-title">External Post</h3>
     {{ range .Params.post }}
-    <div class="outpost-item">
+    <div class="externalpost-item">
         <p>
             <u><a href="{{ .postlink }}">{{ .title }}</a></u>
         </p>

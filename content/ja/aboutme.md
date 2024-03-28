@@ -8,6 +8,7 @@ github = "https://github.com/frkake"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
 speakerdeck = "https://speakerdeck.com/frkake"
+gscholar = "https://scholar.google.co.jp/citations?user=d6oloLsAAAAJ"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
