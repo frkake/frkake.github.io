@@ -9,6 +9,7 @@ github = "https://github.com/frkake"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"
 # facebook = "https://www.facebook.com/tkmiida/"
 speakerdeck = "https://speakerdeck.com/frkake"
+gscholar = "https://scholar.google.co.jp/citations?user=d6oloLsAAAAJ"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
@@ -94,7 +95,7 @@ number = "2302400126"
 name = "TOEIC L&R 815"
 date = "May 2023"
 institute = "Educational Testing Service (ETS)"
-uri = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
+link = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
 
 [[qualification]]
 name = "JDLA Deep Learning For GENERAL"
