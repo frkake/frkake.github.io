@@ -95,7 +95,7 @@ number = "2302400126"
 name = "TOEIC L&R 815"
 date = "May 2023"
 institute = "Educational Testing Service (ETS)"
-link = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
+# link = "https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRRp0VZdV6ROK6FV9O813NxWs4gK1RDjJl"
 
 [[qualification]]
 name = "JDLA Deep Learning For GENERAL"
