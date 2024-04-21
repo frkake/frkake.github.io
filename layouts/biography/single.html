@@ -158,11 +158,11 @@
     {{ range .Params.post }}
     <div class="externalpost-item">
         <p>
-            <u><a href="{{ .postlink }}">{{ .title }}</a></u>
+            <a href="{{ .postlink }}">{{ .title }}</a>
         </p>
         {{ if .eventlink }}
         <p class="event-details">
-            <font size="2">@</font><u><a href="{{ .eventlink }}">{{ .event }}</a></u>
+            <font size="2">@</font><a href="{{ .eventlink }}">{{ .event }}</a>
         </p>
         {{ else if .event }}
         <p class="event-details">
