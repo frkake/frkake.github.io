@@ -415,6 +415,10 @@ body.dark {
     font-size: 4;
 }
 
+.dark .externalpost-item a {
+    color: #7373b5;
+}
+
 .event-details {
     margin-top: 0;
     margin-bottom: 0;
