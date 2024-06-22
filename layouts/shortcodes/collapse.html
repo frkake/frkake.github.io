@@ -1,0 +1,36 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function addCollapseListeners() {
+      var coll = document.querySelectorAll(".collapse");
+      coll.forEach(function(button) {
+        if (!button.classList.contains("listener-added")) {
+          button.classList.add("listener-added");
+          button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      });
+    }
+
+    addCollapseListeners();
+
+    var observer = new MutationObserver(addCollapseListeners);
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
+
+<button class="collapse">
+  {{ .Get 0 }}
+  <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+<div class="content">
+  {{ .Inner | markdownify }}
+</div>
