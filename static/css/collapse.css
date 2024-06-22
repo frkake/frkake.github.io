@@ -1,0 +1,73 @@
+.collapse {
+background-color: #f1f1f1;
+color: #444;
+cursor: pointer;
+padding: 10px;
+width: 100%;
+border: 2px solid #ddd;
+text-align: left;
+outline: none;
+font-size: 15px;
+border-radius: 5px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark .collapse {
+background-color: #2e2e2e;
+color: #ddd;
+border: 2px solid #444;
+}
+
+.active, .collapse:hover {
+background-color: #ccc;
+border-color: #bbb;
+}
+
+.dark .active, .dark .collapse:hover {
+background-color: #444;
+border-color: #666;
+}
+
+.content {
+padding: 10px;
+overflow: hidden;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-bottom: 10px;
+display: none; /* 初期状態では非表示 */
+}
+
+.dark .content {
+background-color: #2e2e2e;
+border: 1px solid #444;
+}
+
+.content pre {
+background-color: #eee;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+.dark .content pre {
+background-color: #444;
+border: 1px solid #555;
+color: #eee;
+}
+
+.arrow {
+transition: transform 0.3s ease;
+}
+
+.active .arrow {
+transform: rotate(90deg);
+}
+
+.dark .arrow {
+fill: #ddd;
+}
