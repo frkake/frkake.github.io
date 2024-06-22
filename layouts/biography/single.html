@@ -136,7 +136,7 @@
     <div class="patent-item">
         <p>
             <strong>{{ .title }}</strong>
-            {{ if .translation }}<p><font size="2" margin-top="0">Translated: {{ .translation }}</font></p>{{ end }}
+            {{ if .translation }}<p><font size="2" margin-top="0">Translation: {{ .translation }}</font></p>{{ end }}
             {{ $boldAuthor := $pat.bold }}
             <p>Authors: 
                 {{ range $index, $author := $pat.authors }}

@@ -56,6 +56,13 @@ body.dark {
     margin-bottom: 10px;
 }
 
+.info-row .description {
+    color: #87808b;
+}
+
+.dark .info-row .description {
+    color: #87808b;
+}
 
 .additional-info {
     display: flex;
