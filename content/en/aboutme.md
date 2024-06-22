@@ -164,6 +164,6 @@ translation = "Image processing method, device, program"
 authors = ["饭田啄巳", "松永英树", ]
 bold = "饭田啄巳"
 patent_number = "CN116935353A"
-# application_number = "CN202310868168.3"
+application_number = "CN202310868168.3"
 +++
 
