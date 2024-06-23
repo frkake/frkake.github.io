@@ -8,7 +8,7 @@ outline = true
 +++
 
 
-{{< links project="https://albumentations.ai/" paper="https://arxiv.org/abs/1809.06839" code="https://github.com/albumentations-team/albumentations" >}}
+{{< links project="https://albumentations.ai/" paper="https://arxiv.org/abs/1809.06839" code="https://github.com/albumentations-team/albumentations" other="https://github.com/frkake/albumentations_post" >}}
 
 -----------
 
