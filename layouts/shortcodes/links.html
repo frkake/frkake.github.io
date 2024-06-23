@@ -39,6 +39,15 @@
             <p>Video</p>
         </a>
     </div>
+    {{ end }}
+
+    {{ with .Get "other" }}
+    <div class="link-item">
+        <a href="{{ . }}" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+            <p>Other</p>
+        </a>
+    </div>
     {{ else }}
         <div class="link-item hidden"></div>
     {{ end }}
