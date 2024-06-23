@@ -17,6 +17,8 @@ outline = true
 画像変換するとき、Albumentationsって便利ですよね。なんといっても変換できる種類の数が豊富なのが嬉しいです。  
 ただ、自分で新たに変換クラスを作成しようとすると、ドキュメントが豊富とは言えないと思うので、誰かの役に立てばと思い、今回の記事を書くことにしました（未来の自分のためかもしれない）。
 
+実行コードはすべて[このリポジトリ](https://github.com/frkake/albumentations_post)にあります。
+
 ## 基本的な使い方
 
 ### マスク画像を使って画像をクロップする
@@ -259,10 +261,10 @@ imageとは異なる処理をしたい場合や可読性を上げたい場合を
 
 #### ランダム値を扱いたい
 
-まずは、ランダムなシフトを行う変換クラス`Shift`を作成してみます。
+まずは、ランダムなシフトを行う変換クラス`RandomShift`を作成してみます。
 
 ```python
-class Shift(A.DualTransform):
+class RandomShift(A.DualTransform):
     def __init__(
         self, 
         x_shift: Tuple[int, int],
@@ -300,7 +302,7 @@ class Shift(A.DualTransform):
 
 
 ```python
-transform = Shift(x_shift=(-100, 100), y_shift=(-100, 100), p=1)
+transform = RandomShift(x_shift=(-100, 100), y_shift=(-100, 100), p=1)
 
 for i in range(2):
     image = cv2.imread('data/images/dog_and_cat.png')
@@ -366,7 +368,7 @@ class RandomCrop(A.DualTransform):
         return ["image"]
 ```
 
-{{< collapse "実行結果" >}}
+{{< collapse "実行コード" >}}
 
 ランダムになっているか確認するために2回実行してみます。
 
@@ -428,7 +430,7 @@ print(f"transformed['image_name']: {transformed['image_name']}")
 # ==> transformed['image_name']: dog_and_cat/cropped
 ```
 
-実行結果を見てみると、`image_name`キーに`dog_and_cat/cropped`という文字列に変換されていることがわかります。
+実行結果を見てみると、`image_name`キーに渡したファイル名が`dog_and_cat/cropped`に変換されていることがわかります。
 
 {{< /collapse >}}
 
