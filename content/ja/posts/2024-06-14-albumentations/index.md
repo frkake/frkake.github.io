@@ -150,8 +150,9 @@ class SelectChannel(A.ImageOnlyTransform):
         return ("channel",)
 ```
 
-このように画像への処理内容は`apply`メソッドに記述します。  
-実際に画像に適応してみましょう。青だけ残す処理を行ってみます。OpenCVで読み込んでおり、BGRなので0チャネル目が青です。
+{{< collapse "実行コード" >}}
+
+青だけ残す処理を行ってみます。OpenCVで読み込んでおり、BGRなので0チャネル目が青です。   
 
 ```python
 transform = A.Compose([
@@ -168,12 +169,15 @@ cv2.imwrite('data/results/select_b.png', transformed["image"])
 ![results/select_b.png](data/results/select_b.png)
 {{< /tile-images >}}
 
-`apply`メソッドには、`transform(image=image)`で渡されたimageが渡されます。それに対して処理を行って返却すると返り値の辞書の`image`キーに値が格納されます。  
-`get_transform_init_args_names`というメソッドは、`A.ReplayCompose`を使うときに必要になるメソッドです。まだ必要ないのですが、後で`A.ReplayCompose`の説明もしたいので、まとめて定義しておきます。
+{{< /collapse >}}
+
+このように画像への処理内容は`apply()`に記述します。  
+`get_transform_init_args_names()`というメソッドは、`A.ReplayCompose`を使うときに必要になるメソッドです。まだ必要ないのですが、後で`A.ReplayCompose`の説明もしたいので、まとめて定義しておきます。  
+`apply()`には、`transform(image=image)`で渡されたimageが渡されます。それに対して処理を行って返却すると、返り値の辞書の`image`キーに値が格納されます。  
 
 #### DualTransformを継承したクラス1
 
-さて、次はすでにAlbumentationsに入っているのですが、指定した領域をクロップするクラス `Crop`を作成してみます。
+さて、次は指定した領域をクロップするクラス `Crop`を作成してみます。`A.Crop`の簡略版です。
 
 ```python
 class Crop(A.DualTransform):
@@ -205,9 +209,7 @@ class Crop(A.DualTransform):
         return ("x_min", "y_min", "x_max", "y_max")
 ```
 
-このクラスは、画像とマスクを同時にクロップする処理を行います。`apply`メソッドは画像に対する処理、`apply_to_mask`メソッドはマスクに対する処理、`apply_to_masks`メソッドは複数のマスクに対する処理を行います。  
-`A.DualTransform`では、他にも `apply_to_bbox`、`apply_to_keypoint`、`apply_to_global_label` などがあり、それぞれのターゲットに対してメソッドを定義することができます。  
-次のコードで実行結果を見てみましょう。
+{{< collapse "実行コード" >}}
 
 ```python
 transform = A.Compose([
@@ -231,8 +233,14 @@ cv2.imwrite('data/results/crop_constant.png', grid_image)
 
 `Crop`クラスで指定した領域がクロップされていることが確認できます。
 
+{{< /collapse >}}
+
+このクラスは、画像とマスクを同時にクロップする処理を行います。`apply()`メソッドは画像に対する処理、`apply_to_mask()`メソッドはマスクに対する処理、`apply_to_masks()`メソッドは複数のマスクに対する処理を行います。
+
+`A.DualTransform`では、他にも `apply_to_bbox()`、`apply_to_keypoint()`、`apply_to_global_label()` などがあり、それぞれのターゲットに対してメソッドを定義することができます。
+
 {{< notice note >}}
-実は、上の変換クラス`Crop`はさらに単純化することができます。`apply_to_mask`と`apply_to_masks`を定義していますが、次のように`apply`メソッドを定義するだけで、maskも同様にクロップされます。imageとmaskは対応したものとして扱われ、同じ変換処理が適用されます。  
+実は、上の変換クラス`Crop`はさらに単純化することができます。`apply_to_mask()`と`apply_to_masks`を定義していますが、次のように`apply()`メソッドを定義するだけで、maskも同様にクロップされます。imageとmaskは対応したものとして扱われ、同じ変換処理が適用されます。  
 そのため、次の`Crop`クラスは上の`Crop`クラスと同じ挙動をします。
 
 ```python
@@ -252,7 +260,7 @@ class Crop(A.DualTransform):
 ```
 
 唯一違うのはリサイズなどで補間処理を見つけたら、mask（およびmasks）の場合は最近傍補間が適用されるように自動的に修正されるという点です。  
-imageとは異なる処理をしたい場合や可読性を上げたい場合を除けば、`apply` メソッドのみを定義しておけば十分です。
+imageとは異なる処理をしたい場合や可読性を上げたい場合を除けば、`apply()` メソッドのみを定義しておけば十分です。
 {{< /notice >}}
 
 ### 応用編
@@ -260,6 +268,8 @@ imageとは異なる処理をしたい場合や可読性を上げたい場合を
 応用編では、より複雑な変換クラスを作成してみます。ただし、ここでは要点のみを説明し、詳細な説明は[仕組み編](#仕組みの解説)に回します。
 
 #### ランダム値を扱いたい
+
+##### 適用するごとにランダム値を生成する
 
 まずは、ランダムなシフトを行う変換クラス`RandomShift`を作成してみます。
 
@@ -276,7 +286,13 @@ class RandomShift(A.DualTransform):
         self.x_shift = x_shift
         self.y_shift = y_shift
 
-    def apply(self, image: np.ndarray, x_shift: int, y_shift: int, **params) -> np.ndarray:
+    def apply(
+        self, 
+        image: np.ndarray, 
+        x_shift: int, 
+        y_shift: int, 
+        **params: Any,
+    ) -> np.ndarray:
         H, W, *_ = image.shape
         canvas = np.zeros_like(image)
         x_min = max(0, x_shift)
@@ -299,7 +315,9 @@ class RandomShift(A.DualTransform):
         }
 ```
 
+{{< collapse "実行コード" >}}
 
+上下左右に[-100, 100]ピクセルの範囲でランダムにシフトする処理を行ってみます。
 
 ```python
 transform = RandomShift(x_shift=(-100, 100), y_shift=(-100, 100), p=1)
@@ -318,8 +336,17 @@ for i in range(2):
 ![data/results/shift_01.png](data/results/shift_01.png)
 {{< /tile-images >}}
 
+ランダムになっていることを確認するために2回実行してみました。2回とも異なるシフトが適用されていることがわかります。さらに、画像とマスクの両方で同じシフトが適用されていることも確認できます。
 
-あああああーーーー
+{{< /collapse >}}
+
+`get_params()`で、適用するごとにランダムな値を生成しています。  
+`get_params()`の返り値は、`apply()`メソッドの引数に渡されます。今回は`apply()`の引数に`x_shift`と`y_shift`を追加して直接受けてみましたが、特に指定しないと`**params`で受け取ることができます。  
+コラムでも述べたように、`apply()`メソッドは他のターゲットにも適用されるので、`apply_to_mask()`や`apply_to_bbox()`などでも共有して使うことができます。これにより、画像とマスクが同じシフトを受けることが保証されます。
+
+##### 入力データに依存したランダム値を生成する
+
+次に、ランダムにクロップする変換クラス`RandomCrop`を作成してみます。`RandomCrop`は、ランダムにクロップする位置を変更しますが、クロップする矩形が画像の範囲を超えないようにするため、画像のサイズに依存したランダム値を生成する必要があります。
 
 ```python
 class RandomCrop(A.DualTransform):
@@ -349,7 +376,7 @@ class RandomCrop(A.DualTransform):
         return ("height", "width")
     
     def get_params_dependent_on_targets(self, params):
-        image = params['image']
+        image = params["image"]
         H, W, C = image.shape
         x_min = np.random.randint(0, W - self.width)
         y_min = np.random.randint(0, H - self.height)
@@ -370,7 +397,7 @@ class RandomCrop(A.DualTransform):
 
 {{< collapse "実行コード" >}}
 
-ランダムになっているか確認するために2回実行してみます。
+画像から200x200サイズの領域をランダムにクロップしてみます。今回もランダムになっているか確認するために2回実行してみます。
 
 ```python
 transform = A.Compose([
@@ -388,12 +415,17 @@ for i in range(2):
     cv2.imwrite(f'data/results/randomcrop_{i:02d}.png', grid_image)
 ```
 
-{{< /collapse >}}
-
 {{< tile-images cols=2 >}}
 ![data/results/randomcrop_00.png](data/results/randomcrop_00.png)
 ![data/results/randomcrop_01.png](data/results/randomcrop_01.png)
 {{< /tile-images >}}
+
+画像内のランダムな位置がクロップされていることが確認できます。クロップ領域が画像の範囲を超えないようになっていることも確認できます。
+
+{{< /collapse >}}
+
+`get_params_dependent_on_targets()`で、`params`に含まれる`image`からランダムな値を生成しています。`get_params_dependent_on_targets()`で利用したいターゲットは、`targets_as_params`プロパティで指定しておかなければなりません。`target_as_params`で`params`のパラメータを収集（辞書を構築）して、`get_params_dependent_on_targets()`を実行する流れになっています。
+`get_params()`と`get_params_dependent_on_targets()`を別々に紹介しましたが、`get_params_dependent_on_targets()`は`get_params()`の代わりに使うこともできます。両方定義した場合は、互いの返り値の辞書がマージされます。
 
 #### 他のデータ形式も変換したい
 
@@ -414,7 +446,9 @@ class CropAndAddSuffix(Crop):
         }
 ```
 
-{{< collapse "実行結果" >}}
+{{< collapse "実行コード" >}}
+
+`CropAndAddSuffix`を実行しています。
 
 ```python
 transform = CropAndAddSuffix(100, 100, 300, 300, p=1)
@@ -434,21 +468,184 @@ print(f"transformed['image_name']: {transformed['image_name']}")
 
 {{< /collapse >}}
 
-前節で作成した`Crop`クラスに`apply_to_str`メソッドと`targets`プロパティを追加しています。このように `targets`プロパティで渡したキーに対して、処理させたいメソッドを指定することで、他のデータ形式にも変換処理を適用できます。  
-こうすると、変換時に`image_name`というキーで渡した文字列に対して、`apply_to_str`が適用され、`/cropped`というsuffixを追加します。  
+前節で作成した`Crop`クラスに`apply_to_str()`と`targets`プロパティを追加しています。このように `targets`プロパティで渡したキーに対して、処理させたいメソッドを指定することで、他のデータ形式にも変換処理を適用できます。  
+こうすると、変換時に`image_name`というキーで渡した文字列に対して、`apply_to_str()`が適用され、`/cropped`というsuffixを追加します。  
 あまりやらないですが、どういう処理をした画像なのかをファイル名に残しておきたい場合などに使えるかもしれません。  
 
 
 #### 他の入力情報を利用した変換をしたい
 
-masksからdog_mask, cat_maskに変更
+[マスクが複数になったら](#マスクが複数になったら)で紹介したように、複数のマスクがある場合には次のように`masks`にマスクのリストを渡すことで、それぞれのマスクに同じ変換を適用できます。
+
+```python
+transformed = transform(image=image, masks=[mask_dog, mask_cat])
+```
+
+例えば、犬と猫のマスクを両方渡して、犬の方のマスク領域だけを抽出する変換クラス`ExtractDogArea`を素朴に作成すると次のようになります。
+
+```python
+class CropDogArea(A.DualTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply, p)
+    
+    def apply(
+        self, 
+        image: np.ndarray,
+        x_min: int,
+        y_min: int,
+        x_max: int,
+        y_max: int,
+        **params,
+    ) -> np.ndarray:
+        return image[y_min:y_max, x_min:x_max]
+    
+    def get_params_dependent_on_targets(self, params):
+        mask = params["masks"][0] # HERE!
+        indices = np.where(mask > 0)
+        y_min, y_max = indices[0].min(), indices[0].max()
+        x_min, x_max = indices[1].min(), indices[1].max()
+        
+        return {
+            "x_min": x_min,
+            "y_min": y_min,
+            "x_max": x_max,
+            "y_max": y_max,
+        }
+
+    @property
+    def targets_as_params(self):
+        return ["masks"]
+```
+
+{{< collapse "実行コード" >}}
+
+```python
+transform = A.Compose([
+    CropDogArea(p=1), 
+    A.PadIfNeeded(
+        min_height=210,
+        min_width=140,
+        value=(128, 128, 128),
+        mask_value=128,
+    )],
+)
+
+image = cv2.imread('data/images/dog_and_cat.png')
+mask_dog = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE)
+mask_cat = cv2.imread('data/masks/cat.png', cv2.IMREAD_GRAYSCALE)
+transformed = transform(image=image, masks=[mask_dog, mask_cat])
+grid_image = make_grid_image([transformed["image"],] + transformed['masks'], n_cols=3)
+cv2.imwrite('data/results/crop_dog_area.png', grid_image)
+```
+{{< /collapse >}}
+
+{{< tile-images cols=1 >}}
+![data/results/crop_dog_area.png](data/results/crop_dog_area.png)
+{{< /tile-images >}}
+
+しかし、これでは入力したマスクの順序を覚えておかなければならないという問題があります。様々な変換を組み合わせて適用する場合に、それらすべてのクラスで0番目のマスクが犬のマスクであることを共通化するのは難しいですし、利用する際に順序を間違えてしまう可能性もあります。`get_params_dependent_on_targets()`の中が見苦しいことになっています。
+
+ですので、`mask_dog`と`mask_cat`を`masks`にまとめて渡すのではなく、`mask_dog`と`mask_cat`をそれぞれ`dog_mask`と`cat_mask`として渡せるようにしてみましょう。
+
+```python
+class CropDogArea(A.DualTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply, p)
+    
+    def apply(
+        self, 
+        image: np.ndarray,
+        x_min: int,
+        y_min: int,
+        x_max: int,
+        y_max: int,
+        **params,
+    ) -> np.ndarray:
+        return image[y_min:y_max, x_min:x_max]
+    
+    def get_params_dependent_on_targets(self, params):
+        mask = params["mask_dog"]
+        indices = np.where(mask > 0)
+        y_min, y_max = indices[0].min(), indices[0].max()
+        x_min, x_max = indices[1].min(), indices[1].max()
+        
+        return {
+            "x_min": x_min,
+            "y_min": y_min,
+            "x_max": x_max,
+            "y_max": y_max,
+        }
+
+    @property
+    def targets_as_params(self):
+        return ["mask_dog"]
+```
+
+`get_params_dependent_on_targets()`や`targets_as_params`が`mask_dog`をそのまま利用できるようになりました。  
+しかし、なにも考えずに利用すると、`mask_dog`と`mask_cat`はマスクとして扱われないため、クロップされません。なので、実行時に「`mask_dog`と`mask_cat`はマスク処理をする対象のデータである」ことを明示的に指定する必要があります。
+
+`A.Compose`の`additional_targets`引数を使って、キーにターゲット名、値にターゲットの種類を指定します。
+
+```python
+transform = A.Compose([
+    CropDogArea(p=1), 
+    A.PadIfNeeded(
+        min_height=210,
+        min_width=140,
+        value=(128, 128, 128),
+        mask_value=128,
+    )], 
+    additional_targets={"mask_dog": "mask", "mask_cat": "mask"}
+)
+```
+
+{{< collapse "実行コード" >}}
+
+`mask_dog`, `mask_cat`をそれぞれ処理した結果は同じキーに格納されて返ってきます。
+
+```python
+image = cv2.imread('data/images/dog_and_cat.png')
+mask_dog = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE)
+mask_cat = cv2.imread('data/masks/cat.png', cv2.IMREAD_GRAYSCALE)
+transformed = transform(image=image, mask_dog=mask_dog, mask_cat=mask_cat)
+grid_image = make_grid_image([
+    transformed["image"], 
+    transformed["mask_dog"], 
+    transformed["mask_cat"]], n_cols=3)
+cv2.imwrite('data/results/crop_dog_area.png', grid_image)
+```
+
+処理結果の画像は上の結果と同じなので、ここでは省略します。
+
+{{< /collapse >}}
+
+`additional_targets` --> `targets`のように辞書をたどって行くことで、処理対象のメソッドへとたどり着きます。  
+`A.DualTransform`には次の`targets`が定義されているので、`"mask_dog"` --> `"mask"` --> `apply_to_mask()` にたどり着きます。
+
+```python
+    @property
+    def targets(self) -> Dict[str, Callable[..., Any]]:
+        return {
+            "image": self.apply,
+            "mask": self.apply_to_mask,
+            "masks": self.apply_to_masks,
+            "bboxes": self.apply_to_bboxes,
+            "keypoints": self.apply_to_keypoints,
+        }
+```
 
 #### 返り値を追加したい
+
+セマンティックセグメンテーション用のマスクを生成する。
 
 元の画像を残したままにする
 ColorJitterで元画像と変換後の画像を返す。SimCLR用。
 
 ## 仕組みの解説
+
+### ベースクラスのメソッド解説
+
+### 処理の流れ
 
 
 
