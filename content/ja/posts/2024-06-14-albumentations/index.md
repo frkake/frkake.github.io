@@ -3,8 +3,7 @@ title = 'Albumentationsにおける自作変換クラス作成'
 date = 2024-06-13T23:06:34
 pubdate = 2024-06-12T23:06:34
 tags = ['Python', 'Albumentations', 'Data Augmentation']
-draft = true
-outline = true
+draft = false
 +++
 
 
@@ -26,8 +25,8 @@ outline = true
 Albumentationsの基本的な使い方を確認するために、以下のコードを実行してみます。画像とマスクの大きさが中途半端で申し訳ないです。
 
 ```python
-image = cv2.imread('data/images/dog_and_cat.png') # image.shape: (339, 509, 3)
-mask = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE) # mask.shape: (339, 509)
+image = cv2.imread('data/images/dog_and_cat.png') # image.shape: (340, 500, 3)
+mask = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE) # mask.shape: (340, 500)
 
 transform = A.Compose([
     A.CropNonEmptyMaskIfExists(height=200, width=200, p=1),
@@ -90,9 +89,9 @@ imageとmaskが同様に変換されていることが確認できます。
 マスクが複数になったら、maskの代わりに各マスクをリストにしたmasksを引数として渡してあげると複数のマスクに同様の変換を適用してくれます。
 
 ```python
-image = cv2.imread('data/images/dog_and_cat.png') # image.shape: (339, 509, 3)
-mask_dog = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE) # mask_dog.shape: (339, 509)
-mask_cat = cv2.imread('data/masks/cat.png', cv2.IMREAD_GRAYSCALE) # mask_cat.shape: (339, 509)
+image = cv2.imread('data/images/dog_and_cat.png') # image.shape: (340, 500, 3)
+mask_dog = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE) # mask_dog.shape: (340, 500)
+mask_cat = cv2.imread('data/masks/cat.png', cv2.IMREAD_GRAYSCALE) # mask_cat.shape: (340, 500)
 transformed = transform(image=image, masks=[mask_dog, mask_cat])
 
 grid_image = make_grid_image([transformed["image"], ] + transformed['masks'], n_cols=3)
@@ -523,8 +522,8 @@ class CropDogArea(A.DualTransform):
 transform = A.Compose([
     CropDogArea(p=1), 
     A.PadIfNeeded(
-        min_height=210,
-        min_width=140,
+        min_height=200,
+        min_width=130,
         value=(128, 128, 128),
         mask_value=128,
     )],
@@ -537,11 +536,12 @@ transformed = transform(image=image, masks=[mask_dog, mask_cat])
 grid_image = make_grid_image([transformed["image"],] + transformed['masks'], n_cols=3)
 cv2.imwrite('data/results/crop_dog_area.png', grid_image)
 ```
-{{< /collapse >}}
 
-{{< tile-images cols=1 >}}
+左から画像、犬のマスク画像、猫のマスク画像に対応しており、それぞれの犬のマスク領域に対応した領域がクロップされていることがわかります。
+
 ![data/results/crop_dog_area.png](data/results/crop_dog_area.png)
-{{< /tile-images >}}
+
+{{< /collapse >}}
 
 しかし、これでは入力したマスクの順序を覚えておかなければならないという問題があります。様々な変換を組み合わせて適用する場合に、それらすべてのクラスで0番目のマスクが犬のマスクであることを共通化するのは難しいですし、利用する際に順序を間違えてしまう可能性もあります。`get_params_dependent_on_targets()`の中が見苦しいことになっています。
 
@@ -615,7 +615,12 @@ grid_image = make_grid_image([
 cv2.imwrite('data/results/crop_dog_area.png', grid_image)
 ```
 
-処理結果の画像は上の結果と同じなので、ここでは省略します。
+処理結果の画像は上の結果と同じですが再掲します。  
+左から画像、犬のマスク画像、猫のマスク画像に対応しており、それぞれの犬のマスク領域に対応した領域がクロップされていることがわかります。
+
+{{< tile-images cols=1 >}}
+![data/results/crop_dog_area.png](data/results/crop_dog_area.png)
+{{< /tile-images >}}
 
 {{< /collapse >}}
 
@@ -634,22 +639,117 @@ cv2.imwrite('data/results/crop_dog_area.png', grid_image)
         }
 ```
 
-#### 返り値を追加したい
+#### 複数種類の入力データを組み合わせた処理をしたい && 返り値を追加したい
 
-セマンティックセグメンテーション用のマスクを生成する。
+これまでの変換処理は、それぞれの画像やマスクに対して処理を行い、その結果を`image`や`masks`として返していました。しかし、処理結果に追加の情報を返したい場合や、複数種類の入力データを組み合わせた処理を行いたい場合もあるでしょう。
 
-元の画像を残したままにする
-ColorJitterで元画像と変換後の画像を返す。SimCLR用。
+この節では、複数の別々に用意したカテゴリマスクを一枚の画像にまとめる処理を行う変換クラス`MergeMasks`を作成してみます。  
+具体的には、犬、猫、芝生、木の4つのマスクを別々に用意したので、それらを一枚の画像にまとめてセグメンテーション用のマスクを作成します。ただし、犬、猫はオブジェクトクラス、芝生、木は背景クラスとしてラベルをまとめます。
 
-## 仕組みの解説
+```python
+class MergeMasks(A.DualTransform):
+    def __init__(
+        self, 
+        object_value: Tuple[int, int, int] = (255, 0, 0),
+        bg_value: Tuple[int, int, int] = (0, 255, 0),
+        always_apply=False,
+        p=1,
+    ):
+        super().__init__(always_apply, p)
+        self.object_value = object_value
+        self.bg_value = bg_value
+    
+    def apply(self, img: np.ndarray, **params) -> np.ndarray:
+        return img
+    
+    def apply_with_params(
+        self, 
+        params: Dict[str, Any], 
+        *args: Any, 
+        **kwargs: Any,
+    ) -> Dict[str, Any]:
+        res = super().apply_with_params(params, *args, **kwargs)
+        
+        H, W = res["mask_dog"].shape
+        canvas = np.zeros((H, W, 3), dtype=np.uint8)
+        
+        mask_object = np.logical_or(res["mask_dog"], res["mask_cat"])
+        mask_bg = np.logical_or(res["mask_grass"], res["mask_tree"])
+        
+        canvas[mask_object] = self.object_value
+        canvas[mask_bg] = self.bg_value        
+        res["mask_merged"] = canvas
+        res["image_overlay"] = cv2.addWeighted(res["image"], 0.5, canvas, 0.5, 0)
+        
+        return res
+    
+    def get_transform_init_args_names(self) -> Tuple[str]:
+        return ("object_value", "bg_value")
+```
 
-### ベースクラスのメソッド解説
+{{< collapse "実行コード" >}}
 
-### 処理の流れ
+画像と各マスクを[-10, 10]度の範囲でランダムに回転させ、`MergeMasks`でマスクをマージしてみます。
 
+処理の対象がわかりやすいように、少しコードが長くなってしまいますが、犬、猫、芝生、木のマスクを読み込んでtransformに渡しています。  
+返り値には、マージ後のマスク`mask_merged`と、画像とマスクを重ねた画像`image_overlay`が追加されているので、それらを描画してみました。
 
+```python
+transform = A.Compose([
+    A.Rotate(limit=10, border_mode=0, p=1), 
+    MergeMasks(object_value=(0, 170, 246), bg_value=(255, 90, 0), p=1),
+], additional_targets={
+    "mask_dog": "mask", 
+    "mask_cat": "mask",
+    "mask_grass": "mask",
+    "mask_tree": "mask",
+})
 
+image = cv2.imread('data/images/dog_and_cat.png')
+mask_dog = cv2.imread('data/masks/dog.png', cv2.IMREAD_GRAYSCALE)
+mask_cat = cv2.imread('data/masks/cat.png', cv2.IMREAD_GRAYSCALE)
+mask_grass = cv2.imread('data/masks/grass.png', cv2.IMREAD_GRAYSCALE)
+mask_tree = cv2.imread('data/masks/tree.png', cv2.IMREAD_GRAYSCALE)
+transformed = transform(
+    image=image, 
+    mask_dog=mask_dog, 
+    mask_cat=mask_cat,
+    mask_grass=mask_grass,
+    mask_tree=mask_tree,
+)
+grid_image = make_grid_image([
+    transformed["image"], 
+    transformed["mask_merged"], 
+    transformed["image_overlay"]], n_cols=3)
+cv2.imwrite('data/results/merged_mask.png', grid_image)
+```
 
+![data/results/merged_mask.png](data/results/merged_mask.png)
 
+{{< /collapse >}}
 
+複数のマスクを組み合わせたり、追加の情報を返す場合は、`apply_with_params()`メソッドを使うと実現できます。  
+本来の`apply_with_params()`は、各ターゲットに対して適用するメソッドの選択やちょっとしたパラメータの更新を行い、実際に各処理（`apply()`や`apply_to_mask()`など）を実行するメソッドです。
+言い換えると、各入力情報を保持しており、`apply_with_params()`の返り値がtransformしたときの返り値となります。ですので、ここでは返り値の辞書に新たな要素を追加しています。
+引数である`params`には、`get_params()`と`get_params_dependent_on_targets()`から受け取った値が入っており、`args`, `kwargs`には、各入力データが入っています。
 
+## ベースクラスのリファレンス
+
+|メソッド or プロパティ | 説明 |
+| --- | --- |
+| `apply()` | 画像に対する変換処理を行うメソッド。 `A.DualTransform` の場合は、マスクに対する処理も行う。 |
+| `targets_as_params` | `get_params_dependent_on_targets()`で利用するターゲットを指定 |
+| `add_targets()` | 辞書形式で追加で処理したいターゲット名とその対象として扱わせたいターゲット名を指定します。上の例で出していた`A.Compose`の`additional_targets`と同じです。`A.Compose`で`additional_targets`を指定すると、内部的には各変換クラスの`add_targets()`が呼ばれています。 |
+| `apply_with_params()` | `targets`で指定した辞書に従って、各ターゲットに対する処理を行う。処理を行う前に`update_params()`によるパラメータ更新も行う。 |
+| `get_params()` | 入力データに依存しないパラメータを準備する関数。変換ごとに一度しか呼ばれないので、同時に入力したデータでランダム値を共有したい場合に便利。 |
+| `get_params_dependent_on_targets()` | 入力データに依存したパラメータを準備する関数。`get_params()`の上位互換という印象。 |
+| `get_transform_init_args_names()` | そのクラスを初期化するのに必要なパラメータ名のリストを返す。通常は不要だが、`A.ReplanCompose`などで同じパラメータを使いまわす場合に使う。 |
+| `set_deterministic()` | |
+| `targets` | 変換対象のターゲット名とそれを処理するメソッドを指定する。 |
+| `update_params()` | `apply_with_params()`内部で最初に呼ばれる。 `params`と`kwargs`の両方が渡されるので、`get_params()`, `get_params_dependent_on_targets()`の中で一番使える情報が多い。 |
+
+変換に利用されるパラメータ`params`は、次の3つのメソッドを順番に呼び出し、辞書を更新していきます。
+
+1. `get_params()`
+2. `get_params_dependent_on_targets()`
+3. `update_params()`
