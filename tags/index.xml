@@ -11,7 +11,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Albumentations</title>
+      <link>https://takumi-iida.com/tags/albumentations/</link>
+      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
+      
+      <guid>https://takumi-iida.com/tags/albumentations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Augmentation</title>
+      <link>https://takumi-iida.com/tags/data-augmentation/</link>
+      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
+      
+      <guid>https://takumi-iida.com/tags/data-augmentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://takumi-iida.com/tags/python/</link>
+      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
+      
+      <guid>https://takumi-iida.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>3D Gaussian Splatting</title>
       <link>https://takumi-iida.com/tags/3d-gaussian-splatting/</link>

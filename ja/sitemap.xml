@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://takumi-iida.com/tags/3d-gaussian-splatting/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <loc>https://takumi-iida.com/tags/albumentations/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <loc>https://takumi-iida.com/posts/2024-06-14-albumentations/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://takumi-iida.com/tags/data-augmentation/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
     <loc>https://takumi-iida.com/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -21,17 +24,14 @@
                 href="https://takumi-iida.com/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/tags/neural-rendering/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
-  </url><url>
     <loc>https://takumi-iida.com/posts/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/rendering/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <loc>https://takumi-iida.com/tags/python/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
     <loc>https://takumi-iida.com/tags/</loc>
-    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -42,6 +42,21 @@
                 hreflang="ja-jp"
                 href="https://takumi-iida.com/tags/"
                 />
+  </url><url>
+    <loc>https://takumi-iida.com/tags/3d-gaussian-splatting/</loc>
+    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+  </url><url>
+    <loc>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</loc>
+    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+  </url><url>
+    <loc>https://takumi-iida.com/tags/neural-rendering/</loc>
+    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+  </url><url>
+    <loc>https://takumi-iida.com/tags/rendering/</loc>
+    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
+  </url><url>
+    <loc>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</loc>
+    <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
     <loc>https://takumi-iida.com/tags/adversarial-examples/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>

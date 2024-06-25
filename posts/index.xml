@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Albumentationsにおける自作変換クラス作成</title>
+      <link>https://takumi-iida.com/posts/2024-06-14-albumentations/</link>
+      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
+      
+      <guid>https://takumi-iida.com/posts/2024-06-14-albumentations/</guid>
+      <description>Project Paper Code Other なんだかものすごく久しぶりの投稿ですが、今回はAlbumentationsにおける自作変換クラス作成について書いていきます。 画像変換</description>
+    </item>
+    
     <item>
       <title>3D Gaussian Splatting</title>
       <link>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</link>
@@ -19,6 +28,15 @@
       
       <guid>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</guid>
       <description>@Article{kerbl3Dgaussians, author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkhler, Thomas and Drettakis, George}, title = {3D Gaussian Splatting for Real-Time Radiance Field Rendering}, journal = {ACM Transactions on Graphics}, number = {4}, volume = {42}, month = {July}, year = {2023}, url = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/} } Project Code 高解像度(1080p)で学習時間が短く、描画</description>
+    </item>
+    
+    <item>
+      <title>TensorRT Developer Guideを読んだメモ</title>
+      <link>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</link>
+      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
+      
+      <guid>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</guid>
+      <description>Project 2. TensorRT&amp;rsquo;s Capabilities TensorRTには、モデルの定義とターゲットGPUへの最適化を行うビルドフェーズと、最適化されたモデルを実行する実行フェーズの2つ</description>
     </item>
     
     <item>
