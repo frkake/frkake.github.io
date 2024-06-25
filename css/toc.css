@@ -1,0 +1,39 @@
+.article-outline {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc-level-1 {
+    margin-left: 0;
+}
+
+.toc-level-2 {
+    margin-left: 20px;
+}
+
+.toc-level-3 {
+    margin-left: 40px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #333;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+.toc a.active {
+    color: red;
+}
