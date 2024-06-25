@@ -38,7 +38,7 @@ enableRobotsTXT = false
     comments = false
     hidemeta = false
     hideSummary = true
-    showtoc = false
+    showtoc = true
     tocopen = false
     hideFooter = true
 
