@@ -174,7 +174,7 @@ cv2.imwrite('data/results/select_b.png', transformed["image"])
 `get_transform_init_args_names()`というメソッドは、`A.ReplayCompose`を使うときに必要になるメソッドです。まだ必要ないのですが、後で`A.ReplayCompose`の説明もしたいので、まとめて定義しておきます。  
 `apply()`には、`transform(image=image)`で渡されたimageが渡されます。それに対して処理を行って返却すると、返り値の辞書の`image`キーに値が格納されます。  
 
-#### DualTransformを継承したクラス1
+#### DualTransformを継承したクラス
 
 さて、次は指定した領域をクロップするクラス `Crop`を作成してみます。`A.Crop`の簡略版です。
 
