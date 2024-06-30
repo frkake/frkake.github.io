@@ -125,7 +125,7 @@ number = "IP-2011-10-18024"
 title = "PCT: Perspective Cue Training Framework for Multi-Camera BEV Segmentation"
 authors = ["Haruya Ishikawa", "Takumi Iida", "Yoshinori Konishi", "Yoshimitsu Aoki"]
 bold = "Takumi Iida"
-conference = "arXiv"
+conference = "IROS 2024 (Oral)"
 link = "https://arxiv.org/abs/2403.12530"
 date = "2024"
 
