@@ -166,6 +166,12 @@ patent_number = "CN116935353A"
 application_number = "CN202310868168.3"
 
 [[post]]
+title = "[CorrMLP] Correlation-aware Coarse-to-fine MLPs for Deformable Medical Image Registrationの論文紹介"
+postlink = "https://speakerdeck.com/frkake/corrmlp-correlation-aware-coarse-to-fine-mlps-for-deformable-medical-image-registration"
+event = "第61回 コンピュータビジョン勉強会＠関東（前編）"
+eventlink = "https://kantocv.connpass.com/event/321174/"
+
+[[post]]
 title = "ゼロショット物体検出の研究動向"
 event = "【SenseTime Japan × Sansan】画像処理勉強会"
 postlink = "https://speakerdeck.com/sensetime_japan/zerosiyotutowu-ti-jian-chu-falseyan-jiu-dong-xiang"
