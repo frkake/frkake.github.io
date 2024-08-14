@@ -16,7 +16,7 @@ draft = false
 画像変換するとき、Albumentationsって便利ですよね。なんといっても変換できる種類の数が豊富なのが嬉しいです。  
 ただ、自分で新たに変換クラスを作成しようとすると、ドキュメントが豊富とは言えないと思うので、誰かの役に立てばと思い、今回の記事を書くことにしました（未来の自分のためかもしれない）。
 
-実行コードはすべて[このリポジトリ](https://github.com/frkake/albumentations_post)にあります。
+実行例はすべて[このリポジトリ](https://github.com/frkake/albumentations_post)にあります。
 
 ## 基本的な使い方
 
@@ -149,7 +149,7 @@ class SelectChannel(A.ImageOnlyTransform):
         return ("channel",)
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 青だけ残す処理を行ってみます。OpenCVで読み込んでおり、BGRなので0チャネル目が青です。   
 
@@ -208,7 +208,7 @@ class Crop(A.DualTransform):
         return ("x_min", "y_min", "x_max", "y_max")
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 ```python
 transform = A.Compose([
@@ -314,7 +314,7 @@ class RandomShift(A.DualTransform):
         }
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 上下左右に[-100, 100]ピクセルの範囲でランダムにシフトする処理を行ってみます。
 
@@ -394,7 +394,7 @@ class RandomCrop(A.DualTransform):
         return ["image"]
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 画像から200x200サイズの領域をランダムにクロップしてみます。今回もランダムになっているか確認するために2回実行してみます。
 
@@ -445,7 +445,7 @@ class CropAndAddSuffix(Crop):
         }
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 `CropAndAddSuffix`を実行しています。
 
@@ -516,7 +516,7 @@ class CropDogArea(A.DualTransform):
         return ["masks"]
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 ```python
 transform = A.Compose([
@@ -599,7 +599,7 @@ transform = A.Compose([
 )
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 `mask_dog`, `mask_cat`をそれぞれ処理した結果は同じキーに格納されて返ってきます。
 
@@ -687,7 +687,7 @@ class MergeMasks(A.DualTransform):
         return ("object_value", "bg_value")
 ```
 
-{{< collapse "実行コード" >}}
+{{< collapse "実行例" >}}
 
 画像と各マスクを[-10, 10]度の範囲でランダムに回転させ、`MergeMasks`でマスクをマージしてみます。
 
