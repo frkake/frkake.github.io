@@ -20,7 +20,7 @@ enableRobotsTXT = false
     title = "Less is more"
     description = "Description"
     keywords = ["Portfolio", "Blog", ]
-    images = ["/images/iida_takumi_italy.jpg", ]
+    images = ["/images/steamed_rice_brown.png", ]
     DateFormat = "2006-01-02"
     defaultTheme = "auto"
     draft = false
@@ -53,7 +53,7 @@ enableRobotsTXT = false
         title = "Takumi Iida"
         subtitle = "Computer Vision Researcher/Engineer"
         description = ""
-        imageUrl = "/images/iida_takumi_italy.jpg"
+        # imageUrl = "/images/iida_takumi_italy.jpg"
 
     [[params.socialIcons]]
         name = "github"

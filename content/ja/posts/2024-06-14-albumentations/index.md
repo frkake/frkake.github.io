@@ -4,6 +4,7 @@ date = 2024-06-13T23:06:34
 pubdate = 2024-06-12T23:06:34
 tags = ['Python', 'Albumentations', 'Data Augmentation']
 draft = false
+images = ['data/thumbnail.png']
 +++
 
 
