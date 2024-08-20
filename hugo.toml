@@ -25,6 +25,8 @@ enableRobotsTXT = false
     defaultTheme = "auto"
     draft = false
 
+    cover.image = "/images/steamed_rice_brown.png"
+
     ShowReadingTime = false
     ShowPostNavLinks = true
     ShowBreadCrumbs = false
