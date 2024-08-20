@@ -1,4 +1,4 @@
-{{ if eq .Site.Params.profileMode.enabled false }}
+{{ if eq .Site.Params.profileMode.enabled true }}
     {{ $.Scratch.Set "redirectURL" "/en/aboutme" }}
 {{ else }}
     {{ $.Scratch.Set "redirectURL" "posts" }}
