@@ -9,117 +9,93 @@
       <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
       <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate>
+    <atom:link href="https://takumi-iida.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Albumentationsにおける自作変換クラス作成</title>
       <link>https://takumi-iida.com/posts/2024-06-14-albumentations/</link>
-      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
-      
+      <pubDate>Wed, 12 Jun 2024 23:06:34 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2024-06-14-albumentations/</guid>
       <description>Project Paper Code Other なんだかものすごく久しぶりの投稿ですが、今回はAlbumentationsにおける自作変換クラス作成について書いていきます。 画像変換</description>
     </item>
-    
     <item>
       <title>3D Gaussian Splatting</title>
       <link>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</link>
-      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
-      
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</guid>
       <description>@Article{kerbl3Dgaussians, author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkhler, Thomas and Drettakis, George}, title = {3D Gaussian Splatting for Real-Time Radiance Field Rendering}, journal = {ACM Transactions on Graphics}, number = {4}, volume = {42}, month = {July}, year = {2023}, url = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/} } Project Code 高解像度(1080p)で学習時間が短く、描画</description>
     </item>
-    
     <item>
       <title>TensorRT Developer Guideを読んだメモ</title>
       <link>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</link>
-      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
-      
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</guid>
       <description>Project 2. TensorRT&amp;rsquo;s Capabilities TensorRTには、モデルの定義とターゲットGPUへの最適化を行うビルドフェーズと、最適化されたモデルを実行する実行フェーズの2つ</description>
     </item>
-    
     <item>
       <title>PhotoGuard</title>
       <link>https://takumi-iida.com/posts/2023-10-01-photoguard/</link>
-      <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
-      
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-10-01-photoguard/</guid>
       <description>@InProceedings{pmlr-v202-salman23a, title = {Raising the Cost of Malicious AI-Powered Image Editing}, author = {Salman, Hadi and Khaddaj, Alaa and Leclerc, Guillaume and Ilyas, Andrew and Madry, Aleksander}, booktitle = {Proceedings of the 40th International Conference on Machine Learning}, pages = {29894--29918}, year = {2023}, editor = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan}, volume = {202}, series = {Proceedings of</description>
     </item>
-    
     <item>
       <title>AdvDM</title>
       <link>https://takumi-iida.com/posts/2023-09-27-advdm/</link>
-      <pubDate>Sun, 01 Oct 2023 21:11:45 +0000</pubDate>
-      
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-09-27-advdm/</guid>
       <description>@misc{liang2023adversarial, title={Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples}, author={Chumeng Liang and Xiaoyu Wu and Yang Hua and Jiaru Zhang and Yiming Xue and Tao Song and Zhengui Xue and Ruhui Ma and Haibing Guan}, year={2023}, eprint={2302.04578}, archivePrefix={arXiv}, primaryClass={cs.CV} } Project Paper Code Video モンテカルロ法を用いて生成過程の潜在変数を</description>
     </item>
-    
     <item>
       <title>Glaze</title>
       <link>https://takumi-iida.com/posts/2023-09-23-glaze/</link>
-      <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
-      
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-09-23-glaze/</guid>
       <description>@inproceedings {291164, author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao}, title = {Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models}, booktitle = {32nd USENIX Security Symposium (USENIX Security 23)}, year = {2023}, isbn = {978-1-939133-37-3}, address = {Anaheim, CA}, pages = {2187--2204}, url = {https://www.usenix.org/conference/usenixsecurity23/presentation/shan}, publisher = {USENIX Association}, month = {Aug} } Project Paper アー</description>
     </item>
-    
-    
     <item>
       <title>移行しました</title>
       <link>https://takumi-iida.com/posts/2023-09-18-introduction/</link>
       <pubDate>Mon, 18 Sep 2023 18:04:19 +0900</pubDate>
-      
       <guid>https://takumi-iida.com/posts/2023-09-18-introduction/</guid>
       <description>動機とか 以前はJekyllを使って自前サイトを作っていたのですが、なんか微妙に感じていました。 Hugoもちょっと触ってみたいと思ったので、触</description>
     </item>
-    
     <item>
       <title>MultiBox</title>
       <link>https://takumi-iida.com/posts/2021-07-25-multibox/</link>
-      <pubDate>Mon, 26 Jul 2021 00:47:15 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Dec 2013 19:40:51 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2021-07-25-multibox/</guid>
       <description>@InProceedings{Erhan_2014_CVPR, author = {Erhan, Dumitru and Szegedy, Christian and Toshev, Alexander and Anguelov, Dragomir}, title = {Scalable Object Detection using Deep Neural Networks}, booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2014} } Paper Video MultiBoxは、画像中に複数インスタンスが会</description>
     </item>
-    
     <item>
       <title>OverFeat</title>
       <link>https://takumi-iida.com/posts/2021-07-24-overfeat/</link>
-      <pubDate>Sun, 25 Jul 2021 04:03:55 +0000</pubDate>
-      
+      <pubDate>Sat, 21 Dec 2013 09:52:33 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2021-07-24-overfeat/</guid>
       <description>@misc{sermanet2014overfeat, title={OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks}, author={Pierre Sermanet and David Eigen and Xiang Zhang and Michael Mathieu and Rob Fergus and Yann LeCun}, year={2014}, eprint={1312.6229}, archivePrefix={arXiv}, primaryClass={cs.CV} } Paper Code Video 従来手法とCNNを組み合わせた初の論文です。R-CNNと似たような位置</description>
     </item>
-    
     <item>
       <title>R-CNN</title>
       <link>https://takumi-iida.com/posts/2021-07-24-r-cnn/</link>
-      <pubDate>Sat, 24 Jul 2021 04:08:08 +0000</pubDate>
-      
+      <pubDate>Mon, 11 Nov 2013 18:43:49 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2021-07-24-r-cnn/</guid>
       <description>@InProceedings{Girshick_2014_CVPR, author = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra}, title = {Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation}, booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2014} } Paper Code CNNと領域提案手法を統合した先駆け的論文</description>
     </item>
-    
     <item>
       <title>記事で紹介した論文の出版年</title>
       <link>https://takumi-iida.com/pubdate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://takumi-iida.com/pubdate/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>飯田啄巳</title>
       <link>https://takumi-iida.com/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://takumi-iida.com/aboutme/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

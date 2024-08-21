@@ -9,35 +9,30 @@
       <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
       <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 01 Oct 2023 21:11:56 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Oct 2023 21:11:56 +0000</lastBuildDate>
+    <atom:link href="https://takumi-iida.com/tags/art/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PhotoGuard</title>
       <link>https://takumi-iida.com/posts/2023-10-01-photoguard/</link>
-      <pubDate>Sun, 01 Oct 2023 21:11:56 +0000</pubDate>
-      
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-10-01-photoguard/</guid>
       <description>@InProceedings{pmlr-v202-salman23a, title = {Raising the Cost of Malicious AI-Powered Image Editing}, author = {Salman, Hadi and Khaddaj, Alaa and Leclerc, Guillaume and Ilyas, Andrew and Madry, Aleksander}, booktitle = {Proceedings of the 40th International Conference on Machine Learning}, pages = {29894--29918}, year = {2023}, editor = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan}, volume = {202}, series = {Proceedings of</description>
     </item>
-    
     <item>
       <title>AdvDM</title>
       <link>https://takumi-iida.com/posts/2023-09-27-advdm/</link>
-      <pubDate>Sun, 01 Oct 2023 21:11:45 +0000</pubDate>
-      
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-09-27-advdm/</guid>
       <description>@misc{liang2023adversarial, title={Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples}, author={Chumeng Liang and Xiaoyu Wu and Yang Hua and Jiaru Zhang and Yiming Xue and Tao Song and Zhengui Xue and Ruhui Ma and Haibing Guan}, year={2023}, eprint={2302.04578}, archivePrefix={arXiv}, primaryClass={cs.CV} } Project Paper Code Video モンテカルロ法を用いて生成過程の潜在変数を</description>
     </item>
-    
     <item>
       <title>Glaze</title>
       <link>https://takumi-iida.com/posts/2023-09-23-glaze/</link>
-      <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
-      
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-09-23-glaze/</guid>
       <description>@inproceedings {291164, author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao}, title = {Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models}, booktitle = {32nd USENIX Security Symposium (USENIX Security 23)}, year = {2023}, isbn = {978-1-939133-37-3}, address = {Anaheim, CA}, pages = {2187--2204}, url = {https://www.usenix.org/conference/usenixsecurity23/presentation/shan}, publisher = {USENIX Association}, month = {Aug} } Project Paper アー</description>
     </item>
-    
   </channel>
 </rss>

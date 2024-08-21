@@ -9,17 +9,16 @@
       <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
       <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 23 Sep 2023 02:13:14 +0900</lastBuildDate><atom:link href="https://takumi-iida.com/tags/text-to-image/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 02:13:14 +0900</lastBuildDate>
+    <atom:link href="https://takumi-iida.com/tags/text-to-image/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Glaze</title>
       <link>https://takumi-iida.com/posts/2023-09-23-glaze/</link>
-      <pubDate>Sat, 23 Sep 2023 02:13:14 +0900</pubDate>
-      
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-09-23-glaze/</guid>
       <description>@inproceedings {291164, author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao}, title = {Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models}, booktitle = {32nd USENIX Security Symposium (USENIX Security 23)}, year = {2023}, isbn = {978-1-939133-37-3}, address = {Anaheim, CA}, pages = {2187--2204}, url = {https://www.usenix.org/conference/usenixsecurity23/presentation/shan}, publisher = {USENIX Association}, month = {Aug} } Project Paper アー</description>
     </item>
-    
   </channel>
 </rss>

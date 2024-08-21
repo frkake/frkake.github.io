@@ -9,17 +9,16 @@
       <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
       <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/neural-rendering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 12:53:11 +0000</lastBuildDate>
+    <atom:link href="https://takumi-iida.com/tags/neural-rendering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Gaussian Splatting</title>
       <link>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</link>
-      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
-      
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</guid>
       <description>@Article{kerbl3Dgaussians, author = {Kerbl, Bernhard and Kopanas, Georgios and Leimkhler, Thomas and Drettakis, George}, title = {3D Gaussian Splatting for Real-Time Radiance Field Rendering}, journal = {ACM Transactions on Graphics}, number = {4}, volume = {42}, month = {July}, year = {2023}, url = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/} } Project Code 高解像度(1080p)で学習時間が短く、描画</description>
     </item>
-    
   </channel>
 </rss>

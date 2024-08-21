@@ -9,17 +9,16 @@
       <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
       <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 25 Jul 2021 04:03:55 +0000</lastBuildDate><atom:link href="https://takumi-iida.com/tags/1-stage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 04:03:55 +0000</lastBuildDate>
+    <atom:link href="https://takumi-iida.com/tags/1-stage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OverFeat</title>
       <link>https://takumi-iida.com/posts/2021-07-24-overfeat/</link>
-      <pubDate>Sun, 25 Jul 2021 04:03:55 +0000</pubDate>
-      
+      <pubDate>Sat, 21 Dec 2013 09:52:33 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2021-07-24-overfeat/</guid>
       <description>@misc{sermanet2014overfeat, title={OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks}, author={Pierre Sermanet and David Eigen and Xiang Zhang and Michael Mathieu and Rob Fergus and Yann LeCun}, year={2014}, eprint={1312.6229}, archivePrefix={arXiv}, primaryClass={cs.CV} } Paper Code Video 従来手法とCNNを組み合わせた初の論文です。R-CNNと似たような位置</description>
     </item>
-    
   </channel>
 </rss>
