@@ -55,7 +55,7 @@ enableRobotsTXT = false
         title = "Takumi Iida"
         subtitle = "Computer Vision Researcher/Engineer"
         description = ""
-        # imageUrl = "/images/iida_takumi_italy.jpg"
+        imageUrl = "/images/iida_takumi_italy.jpg"
 
     [[params.socialIcons]]
         name = "github"
