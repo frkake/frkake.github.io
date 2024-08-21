@@ -2,7 +2,7 @@
 type = "biography"
 title = "飯田啄巳"
 biography = "コンピュータビジョン エンジニア/リサーチャー"
-image = "/images/iida_takumi_italy.jpg"
+profile_image = "/images/iida_takumi_italy.jpg"
 # twitter = "https://twitter.com/frkake"
 github = "https://github.com/frkake"
 linkedin = "https://www.linkedin.com/in/takumi-iida/"

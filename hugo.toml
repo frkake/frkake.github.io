@@ -50,12 +50,12 @@ enableRobotsTXT = false
         text = "Less is more"
         icon = "/images/steamed_rice_brown.svg"
 
-    [params.profileMode]
-        enabled = false
-        title = "Takumi Iida"
-        subtitle = "Computer Vision Researcher/Engineer"
-        description = ""
-        imageUrl = "/images/iida_takumi_italy.jpg"
+    # [params.profileMode]
+    #     enabled = false
+    #     title = "Takumi Iida"
+    #     subtitle = "Computer Vision Researcher/Engineer"
+    #     description = ""
+    #     imageUrl = "/images/iida_takumi_italy.jpg"
 
     [[params.socialIcons]]
         name = "github"
