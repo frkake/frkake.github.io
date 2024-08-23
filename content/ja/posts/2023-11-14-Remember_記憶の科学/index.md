@@ -1,7 +1,6 @@
 +++
 title = '[読書メモ] Remember　記憶の科学 しっかり覚えて上手に忘れるための18章'
 date = 2023-11-13T12:53:11
-pubdate = 2023-03-01T00:00:00
 tags = ["Book", "Review", ]
 draft = true
 +++
