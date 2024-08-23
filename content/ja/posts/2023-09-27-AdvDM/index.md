@@ -3,6 +3,8 @@ title = 'AdvDM'
 date = 2023-10-01T21:11:45
 pubdate = 2023-02-02
 tags = ["ICML", "Adversarial Examples", "Diffusion Model", "Art"]
+cover.image = "image.png"
+cover.caption = "コンセプト図"
 +++
 
 {{< cite >}}

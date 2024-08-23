@@ -3,6 +3,8 @@ title = '3D Gaussian Splatting'
 date = 2023-11-13T12:53:11
 pubdate = 2023-03-01T00:00:00
 tags = ["Rendering", "Neural rendering", "3D Gaussian Splatting", ]
+cover.image = "image-1.png"
+cover.caption = "全体図"
 +++
 
 {{< cite >}}

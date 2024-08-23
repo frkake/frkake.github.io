@@ -3,6 +3,8 @@ title = 'PhotoGuard'
 date = 2023-10-01T21:11:56
 pubdate = 2023-07-01T00:00:00
 tags = ["ICML", "Adversarial Examples", "Diffusion Model", "Art"]
+cover.image = "image.png"
+cover.caption = "脅威モデルと解決策"
 +++
 
 {{< cite >}}
@@ -32,8 +34,6 @@ tags = ["ICML", "Adversarial Examples", "Diffusion Model", "Art"]
 摂動を加えて、AIによる画像編集コストを上げる。（この論文では予防接種と呼んでいる）
 
 ## PhotoGuard
-
-![脅威モデルと解決策](image.png)
 
 攻撃方法（予防方法）は次の2種類。
 
