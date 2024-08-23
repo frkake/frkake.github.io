@@ -11,12 +11,19 @@
     </image>
     <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2024 01:08:02 +0000</lastBuildDate>
     <atom:link href="https://takumi-iida.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSIIのロードマップ</title>
+      <link>https://takumi-iida.com/posts/2024-08-11-ssii_roadmap/</link>
+      <pubDate>Mon, 22 Jul 2024 01:08:02 +0000</pubDate>
+      <guid>https://takumi-iida.com/posts/2024-08-11-ssii_roadmap/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Albumentationsにおける自作変換クラス作成</title>
       <link>https://takumi-iida.com/posts/2024-06-14-albumentations/</link>
-      <pubDate>Wed, 12 Jun 2024 23:06:34 +0000</pubDate>
+      <pubDate>Thu, 13 Jun 2024 23:06:34 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2024-06-14-albumentations/</guid>
       <description>Project Paper Code Other なんだかものすごく久しぶりの投稿ですが、今回はAlbumentationsにおける自作変換クラス作成について書いていきます。 画像変換</description>
     </item>
@@ -30,7 +37,7 @@
     <item>
       <title>TensorRT Developer Guideを読んだメモ</title>
       <link>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</link>
-      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Nov 2023 12:53:11 +0000</pubDate>
       <guid>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</guid>
       <description>Project 2. TensorRT&amp;rsquo;s Capabilities TensorRTには、モデルの定義とターゲットGPUへの最適化を行うビルドフェーズと、最適化されたモデルを実行する実行フェーズの2つ</description>
     </item>
