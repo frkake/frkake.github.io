@@ -26,6 +26,7 @@ enableRobotsTXT = false
     draft = false
 
     cover.image = "/images/steamed_rice_brown.png"
+    env = "production"
 
     ShowReadingTime = false
     ShowPostNavLinks = true
