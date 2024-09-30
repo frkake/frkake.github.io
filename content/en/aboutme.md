@@ -31,10 +31,17 @@ university = "Ritsumeikan University"
 years = "2014-2018"
 
 [[experience]]
+logo = "/images/elith_logo.webp"
+institute = "Elith Inc."
+role = "Research Manager"
+duration = "Oct.2024 - Present"
+location = "Remote"
+
+[[experience]]
 logo = "/images/lpixel.jpg"
 institute = "LPIXEL Inc. "
 role = "Machine Learning Engineer"
-duration = "Apr.2024 - Present"
+duration = "Apr.2024 - Sep.2024"
 location = "Remote (Kyoto)"
 
 [[experience]]
@@ -44,40 +51,40 @@ role = "Researcher"
 duration = "Apr.2020 - Mar.2024"
 location = "Kyoto"
 
-[[experience]]
-logo = "/images/datagrid.png"
-institute = "DATAGRID Inc. "
-role = "Part-time"
-duration = "Dec.2019 - Mar.2020"
-location = "Kyoto"
+# [[experience]]
+# logo = "/images/datagrid.png"
+# institute = "DATAGRID Inc. "
+# role = "Part-time"
+# duration = "Dec.2019 - Mar.2020"
+# location = "Kyoto"
 
-[[experience]]
-logo = "/images/sensetime.png"
-institute = "SenseTime Japan, Ltd. "
-role = "Intern"
-duration = "Jun.2019 - Sep.2019"
-location = "Kyoto"
+# [[experience]]
+# logo = "/images/sensetime.png"
+# institute = "SenseTime Japan, Ltd. "
+# role = "Intern"
+# duration = "Jun.2019 - Sep.2019"
+# location = "Kyoto"
 
-[[experience]]
-logo = "/images/hacarus.png"
-institute = "Hacarus Inc. "
-role = "Part-time"
-duration = "Jan.2019 - Apr.2019"
-location = "Kyoto"
+# [[experience]]
+# logo = "/images/hacarus.png"
+# institute = "Hacarus Inc. "
+# role = "Part-time"
+# duration = "Jan.2019 - Apr.2019"
+# location = "Kyoto"
 
-[[experience]]
-logo = "/images/denso.png"
-institute = "DENSO Corp. "
-role = "Intern"
-duration = "Feb.2019 - Feb.2019"
-location = "Tokyo"
+# [[experience]]
+# logo = "/images/denso.png"
+# institute = "DENSO Corp. "
+# role = "Intern"
+# duration = "Feb.2019 - Feb.2019"
+# location = "Tokyo"
 
-[[experience]]
-logo = "/images/hitachi.png"
-institute = "Hitachi, Ltd. "
-role = "Intern"
-duration = "Aug.2018 - Aug.2018"
-location = "Kanagawa"
+# [[experience]]
+# logo = "/images/hitachi.png"
+# institute = "Hitachi, Ltd. "
+# role = "Intern"
+# duration = "Aug.2018 - Aug.2018"
+# location = "Kanagawa"
 
 [[qualification]]
 name = "Computer Graphics Engineer Certification Test (Expert)"
@@ -165,5 +172,6 @@ authors = ["饭田啄巳", "松永英树", ]
 bold = "饭田啄巳"
 patent_number = "CN116935353A"
 application_number = "CN202310868168.3"
+link = "https://www.patentguru.com/CN116935353A"
 +++
 

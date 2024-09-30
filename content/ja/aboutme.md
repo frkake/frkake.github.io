@@ -30,10 +30,18 @@ university = "立命館大学"
 years = "2014-2018"
 
 [[experience]]
+logo = "/images/elith_logo.webp"
+institute = "株式会社Elith"
+role = "リサーチマネージャ"
+duration = "2024.10 - 現在"
+location = "リモート"
+active = true
+
+[[experience]]
 logo = "/images/lpixel.jpg"
 institute = "エルピクセル株式会社"
 role = "機械学習エンジニア"
-duration = "2024.4 - 現在"
+duration = "2024.4 - 2024.9"
 location = "リモート"
 
 [[experience]]
@@ -43,40 +51,40 @@ role = "リサーチャー"
 duration = "2020.4 - 2023.3"
 location = "京都"
 
-[[experience]]
-logo = "/images/datagrid.png"
-institute = "株式会社データグリッド"
-role = "アルバイト"
-duration = "2019.12 - 2020.3"
-location = "京都"
+# [[experience]]
+# logo = "/images/datagrid.png"
+# institute = "株式会社データグリッド"
+# role = "アルバイト"
+# duration = "2019.12 - 2020.3"
+# location = "京都"
 
-[[experience]]
-logo = "/images/sensetime.png"
-institute = "株式会社センスタイムジャパン"
-role = "インターン"
-duration = "2019.6 - 2019.9"
-location = "京都"
+# [[experience]]
+# logo = "/images/sensetime.png"
+# institute = "株式会社センスタイムジャパン"
+# role = "インターン"
+# duration = "2019.6 - 2019.9"
+# location = "京都"
 
-[[experience]]
-logo = "/images/hacarus.png"
-institute = "株式会社ハカルス"
-role = "アルバイト"
-duration = "2019.1 - 2019.4"
-location = "京都"
+# [[experience]]
+# logo = "/images/hacarus.png"
+# institute = "株式会社ハカルス"
+# role = "アルバイト"
+# duration = "2019.1 - 2019.4"
+# location = "京都"
 
-[[experience]]
-logo = "/images/denso.png"
-institute = "株式会社デンソー"
-role = "インターン"
-duration = "2019.2 - 2019.2"
-location = "東京"
+# [[experience]]
+# logo = "/images/denso.png"
+# institute = "株式会社デンソー"
+# role = "インターン"
+# duration = "2019.2 - 2019.2"
+# location = "東京"
 
-[[experience]]
-logo = "/images/hitachi.png"
-institute = "株式会社日立製作所"
-role = "インターン"
-duration = "2018.8 - 2018.8"
-location = "神奈川"
+# [[experience]]
+# logo = "/images/hitachi.png"
+# institute = "株式会社日立製作所"
+# role = "インターン"
+# duration = "2018.8 - 2018.8"
+# location = "神奈川"
 
 [[qualification]]
 name = "CGエンジニア検定 エキスパート"
@@ -164,6 +172,7 @@ authors = ["饭田啄巳", "松永英树", ]
 bold = "饭田啄巳"
 patent_number = "CN116935353A"
 application_number = "CN202310868168.3"
+link = "https://www.patentguru.com/CN116935353A"
 
 [[post]]
 title = "[CorrMLP] Correlation-aware Coarse-to-fine MLPs for Deformable Medical Image Registrationの論文紹介"

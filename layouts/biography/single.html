@@ -69,7 +69,7 @@
 <h3 class="experience-title">Experience</h3>
 <div class="experience-timeline">
     {{ range $index, $element := .Params.experience }}
-    <div class="experience-item {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }}">
+    <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }}">
     <div class="timeline-dot"></div>
     <div class="experience-card">
         <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
@@ -135,7 +135,11 @@
     {{ range $pat := .Params.patent }}
     <div class="patent-item">
         <p>
+            {{ if $pat.link }}
+            <a href="{{ $pat.link}}">
+            {{ end }}
             <strong>{{ .title }}</strong>
+            {{ if $pat.link }}</a>{{ end }}
             {{ if .translation }}<p><font size="2" margin-top="0">Translation: {{ .translation }}</font></p>{{ end }}
             {{ $boldAuthor := $pat.bold }}
             <p>Authors: 
