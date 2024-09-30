@@ -1,205 +1,206 @@
 {{ define "main" }}
 
 <div class="biography-section">
-<!-- Profile Image and Social Links -->
-<div class="profile-container">
-    <div class="profile-image-container">
-    <img src="{{ .Params.profile_image }}" alt="Profile Image" class="profile-image">
-    </div>
-    <div class="social-links">
-        {{ if .Params.twitter }}<a href="{{ .Params.twitter }}"><i class="fa-brands fa-square-x-twitter"></i></a>{{ end }}
-        {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>{{ end }}
-        {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
-        {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}"><i class="fab fa-speaker-deck"></i></a>{{ end }}
-        {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
-        {{ if .Params.gscholar }}<a href="{{ .Params.gscholar}}"><i class="fas fa-graduation-cap"></i></a>{{ end }}
-        {{ if .Params.orcid }}<a href="{{ .Params.orcid }}"><i class="fab fa-orcid"></i></a>{{ end }}
-        {{ if .Params.researchgate }}<a href="{{ .Params.researchgate }}"><i class="fab fa-researchgate"></i></a>{{ end }}
-        {{ if .Params.academia }}<a href="{{ .Params.academia }}"><i class="fab fa-academia"></i></a>{{ end }}
-        {{ if .Params.slideshare }}<a href="{{ .Params.slideshare }}"><i class="fab fa-slideshare"></i></a>{{ end }}
-        {{ if .Params.youtube }}<a href="{{ .Params.youtube }}"><i class="fab fa-youtube"></i></a>{{ end }}
-        {{ if .Params.instagram }}<a href="{{ .Params.instagram }}"><i class="fab fa-instagram"></i></a>{{ end }}
-        {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
-    </div>
-</div>
-
-<!-- Biography -->
-<div class="info-row">
-    <h2>{{ .Params.title }}</h2>
-    <p>{{ .Params.biography }}</p>
-    <!-- Description -->
-    <p class="description">{{ .Params.description }}</p>
-</div>
-
-<!-- Skills and Education -->
-<div class="additional-info">
-    <div class="skills">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-        {{ range .Params.skills }}
-        <li>
-            <div class="skills-indicator" style="--percentage: {{ .percentage }}">
-                <span class="percentage-label">{{.percentage}}</span>
-            </div>
-            <div class="skills-content">{{ .name }}</div>
-        </li>
-        {{ end }}
-        </ul>
+    <!-- Profile Image and Social Links -->
+    <div class="profile-container">
+        <div class="profile-image-container">
+            <img src="{{ .Params.profile_image }}" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="social-links">
+            {{ if .Params.twitter }}<a href="{{ .Params.twitter }}"><i class="fa-brands fa-square-x-twitter"></i></a>{{ end }}
+            {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>{{ end }}
+            {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
+            {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}"><i class="fab fa-speaker-deck"></i></a>{{ end }}
+            {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
+            {{ if .Params.gscholar }}<a href="{{ .Params.gscholar}}"><i class="fas fa-graduation-cap"></i></a>{{ end }}
+            {{ if .Params.orcid }}<a href="{{ .Params.orcid }}"><i class="fab fa-orcid"></i></a>{{ end }}
+            {{ if .Params.researchgate }}<a href="{{ .Params.researchgate }}"><i class="fab fa-researchgate"></i></a>{{ end }}
+            {{ if .Params.academia }}<a href="{{ .Params.academia }}"><i class="fab fa-academia"></i></a>{{ end }}
+            {{ if .Params.slideshare }}<a href="{{ .Params.slideshare }}"><i class="fab fa-slideshare"></i></a>{{ end }}
+            {{ if .Params.youtube }}<a href="{{ .Params.youtube }}"><i class="fab fa-youtube"></i></a>{{ end }}
+            {{ if .Params.instagram }}<a href="{{ .Params.instagram }}"><i class="fab fa-instagram"></i></a>{{ end }}
+            {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
+        </div>
     </div>
 
-    <div class="education">
-        <h3>Education</h3>
-        <ul class="education-list">
-        {{ range .Params.education }}
-        <li>
-            <i class="fas fa-graduation-cap education-icon"></i>
-            <div class="education-content">
-            <div class="course">{{ .course }}</div>
-            <div class="university">{{ .university }}</div>
-            <div class="years">{{ .years }}</div>
-            </div>
-        </li>
-        {{ end }}
-        </ul>
+    <!-- Biography -->
+    <div class="info-row">
+        <h2>{{ .Params.title }}</h2>
+        <p>{{ .Params.biography }}</p>
+        <!-- Description -->
+        <p class="description">{{ .Params.description }}</p>
     </div>
-</div>
 
-{{ if .Params.experience }}
-<div class="info-row">
-<h3 class="experience-title">Experience</h3>
-<div id="experience-wrapper">
-    <div class="experience-timeline">
-        {{ range $index, $element := .Params.experience }}
-        <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }} {{ if .hide }}hidden-experience{{ end }}">
-        <div class="timeline-dot"></div>
-        <div class="experience-card">
-            <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
-            <div class="experience-details">
-            <h4>{{ .institute }}</h4>
-            <p class="role">{{ .role }}</p>
-            <p class="time-location">
-                <span class="duration">{{ .duration }}</span>, 
-                <span class="location">{{ .location }}</span>
-            </p>
+    <!-- Skills and Education -->
+    <div class="additional-info">
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                {{ range .Params.skills }}
+                <li>
+                    <div class="skills-indicator" style="--percentage: {{ .percentage }}">
+                        <span class="percentage-label">{{ .percentage }}</span>
+                    </div>
+                    <div class="skills-content">{{ .name }}</div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="education">
+            <h3>Education</h3>
+            <ul class="education-list">
+                {{ range .Params.education }}
+                <li>
+                    <i class="fas fa-graduation-cap education-icon"></i>
+                    <div class="education-content">
+                        <div class="course">{{ .course }}</div>
+                        <div class="university">{{ .university }}</div>
+                        <div class="years">{{ .years }}</div>
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+
+    {{ if .Params.experience }}
+    <div class="info-row">
+        <h3 class="experience-title">Experience</h3>
+        <div id="experience-wrapper">
+            <div class="experience-timeline">
+                {{ range $index, $element := .Params.experience }}
+                <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }} {{ if .hide }}hidden-experience{{ end }}">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
+                        <div class="experience-details">
+                            <h4>{{ .institute }}</h4>
+                            <p class="role">{{ .role }}</p>
+                            <p class="time-location">
+                                <span class="duration">{{ .duration }}</span>,
+                                <span class="location">{{ .location }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                <div class="experience-item show-more last-item" onclick="toggleExperiences()">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <p class="show-more-text"><i class="fas fa-chevron-down"></i> Show more experiences</p>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        {{ end }}
-    </div>
-</div>
-<button id="toggle-experience-btn" onclick="toggleExperiences()" class="toggle-btn">
-    <span class="btn-text">Unfold</span> <i class="fas fa-chevron-down"></i>
-</button>
-</div>
-{{ end }}
-
-{{ if .Params.qualification }}
-<div class="info-row">
-    <h3 class="qualification-title">Qualification</h3>
-    {{ range .Params.qualification }}
-    <div class="qualification-item">
-        <p><strong>
-            {{ if .link }}<a href="{{ .link }}">{{ end }}
-                {{ .name }}
-            {{ if .link }}</a>{{ end }}
-        </strong></p>
-        <p>{{ .institute }}</p>
-        <p>{{ .date }}</p>
-        {{ if .number }}<p><font color=#87808b size="4">No. {{ .number }}</font></p>{{ end }}
     </div>
     {{ end }}
-</div>
-{{ end }}
 
-{{ if .Params.publication }}
-<div class="info-row">
-    <h3 class="publication-title">Publications</h3>
-    {{ range $pub := .Params.publication }}
-    <div class="publication-item">
-        {{ if $pub.link }}
-        <a href="{{ $pub.link }}">
+    {{ if .Params.qualification }}
+    <div class="info-row">
+        <h3 class="qualification-title">Qualification</h3>
+        {{ range .Params.qualification }}
+        <div class="qualification-item">
+            <p><strong>
+                {{ if .link }}<a href="{{ .link }}">{{ end }}
+                {{ .name }}
+                {{ if .link }}</a>{{ end }}
+            </strong></p>
+            <p>{{ .institute }}</p>
+            <p>{{ .date }}</p>
+            {{ if .number }}<p><span class="qualification-number">No. {{ .number }}</span></p>{{ end }}
+        </div>
         {{ end }}
-        <p>
-            {{ $boldAuthor := $pub.bold }}
-            {{ range $index, $author := $pub.authors }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.publication }}
+    <div class="info-row">
+        <h3 class="publication-title">Publications</h3>
+        {{ range $pub := .Params.publication }}
+        <div class="publication-item">
+            {{ if $pub.link }}
+            <a href="{{ $pub.link }}">
+            {{ end }}
+            <p>
+                {{ $boldAuthor := $pub.bold }}
+                {{ range $index, $author := $pub.authors }}
                 {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
                 {{ if lt $index (sub (len $pub.authors) 1) }}, {{ end }}
-            {{ end }}
-            , 
-            "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
-        </p>
-        {{ if $pub.link }}</a>{{ end }}
-    </div>
-    {{ end }}
-</div>
-{{ end }}
-
-{{ if .Params.patent }}
-<div class="info-row">
-    <h3 class="patent-title">Patents</h3>
-    {{ range $pat := .Params.patent }}
-    <div class="patent-item">
-        <p>
-            {{ if $pat.link }}
-            <a href="{{ $pat.link}}">
-            {{ end }}
-            <strong>{{ .title }}</strong>
-            {{ if $pat.link }}</a>{{ end }}
-            {{ if .translation }}<p><font size="2" margin-top="0">Translation: {{ .translation }}</font></p>{{ end }}
-            {{ $boldAuthor := $pat.bold }}
-            <p>Authors: 
-                {{ range $index, $author := $pat.authors }}
-                    {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
-                    {{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
                 {{ end }}
+                ,
+                "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
             </p>
-            {{ if .patent_number }}<p><font color=#87808b size="4">Patent No. {{ .patent_number }}</font></p>{{ end }}
-            {{ if .application_number }}<p><font color=#87808b size="4">Application No. {{ .application_number }}</font></p>{{ end }}
-        </p>
-    </div>
-    {{ end }}
-</div>
-{{ end }}
-
-{{ if .Params.post }}
-<div class="info-row">
-    <h3 class="externalpost-title">External Post</h3>
-    {{ range .Params.post }}
-    <div class="externalpost-item">
-        <p>
-            <a href="{{ .postlink }}">{{ .title }}</a>
-        </p>
-        {{ if .eventlink }}
-        <p class="event-details">
-            <font size="2">@</font><a href="{{ .eventlink }}">{{ .event }}</a>
-        </p>
-        {{ else if .event }}
-        <p class="event-details">
-            <font size="2">@</font>{{ .event }}
-        </p>
+            {{ if $pub.link }}</a>{{ end }}
+        </div>
         {{ end }}
     </div>
     {{ end }}
-{{ end }}
 
-<script>
-    function toggleExperiences() {
-        var wrapper = document.getElementById('experience-wrapper');
-        var btn = document.getElementById('toggle-experience-btn');
-        var btnText = btn.querySelector('.btn-text');
-        var btnIcon = btn.querySelector('i');
-        if (btnText.innerText === "Unfold") {
-            wrapper.classList.add('show-hidden-experiences');
-            btnText.innerText = "Fold";
-            btnIcon.classList.remove('fa-chevron-down');
-            btnIcon.classList.add('fa-chevron-up');
-        } else {
-            wrapper.classList.remove('show-hidden-experiences');
-            btnText.innerText = "Unfold";
-            btnIcon.classList.remove('fa-chevron-up');
-            btnIcon.classList.add('fa-chevron-down');
+    {{ if .Params.patent }}
+    <div class="info-row">
+        <h3 class="patent-title">Patents</h3>
+        {{ range $pat := .Params.patent }}
+        <div class="patent-item">
+            <p>
+                {{ if $pat.link }}
+                <a href="{{ $pat.link}}">
+                {{ end }}
+                <strong>{{ .title }}</strong>
+                {{ if $pat.link }}</a>{{ end }}
+            </p>
+            {{ if .translation }}<p><span class="patent-translation">Translation: {{ .translation }}</span></p>{{ end }}
+            <p>Authors:
+                {{ $boldAuthor := $pat.bold }}
+                {{ range $index, $author := $pat.authors }}
+                {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
+                {{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
+                {{ end }}
+            </p>
+            {{ if .patent_number }}<p><span class="patent-number">Patent No. {{ .patent_number }}</span></p>{{ end }}
+            {{ if .application_number }}<p><span class="application-number">Application No. {{ .application_number }}</span></p>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.post }}
+    <div class="info-row">
+        <h3 class="externalpost-title">External Post</h3>
+        {{ range .Params.post }}
+        <div class="externalpost-item">
+            <p>
+                <a href="{{ .postlink }}">{{ .title }}</a>
+            </p>
+            {{ if .eventlink }}
+            <p class="event-details">
+                <span class="event-at">@</span><a href="{{ .eventlink }}">{{ .event }}</a>
+            </p>
+            {{ else if .event }}
+            <p class="event-details">
+                <span class="event-at">@</span>{{ .event }}
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <script>
+        function toggleExperiences() {
+            var wrapper = document.getElementById('experience-wrapper');
+            var showMoreText = document.querySelector('.show-more-text');
+            var icon = showMoreText.querySelector('i');
+
+            if (wrapper.classList.contains('show-hidden-experiences')) {
+                wrapper.classList.remove('show-hidden-experiences');
+                showMoreText.innerHTML = '<i class="fas fa-chevron-down"></i> Show more experiences';
+            } else {
+                wrapper.classList.add('show-hidden-experiences');
+                showMoreText.innerHTML = '<i class="fas fa-chevron-up"></i> Show less experiences';
+            }
         }
-    }
-</script>
+    </script>
+</div>
 
 {{ end }}
