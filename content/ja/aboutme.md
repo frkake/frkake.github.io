@@ -32,7 +32,7 @@ years = "2014-2018"
 [[experience]]
 logo = "/images/elith_logo.webp"
 institute = "株式会社Elith"
-role = "リサーチマネージャ"
+role = "リサーチマネージャー"
 duration = "2024.10 - 現在"
 location = "リモート"
 active = true

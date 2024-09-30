@@ -51,40 +51,45 @@ role = "Researcher"
 duration = "Apr.2020 - Mar.2024"
 location = "Kyoto"
 
-# [[experience]]
-# logo = "/images/datagrid.png"
-# institute = "DATAGRID Inc. "
-# role = "Part-time"
-# duration = "Dec.2019 - Mar.2020"
-# location = "Kyoto"
+[[experience]]
+logo = "/images/datagrid.png"
+institute = "DATAGRID Inc. "
+role = "Part-time"
+duration = "Dec.2019 - Mar.2020"
+location = "Kyoto"
+hide = true
 
-# [[experience]]
-# logo = "/images/sensetime.png"
-# institute = "SenseTime Japan, Ltd. "
-# role = "Intern"
-# duration = "Jun.2019 - Sep.2019"
-# location = "Kyoto"
+[[experience]]
+logo = "/images/sensetime.png"
+institute = "SenseTime Japan, Ltd. "
+role = "Intern"
+duration = "Jun.2019 - Sep.2019"
+location = "Kyoto"
+hide = true
 
-# [[experience]]
-# logo = "/images/hacarus.png"
-# institute = "Hacarus Inc. "
-# role = "Part-time"
-# duration = "Jan.2019 - Apr.2019"
-# location = "Kyoto"
+[[experience]]
+logo = "/images/hacarus.png"
+institute = "Hacarus Inc. "
+role = "Part-time"
+duration = "Jan.2019 - Apr.2019"
+location = "Kyoto"
+hide = true
 
-# [[experience]]
-# logo = "/images/denso.png"
-# institute = "DENSO Corp. "
-# role = "Intern"
-# duration = "Feb.2019 - Feb.2019"
-# location = "Tokyo"
+[[experience]]
+logo = "/images/denso.png"
+institute = "DENSO Corp. "
+role = "Intern"
+duration = "Feb.2019 - Feb.2019"
+location = "Tokyo"
+hide = true
 
-# [[experience]]
-# logo = "/images/hitachi.png"
-# institute = "Hitachi, Ltd. "
-# role = "Intern"
-# duration = "Aug.2018 - Aug.2018"
-# location = "Kanagawa"
+[[experience]]
+logo = "/images/hitachi.png"
+institute = "Hitachi, Ltd. "
+role = "Intern"
+duration = "Aug.2018 - Aug.2018"
+location = "Kanagawa"
+hide = true
 
 [[qualification]]
 name = "Computer Graphics Engineer Certification Test (Expert)"
