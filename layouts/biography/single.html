@@ -67,24 +67,29 @@
 {{ if .Params.experience }}
 <div class="info-row">
 <h3 class="experience-title">Experience</h3>
-<div class="experience-timeline">
-    {{ range $index, $element := .Params.experience }}
-    <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }}">
-    <div class="timeline-dot"></div>
-    <div class="experience-card">
-        <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
-        <div class="experience-details">
-        <h4>{{ .institute }}</h4>
-        <p class="role">{{ .role }}</p>
-        <p class="time-location">
-            <span class="duration">{{ .duration }}</span>, 
-            <span class="location">{{ .location }}</span>
-        </p>
+<div id="experience-wrapper">
+    <div class="experience-timeline">
+        {{ range $index, $element := .Params.experience }}
+        <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }} {{ if .hide }}hidden-experience{{ end }}">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+            <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
+            <div class="experience-details">
+            <h4>{{ .institute }}</h4>
+            <p class="role">{{ .role }}</p>
+            <p class="time-location">
+                <span class="duration">{{ .duration }}</span>, 
+                <span class="location">{{ .location }}</span>
+            </p>
+            </div>
         </div>
+        </div>
+        {{ end }}
     </div>
-    </div>
-    {{ end }}
 </div>
+<button id="toggle-experience-btn" onclick="toggleExperiences()" class="toggle-btn">
+    <span class="btn-text">Unfold</span> <i class="fas fa-chevron-down"></i>
+</button>
 </div>
 {{ end }}
 
@@ -177,5 +182,24 @@
     {{ end }}
 {{ end }}
 
+<script>
+    function toggleExperiences() {
+        var wrapper = document.getElementById('experience-wrapper');
+        var btn = document.getElementById('toggle-experience-btn');
+        var btnText = btn.querySelector('.btn-text');
+        var btnIcon = btn.querySelector('i');
+        if (btnText.innerText === "Unfold") {
+            wrapper.classList.add('show-hidden-experiences');
+            btnText.innerText = "Fold";
+            btnIcon.classList.remove('fa-chevron-down');
+            btnIcon.classList.add('fa-chevron-up');
+        } else {
+            wrapper.classList.remove('show-hidden-experiences');
+            btnText.innerText = "Unfold";
+            btnIcon.classList.remove('fa-chevron-up');
+            btnIcon.classList.add('fa-chevron-down');
+        }
+    }
+</script>
 
 {{ end }}

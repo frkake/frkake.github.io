@@ -51,40 +51,45 @@ role = "リサーチャー"
 duration = "2020.4 - 2023.3"
 location = "京都"
 
-# [[experience]]
-# logo = "/images/datagrid.png"
-# institute = "株式会社データグリッド"
-# role = "アルバイト"
-# duration = "2019.12 - 2020.3"
-# location = "京都"
+[[experience]]
+logo = "/images/datagrid.png"
+institute = "株式会社データグリッド"
+role = "アルバイト"
+duration = "2019.12 - 2020.3"
+location = "京都"
+hide = true
 
-# [[experience]]
-# logo = "/images/sensetime.png"
-# institute = "株式会社センスタイムジャパン"
-# role = "インターン"
-# duration = "2019.6 - 2019.9"
-# location = "京都"
+[[experience]]
+logo = "/images/sensetime.png"
+institute = "株式会社センスタイムジャパン"
+role = "インターン"
+duration = "2019.6 - 2019.9"
+location = "京都"
+hide = true
 
-# [[experience]]
-# logo = "/images/hacarus.png"
-# institute = "株式会社ハカルス"
-# role = "アルバイト"
-# duration = "2019.1 - 2019.4"
-# location = "京都"
+[[experience]]
+logo = "/images/hacarus.png"
+institute = "株式会社ハカルス"
+role = "アルバイト"
+duration = "2019.1 - 2019.4"
+location = "京都"
+hide = true
 
-# [[experience]]
-# logo = "/images/denso.png"
-# institute = "株式会社デンソー"
-# role = "インターン"
-# duration = "2019.2 - 2019.2"
-# location = "東京"
+[[experience]]
+logo = "/images/denso.png"
+institute = "株式会社デンソー"
+role = "インターン"
+duration = "2019.2 - 2019.2"
+location = "東京"
+hide = true
 
-# [[experience]]
-# logo = "/images/hitachi.png"
-# institute = "株式会社日立製作所"
-# role = "インターン"
-# duration = "2018.8 - 2018.8"
-# location = "神奈川"
+[[experience]]
+logo = "/images/hitachi.png"
+institute = "株式会社日立製作所"
+role = "インターン"
+duration = "2018.8 - 2018.8"
+location = "神奈川"
+hide = true
 
 [[qualification]]
 name = "CGエンジニア検定 エキスパート"
