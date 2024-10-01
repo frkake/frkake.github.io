@@ -1,7 +1,7 @@
 +++
 type = "biography"
 title = "飯田啄巳"
-biography = "コンピュータビジョン エンジニア/リサーチャー"
+biography = "機械学習/ コンピュータビジョン"
 profile_image = "/images/iida_takumi_italy.jpg"
 # twitter = "https://twitter.com/frkake"
 github = "https://github.com/frkake"
@@ -93,7 +93,7 @@ hide = true
 
 [[qualification]]
 name = "CGエンジニア検定 エキスパート"
-data = "2023.12"
+date = "2023.12"
 institute = "公益財団法人 画像情報教育振興協会 (CG-ARTS)"
 number = "2312300081"
 

@@ -1,7 +1,7 @@
 +++
 type = "biography"
 title = "Takumi Iida"
-biography = "Computer Vision Engineer/Researcher"
+biography = "Machine Learning/ Computer Vision"
 description = "Japanese page has more information!"
 profile_image = "/images/iida_takumi_italy.jpg"
 # twitter = "https://twitter.com/frkake"
