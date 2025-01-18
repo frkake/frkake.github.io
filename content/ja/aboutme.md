@@ -180,6 +180,12 @@ application_number = "CN202310868168.3"
 link = "https://www.patentguru.com/CN116935353A"
 
 [[post]]
+title = "衛星画像からの地上画像生成"
+postlink = "https://speakerdeck.com/elith/eccv2024du-mihui-wei-xing-hua-xiang-karanodi-shang-hua-xiang-sheng-cheng"
+event = "第62回 コンピュータビジョン勉強会＠関東"
+eventlink = "https://kantocv.connpass.com/event/331970/"
+
+[[post]]
 title = "[CorrMLP] Correlation-aware Coarse-to-fine MLPs for Deformable Medical Image Registrationの論文紹介"
 postlink = "https://speakerdeck.com/frkake/corrmlp-correlation-aware-coarse-to-fine-mlps-for-deformable-medical-image-registration"
 event = "第61回 コンピュータビジョン勉強会＠関東（前編）"
