@@ -2,169 +2,169 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Less is more</title>
-    <link>https://takumi-iida.com/tags/</link>
+    <link>https://frkake.com/tags/</link>
     <description>Recent content in Tags on Less is more</description>
     <image>
       <title>Less is more</title>
-      <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
-      <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
+      <url>https://frkake.com/images/steamed_rice_brown.png</url>
+      <link>https://frkake.com/images/steamed_rice_brown.png</link>
     </image>
     <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate>
-    <atom:link href="https://takumi-iida.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frkake.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Albumentations</title>
-      <link>https://takumi-iida.com/tags/albumentations/</link>
+      <link>https://frkake.com/tags/albumentations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/albumentations/</guid>
+      <guid>https://frkake.com/tags/albumentations/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Augmentation</title>
-      <link>https://takumi-iida.com/tags/data-augmentation/</link>
+      <link>https://frkake.com/tags/data-augmentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/data-augmentation/</guid>
+      <guid>https://frkake.com/tags/data-augmentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://takumi-iida.com/tags/python/</link>
+      <link>https://frkake.com/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/python/</guid>
+      <guid>https://frkake.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>3D Gaussian Splatting</title>
-      <link>https://takumi-iida.com/tags/3d-gaussian-splatting/</link>
+      <link>https://frkake.com/tags/3d-gaussian-splatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/3d-gaussian-splatting/</guid>
+      <guid>https://frkake.com/tags/3d-gaussian-splatting/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural rendering</title>
-      <link>https://takumi-iida.com/tags/neural-rendering/</link>
+      <link>https://frkake.com/tags/neural-rendering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/neural-rendering/</guid>
+      <guid>https://frkake.com/tags/neural-rendering/</guid>
       <description></description>
     </item>
     <item>
       <title>Rendering</title>
-      <link>https://takumi-iida.com/tags/rendering/</link>
+      <link>https://frkake.com/tags/rendering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/rendering/</guid>
+      <guid>https://frkake.com/tags/rendering/</guid>
       <description></description>
     </item>
     <item>
       <title>Adversarial Examples</title>
-      <link>https://takumi-iida.com/tags/adversarial-examples/</link>
+      <link>https://frkake.com/tags/adversarial-examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/adversarial-examples/</guid>
+      <guid>https://frkake.com/tags/adversarial-examples/</guid>
       <description></description>
     </item>
     <item>
       <title>Art</title>
-      <link>https://takumi-iida.com/tags/art/</link>
+      <link>https://frkake.com/tags/art/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/art/</guid>
+      <guid>https://frkake.com/tags/art/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffusion Model</title>
-      <link>https://takumi-iida.com/tags/diffusion-model/</link>
+      <link>https://frkake.com/tags/diffusion-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/diffusion-model/</guid>
+      <guid>https://frkake.com/tags/diffusion-model/</guid>
       <description></description>
     </item>
     <item>
       <title>ICML</title>
-      <link>https://takumi-iida.com/tags/icml/</link>
+      <link>https://frkake.com/tags/icml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/icml/</guid>
+      <guid>https://frkake.com/tags/icml/</guid>
       <description></description>
     </item>
     <item>
       <title>Image Protection</title>
-      <link>https://takumi-iida.com/tags/image-protection/</link>
+      <link>https://frkake.com/tags/image-protection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/image-protection/</guid>
+      <guid>https://frkake.com/tags/image-protection/</guid>
       <description></description>
     </item>
     <item>
       <title>Style Transfer</title>
-      <link>https://takumi-iida.com/tags/style-transfer/</link>
+      <link>https://frkake.com/tags/style-transfer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/style-transfer/</guid>
+      <guid>https://frkake.com/tags/style-transfer/</guid>
       <description></description>
     </item>
     <item>
       <title>Text-to-Image</title>
-      <link>https://takumi-iida.com/tags/text-to-image/</link>
+      <link>https://frkake.com/tags/text-to-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/text-to-image/</guid>
+      <guid>https://frkake.com/tags/text-to-image/</guid>
       <description></description>
     </item>
     <item>
       <title>General</title>
-      <link>https://takumi-iida.com/tags/general/</link>
+      <link>https://frkake.com/tags/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/general/</guid>
+      <guid>https://frkake.com/tags/general/</guid>
       <description></description>
     </item>
     <item>
       <title>CVPR</title>
-      <link>https://takumi-iida.com/tags/cvpr/</link>
+      <link>https://frkake.com/tags/cvpr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/cvpr/</guid>
+      <guid>https://frkake.com/tags/cvpr/</guid>
       <description></description>
     </item>
     <item>
       <title>Object Detection</title>
-      <link>https://takumi-iida.com/tags/object-detection/</link>
+      <link>https://frkake.com/tags/object-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/object-detection/</guid>
+      <guid>https://frkake.com/tags/object-detection/</guid>
       <description></description>
     </item>
     <item>
       <title>Region Proposal</title>
-      <link>https://takumi-iida.com/tags/region-proposal/</link>
+      <link>https://frkake.com/tags/region-proposal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/region-proposal/</guid>
+      <guid>https://frkake.com/tags/region-proposal/</guid>
       <description></description>
     </item>
     <item>
       <title>1-stage</title>
-      <link>https://takumi-iida.com/tags/1-stage/</link>
+      <link>https://frkake.com/tags/1-stage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/1-stage/</guid>
+      <guid>https://frkake.com/tags/1-stage/</guid>
       <description></description>
     </item>
     <item>
       <title>Sliding Window</title>
-      <link>https://takumi-iida.com/tags/sliding-window/</link>
+      <link>https://frkake.com/tags/sliding-window/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/sliding-window/</guid>
+      <guid>https://frkake.com/tags/sliding-window/</guid>
       <description></description>
     </item>
     <item>
       <title>2-stage</title>
-      <link>https://takumi-iida.com/tags/2-stage/</link>
+      <link>https://frkake.com/tags/2-stage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/2-stage/</guid>
+      <guid>https://frkake.com/tags/2-stage/</guid>
       <description></description>
     </item>
     <item>
       <title>Selective Search</title>
-      <link>https://takumi-iida.com/tags/selective-search/</link>
+      <link>https://frkake.com/tags/selective-search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/selective-search/</guid>
+      <guid>https://frkake.com/tags/selective-search/</guid>
       <description></description>
     </item>
     <item>
       <title>SVM</title>
-      <link>https://takumi-iida.com/tags/svm/</link>
+      <link>https://frkake.com/tags/svm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://takumi-iida.com/tags/svm/</guid>
+      <guid>https://frkake.com/tags/svm/</guid>
       <description></description>
     </item>
   </channel>

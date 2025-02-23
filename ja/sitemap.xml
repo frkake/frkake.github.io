@@ -2,158 +2,158 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://takumi-iida.com/tags/albumentations/</loc>
+    <loc>https://frkake.com/tags/albumentations/</loc>
     <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2024-06-14-albumentations/</loc>
+    <loc>https://frkake.com/posts/2024-06-14-albumentations/</loc>
     <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/data-augmentation/</loc>
+    <loc>https://frkake.com/tags/data-augmentation/</loc>
     <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://takumi-iida.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://takumi-iida.com/"
-                />
-  </url><url>
-    <loc>https://takumi-iida.com/posts/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
-  </url><url>
-    <loc>https://takumi-iida.com/tags/python/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
-  </url><url>
-    <loc>https://takumi-iida.com/tags/</loc>
+    <loc>https://frkake.com/</loc>
     <lastmod>2024-06-13T23:06:34+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/tags/"
+                href="https://frkake.com/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/tags/"
+                href="https://frkake.com/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/tags/3d-gaussian-splatting/</loc>
+    <loc>https://frkake.com/posts/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/python/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://frkake.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://frkake.com/tags/"
+                />
+  </url><url>
+    <loc>https://frkake.com/tags/3d-gaussian-splatting/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-11-14-3d-gaussian-splatting/</loc>
+    <loc>https://frkake.com/posts/2023-11-14-3d-gaussian-splatting/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/neural-rendering/</loc>
+    <loc>https://frkake.com/tags/neural-rendering/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/rendering/</loc>
+    <loc>https://frkake.com/tags/rendering/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-11-13-tensorrt_docs/</loc>
+    <loc>https://frkake.com/posts/2023-11-13-tensorrt_docs/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/adversarial-examples/</loc>
+    <loc>https://frkake.com/tags/adversarial-examples/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/art/</loc>
+    <loc>https://frkake.com/tags/art/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/diffusion-model/</loc>
+    <loc>https://frkake.com/tags/diffusion-model/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/icml/</loc>
+    <loc>https://frkake.com/tags/icml/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-10-01-photoguard/</loc>
+    <loc>https://frkake.com/posts/2023-10-01-photoguard/</loc>
     <lastmod>2023-10-01T21:11:56+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-09-27-advdm/</loc>
+    <loc>https://frkake.com/posts/2023-09-27-advdm/</loc>
     <lastmod>2023-10-01T21:11:45+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-09-23-glaze/</loc>
+    <loc>https://frkake.com/posts/2023-09-23-glaze/</loc>
     <lastmod>2023-09-23T02:13:14+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/image-protection/</loc>
+    <loc>https://frkake.com/tags/image-protection/</loc>
     <lastmod>2023-09-23T02:13:14+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/style-transfer/</loc>
+    <loc>https://frkake.com/tags/style-transfer/</loc>
     <lastmod>2023-09-23T02:13:14+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/text-to-image/</loc>
+    <loc>https://frkake.com/tags/text-to-image/</loc>
     <lastmod>2023-09-23T02:13:14+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/search/</loc>
+    <loc>https://frkake.com/search/</loc>
     <lastmod>2023-09-18T21:01:14+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/general/</loc>
+    <loc>https://frkake.com/tags/general/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2023-09-18-introduction/</loc>
+    <loc>https://frkake.com/posts/2023-09-18-introduction/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/cvpr/</loc>
+    <loc>https://frkake.com/tags/cvpr/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2021-07-25-multibox/</loc>
+    <loc>https://frkake.com/posts/2021-07-25-multibox/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/object-detection/</loc>
+    <loc>https://frkake.com/tags/object-detection/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/region-proposal/</loc>
+    <loc>https://frkake.com/tags/region-proposal/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/1-stage/</loc>
+    <loc>https://frkake.com/tags/1-stage/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2021-07-24-overfeat/</loc>
+    <loc>https://frkake.com/posts/2021-07-24-overfeat/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/sliding-window/</loc>
+    <loc>https://frkake.com/tags/sliding-window/</loc>
     <lastmod>2021-07-25T04:03:55+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/2-stage/</loc>
+    <loc>https://frkake.com/tags/2-stage/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/posts/2021-07-24-r-cnn/</loc>
+    <loc>https://frkake.com/posts/2021-07-24-r-cnn/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/selective-search/</loc>
+    <loc>https://frkake.com/tags/selective-search/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/tags/svm/</loc>
+    <loc>https://frkake.com/tags/svm/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
   </url><url>
-    <loc>https://takumi-iida.com/categories/</loc>
+    <loc>https://frkake.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/categories/"
+                href="https://frkake.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/categories/"
+                href="https://frkake.com/categories/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/pubdate/</loc>
+    <loc>https://frkake.com/pubdate/</loc>
   </url><url>
-    <loc>https://takumi-iida.com/aboutme/</loc>
+    <loc>https://frkake.com/aboutme/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/aboutme/"
+                href="https://frkake.com/en/aboutme/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/aboutme/"
+                href="https://frkake.com/aboutme/"
                 />
   </url>
 </urlset>

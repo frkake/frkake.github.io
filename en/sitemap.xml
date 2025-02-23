@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://takumi-iida.com/en/categories/</loc>
+    <loc>https://frkake.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/categories/"
+                href="https://frkake.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/categories/"
+                href="https://frkake.com/en/categories/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/en/</loc>
+    <loc>https://frkake.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/"
+                href="https://frkake.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/"
+                href="https://frkake.com/en/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/en/tags/</loc>
+    <loc>https://frkake.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/tags/"
+                href="https://frkake.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/tags/"
+                href="https://frkake.com/en/tags/"
                 />
   </url><url>
-    <loc>https://takumi-iida.com/en/aboutme/</loc>
+    <loc>https://frkake.com/en/aboutme/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://takumi-iida.com/aboutme/"
+                href="https://frkake.com/aboutme/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://takumi-iida.com/en/aboutme/"
+                href="https://frkake.com/en/aboutme/"
                 />
   </url>
 </urlset>

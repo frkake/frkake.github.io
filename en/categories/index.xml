@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Less is more</title>
-    <link>https://takumi-iida.com/en/categories/</link>
+    <link>https://frkake.com/en/categories/</link>
     <description>Recent content in Categories on Less is more</description>
     <image>
       <title>Less is more</title>
-      <url>https://takumi-iida.com/images/steamed_rice_brown.png</url>
-      <link>https://takumi-iida.com/images/steamed_rice_brown.png</link>
+      <url>https://frkake.com/images/steamed_rice_brown.png</url>
+      <link>https://frkake.com/images/steamed_rice_brown.png</link>
     </image>
     <generator>Hugo -- 0.118.2</generator>
     <language>en-us</language>
-    <atom:link href="https://takumi-iida.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://frkake.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
