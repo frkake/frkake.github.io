@@ -12,11 +12,9 @@ speakerdeck = "https://speakerdeck.com/frkake"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
-    {name = "落下物検知", percentage=80},
-    {name = "レーン検出", percentage=70},
-    {name = "PyTorch", percentage=70},
-    {name = "CG", percentage=40},
-    {name = "Rust", percentage=20},
+    {name = "Computer Vision", percentage=60},
+    {name = "Computer Graphics", percentage=40},
+    {name = "LLM", percentage=30},
 ]
 
 [[education]]
@@ -30,12 +28,19 @@ university = "立命館大学"
 years = "2014-2018"
 
 [[experience]]
+logo = "/images/LayerX_Logo_Vertical_RGB_Color.png"
+institute = "株式会社LayerX"
+role = "機械学習エンジニア"
+duration = "2025.3 - 現在"
+location = "リモート"
+active = true
+
+[[experience]]
 logo = "/images/elith_logo.webp"
 institute = "株式会社Elith"
 role = "リサーチマネージャー"
-duration = "2024.10 - 現在"
+duration = "2024.10 - 2025.2"
 location = "リモート"
-active = true
 
 [[experience]]
 logo = "/images/lpixel.jpg"

@@ -13,11 +13,9 @@ speakerdeck = "https://speakerdeck.com/frkake"
 resume = "/pdf/[Takumi Iida] Resume.pdf"
 
 skills = [
-    {name = "Fallen Object Detection", percentage=80},
-    {name = "Lane Detection", percentage=70},
-    {name = "PyTorch", percentage=70},
-    {name = "CG", percentage=40},
-    {name = "Rust", percentage=20},
+    {name = "Computer Vision", percentage=60},
+    {name = "Computer Graphics", percentage=40},
+    {name = "LLM", percentage=30},
 ]
 
 [[education]]
@@ -31,10 +29,18 @@ university = "Ritsumeikan University"
 years = "2014-2018"
 
 [[experience]]
+logo = "/images/LayerX_Logo_Vertical_RGB_Color.png"
+institute = "LayerX Inc."
+role = "Machine Learning Engineer"
+duration = "Mar.2025 - Present"
+location = "Remote"
+active = true
+
+[[experience]]
 logo = "/images/elith_logo.webp"
 institute = "Elith Inc."
 role = "Research Manager"
-duration = "Oct.2024 - Present"
+duration = "Oct.2024 - Feb.2025"
 location = "Remote"
 
 [[experience]]
@@ -42,7 +48,7 @@ logo = "/images/lpixel.jpg"
 institute = "LPIXEL Inc. "
 role = "Machine Learning Engineer"
 duration = "Apr.2024 - Sep.2024"
-location = "Remote (Kyoto)"
+location = "Remote"
 
 [[experience]]
 logo = "/images/sensetime.png"
