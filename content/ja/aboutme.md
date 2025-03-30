@@ -139,6 +139,16 @@ institute = "独立行政法人 情報処理推進機構 (IPA)"
 number = "IP-2011-10-18024"
 
 [[publication]]
+title = "Dynamic Knowledge Integration in Multi-Agent Systems for Content Inference"
+authors = ["Atsushi Yamamoto", "Takumi Iida", "Taito Naruki", "Akihiko Katagiri", "Yudai Koike", "Ryuta Shimogauchi", "Kota Shimomura", "Eri Onami", "Koki Inoue", "Osamu Ito"]
+bold = "Takumi Iida"
+conference = "The International Conference on Learning Representations (ICLR) Workshop"
+workshop = "Towards Agentic AI for Science: Hypothesis Generation, Comprehension, Quantification, and Validation"
+link = "https://openreview.net/forum?id=5XNYu4rBe4"
+workshoplink = "https://iclragenticai.github.io/"
+date = "2025"
+
+[[publication]]
 title = "PCT: Perspective Cue Training Framework for Multi-Camera BEV Segmentation"
 authors = ["Haruya Ishikawa", "Takumi Iida", "Yoshinori Konishi", "Yoshimitsu Aoki"]
 bold = "Takumi Iida"
