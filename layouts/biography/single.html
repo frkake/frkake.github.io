@@ -252,23 +252,18 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // 非表示要素の数を確認
-            var hiddenExperiences = document.querySelectorAll('.hidden-experience');
-            console.log('Hidden experiences count:', hiddenExperiences.length);
+            const hiddenExperiences = document.querySelectorAll('.hidden-experience');
             
             // 「もっと見る」ボタンが必要ない場合は非表示
             if (hiddenExperiences.length === 0) {
-                var showMoreItem = document.querySelector('.show-more');
-                if (showMoreItem) {
-                    showMoreItem.style.display = 'none';
+                const showMoreButton = document.querySelector('.show-more');
+                if (showMoreButton) {
+                    showMoreButton.style.display = 'none';
                 }
             }
             
             // スタイルを初期化
             hiddenExperiences.forEach(function(item) {
-                // デバッグ用にコンソールに表示
-                console.log('Initializing element:', item);
-                
-                // スタイルを設定
                 item.style.visibility = 'hidden';
                 item.style.opacity = '0';
                 item.style.height = '0';
@@ -278,14 +273,12 @@
         });
 
         function toggleExperiences() {
-            var wrapper = document.getElementById('experience-wrapper');
-            var toggleText = document.getElementById('toggle-text');
-            var toggleButton = document.querySelector('.show-more');
-            var hiddenExperiences = document.querySelectorAll('.hidden-experience');
+            const experienceWrapper = document.getElementById('experience-wrapper');
+            const toggleText = document.getElementById('toggle-text');
+            const toggleButton = document.querySelector('.show-more');
+            const hiddenExperiences = document.querySelectorAll('.hidden-experience');
             
-            console.log('Toggle clicked. Hidden items:', hiddenExperiences.length);
-            
-            var isVisible = wrapper.classList.contains('show-hidden-experiences');
+            const isVisible = experienceWrapper.classList.contains('show-hidden-experiences');
             
             // ボタンの状態を更新
             toggleButton.classList.toggle('is-active');
@@ -297,7 +290,6 @@
                 // 各要素を段階的に非表示
                 hiddenExperiences.forEach(function(item, index) {
                     setTimeout(function() {
-                        console.log('Hiding item:', index);
                         item.style.opacity = '0';
                         item.style.transform = 'translateY(-10px)';
                         item.style.marginBottom = '0';
@@ -305,7 +297,7 @@
                         // 最後の要素のアニメーション後にクラスを削除
                         if (index === hiddenExperiences.length - 1) {
                             setTimeout(function() {
-                                wrapper.classList.remove('show-hidden-experiences');
+                                experienceWrapper.classList.remove('show-hidden-experiences');
                                 hiddenExperiences.forEach(function(el) {
                                     el.style.visibility = 'hidden';
                                     el.style.height = '0';
@@ -317,12 +309,11 @@
             } else {
                 // 開く処理
                 toggleText.textContent = '閉じる';
-                wrapper.classList.add('show-hidden-experiences');
+                experienceWrapper.classList.add('show-hidden-experiences');
                 
                 // 各要素を段階的に表示
                 hiddenExperiences.forEach(function(item, index) {
                     setTimeout(function() {
-                        console.log('Showing item:', index);
                         item.style.visibility = 'visible';
                         item.style.height = 'auto';
                         
@@ -339,22 +330,22 @@
         
         function toggleProjects(element) {
             // プロジェクト詳細を取得
-            var details = element.querySelector('.project-details');
-            if (!details) return; // プロジェクト詳細がなければ何もしない
+            const projectDetails = element.querySelector('.project-details');
+            if (!projectDetails) return; // プロジェクト詳細がなければ何もしない
             
             // プロジェクトが空の場合も何もしない
-            if (details.children.length === 0) return;
+            if (projectDetails.children.length === 0) return;
             
             // 詳細が表示されているか確認
-            var isExpanded = details.classList.contains('expanded');
+            const isExpanded = projectDetails.classList.contains('expanded');
             
             // カード全体のクラスを切り替え
             if (isExpanded) {
                 element.classList.remove('expanded');
-                details.classList.remove('expanded');
+                projectDetails.classList.remove('expanded');
             } else {
                 element.classList.add('expanded');
-                details.classList.add('expanded');
+                projectDetails.classList.add('expanded');
             }
         }
     </script>

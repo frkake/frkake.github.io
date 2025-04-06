@@ -1,78 +1,92 @@
-/* ========== 基本設定（相対値への変換） ========== */
+/* ========== カラー変数と基本設定 ========== */
 
 :root {
+    /* プライマリーカラー */
     --primary-color: #3498db;
     --primary-dark: #2980b9;
     --primary-light: #e3f2fd;
     --primary-alpha: rgba(52, 152, 219, 0.1);
     
+    /* セカンダリーカラー */
     --secondary-color: #9b59b6;
     --secondary-dark: #8e44ad;
     --secondary-light: #f3e5f5;
     --secondary-alpha: rgba(155, 89, 182, 0.1);
     
+    /* アクセントカラー1 */
     --accent1-color: #f39c12;
     --accent1-dark: #e67e22;
     --accent1-light: #fff8e1;
     --accent1-alpha: rgba(243, 156, 18, 0.1);
     
+    /* アクセントカラー2 - アクティブ状態 */
     --accent2-color: #28a745;
     --accent2-dark: #218838;
     --accent2-light: #e8f5e9;
     --accent2-alpha: rgba(40, 167, 69, 0.1);
+    --active-color: var(--accent2-color);
+    --active-dark: var(--accent2-dark);
+    --active-light: var(--accent2-light);
+    --active-alpha: var(--accent2-alpha);
     
+    /* テキストカラー */
     --text-color: #333;
     --text-light: #666;
     --text-lighter: #888;
     
+    /* 背景と影 */
     --background-color: #f8f9fa;
     --card-background: #ffffff;
     --shadow-color: rgba(0, 0, 0, 0.03);
     --shadow-hover: rgba(0, 0, 0, 0.06);
     
+    /* レイアウト変数 */
     --border-radius: 12px;
     --card-radius: 16px;
     --section-spacing: 3rem;
     --transition-speed: 0.3s;
-    --active-color: #28a745;
-    --active-dark: #218838;
-    --active-light: #e8f5e9;
-    --active-alpha: rgba(40, 167, 69, 0.1);
 }
 
+/* ダークモード設定 */
 .dark {
+    /* プライマリーカラー */
     --primary-color: #58a6ff;
     --primary-dark: #82bcff;
     --primary-light: #142e45;
     --primary-alpha: rgba(88, 166, 255, 0.15);
     
+    /* セカンダリーカラー */
     --secondary-color: #bb86fc;
     --secondary-dark: #d2b1fc;
     --secondary-light: #251830;
     --secondary-alpha: rgba(187, 134, 252, 0.15);
     
+    /* アクセントカラー1 */
     --accent1-color: #ffc107;
     --accent1-dark: #ffca28;
     --accent1-light: #2a2200;
     --accent1-alpha: rgba(255, 193, 7, 0.15);
     
+    /* アクセントカラー2 - アクティブ状態 */
     --accent2-color: #3ebc5c;
     --accent2-dark: #4cd368;
     --accent2-light: #092211;
     --accent2-alpha: rgba(62, 188, 92, 0.15);
+    --active-color: var(--accent2-color);
+    --active-dark: var(--accent2-dark);
+    --active-light: var(--accent2-light);
+    --active-alpha: var(--accent2-alpha);
     
+    /* テキストカラー */
     --text-color: #e0e0e0;
     --text-light: #aaaaaa;
     --text-lighter: #8a8a8a;
     
+    /* 背景と影 */
     --background-color: #121212;
     --card-background: #1a1a1a;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --shadow-hover: rgba(0, 0, 0, 0.3);
-    --active-color: #3ebc5c;
-    --active-dark: #4cd368;
-    --active-light: #092211;
-    --active-alpha: rgba(62, 188, 92, 0.15);
 }
 
 /* ========== 基本スタイル ========== */
@@ -111,6 +125,7 @@ body {
     box-shadow: 0 8px 30px var(--shadow-hover);
 }
 
+/* プロフィール画像 */
 .profile-image-container {
     flex-shrink: 0;
     width: 200px;
@@ -145,23 +160,24 @@ body {
     object-fit: cover;
     object-position: center;
     transition: transform 0.5s ease;
+    user-select: none;
+    pointer-events: none;
+    user-drag: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
-    user-select: none;
-    pointer-events: none;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
 }
 
 .profile-image-container:hover .profile-image {
     transform: scale(1.08);
 }
 
+/* プロフィール情報 */
 .profile-info {
     flex: 1;
     min-width: 300px;
@@ -243,8 +259,12 @@ body {
 }
 
 /* ========== セクション共通スタイル ========== */
-.skills-section, .education-section, .experience-section, 
-.qualification-section, .publication-section, .patent-section, 
+.skills-section, 
+.education-section, 
+.experience-section, 
+.qualification-section, 
+.publication-section, 
+.patent-section, 
 .externalpost-section {
     padding: 2rem;
     background-color: var(--card-background);
@@ -253,15 +273,23 @@ body {
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
-.skills-section:hover, .education-section:hover, .experience-section:hover, 
-.qualification-section:hover, .publication-section:hover, .patent-section:hover, 
+.skills-section:hover, 
+.education-section:hover, 
+.experience-section:hover, 
+.qualification-section:hover, 
+.publication-section:hover, 
+.patent-section:hover, 
 .externalpost-section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px var(--shadow-hover);
 }
 
-.skills-section h3, .education-section h3, .experience-section h3, 
-.qualification-section h3, .publication-section h3, .patent-section h3, 
+.skills-section h3, 
+.education-section h3, 
+.experience-section h3, 
+.qualification-section h3, 
+.publication-section h3, 
+.patent-section h3, 
 .externalpost-section h3 {
     display: flex;
     align-items: center;
@@ -273,8 +301,12 @@ body {
     color: var(--primary-color);
 }
 
-.skills-section h3 i, .education-section h3 i, .experience-section h3 i, 
-.qualification-section h3 i, .publication-section h3 i, .patent-section h3 i, 
+.skills-section h3 i, 
+.education-section h3 i, 
+.experience-section h3 i, 
+.qualification-section h3 i, 
+.publication-section h3 i, 
+.patent-section h3 i, 
 .externalpost-section h3 i {
     margin-right: 0.5rem;
 }
@@ -426,6 +458,7 @@ body {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
+/* アニメーションディレイ */
 .experience-item:nth-child(1) { animation-delay: 0.1s; }
 .experience-item:nth-child(2) { animation-delay: 0.2s; }
 .experience-item:nth-child(3) { animation-delay: 0.3s; }
@@ -512,10 +545,7 @@ body {
     color: var(--text-lighter);
 }
 
-.experience-duration i, .experience-location i {
-    margin-right: 0.3rem;
-}
-
+/* 非表示経験項目の処理 */
 .hidden-experience {
     height: 0;
     visibility: hidden;
@@ -540,6 +570,7 @@ body {
     transition: opacity 0.4s ease, transform 0.4s ease, margin-bottom 0.4s ease, height 0.4s ease, visibility 0s linear;
 }
 
+/* もっと見るボタン */
 .toggle-card {
     background-color: var(--secondary-alpha);
     cursor: pointer;
@@ -756,13 +787,16 @@ body {
     margin-right: 0.5rem;
 }
 
-.publication-venue, .publication-workshop, .publication-date {
+.publication-venue, 
+.publication-workshop, 
+.publication-date {
     display: flex;
     align-items: center;
     color: var(--text-light);
 }
 
-.publication-venue, .publication-workshop {
+.publication-venue, 
+.publication-workshop {
     margin-right: 1rem;
     flex: 1;
 }
@@ -856,7 +890,8 @@ body {
     color: var(--text-lighter);
 }
 
-.patent-number, .patent-app-number {
+.patent-number, 
+.patent-app-number {
     display: flex;
     align-items: center;
     background-color: var(--primary-alpha);
@@ -864,12 +899,9 @@ body {
     border-radius: 4px;
 }
 
-.dark .patent-number, .dark .patent-app-number {
+.dark .patent-number, 
+.dark .patent-app-number {
     background-color: rgba(88, 166, 255, 0.15);
-}
-
-.patent-number i, .patent-app-number i {
-    margin-right: 0.3rem;
 }
 
 .patent-translation {
@@ -886,10 +918,6 @@ body {
 .dark .patent-translation {
     background-color: rgba(255, 193, 7, 0.1);
     color: var(--accent1-color);
-}
-
-.patent-translation i {
-    margin-right: 0.5rem;
 }
 
 .patent-authors {
@@ -959,10 +987,6 @@ body {
     align-items: baseline;
 }
 
-.externalpost-event i {
-    margin-right: 0.5rem;
-}
-
 .externalpost-event a {
     color: var(--text-color);
     text-decoration: none;
@@ -990,66 +1014,7 @@ body {
     }
 }
 
-/* ========== レスポンシブデザイン ========== */
-@media (max-width: 768px) {
-    .biography-section {
-        margin: 1.5rem auto;
-    }
-    
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
-    }
-    
-    .profile-info {
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .skills-education-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .qualification-grid, .externalpost-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .experience-timeline {
-        padding-left: 1.5rem;
-    }
-    
-    .timeline-dot {
-        left: -1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-image-container {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .profile-name {
-        font-size: 2rem;
-    }
-    
-    .skills-section, .education-section, .experience-section, 
-    .qualification-section, .publication-section, .patent-section, 
-    .externalpost-section {
-        padding: 1.2rem;
-    }
-    
-    .experience-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-
-/* アクティブアイテムのスタイル */
+/* ========== アクティブアイテムのスタイル ========== */
 .active-item .experience-card {
     border-left: 4px solid var(--active-color);
     background-color: var(--active-light);
@@ -1073,7 +1038,7 @@ body {
     color: var(--active-color);
 }
 
-/* プロジェクト詳細セクション */
+/* ========== プロジェクト詳細セクション ========== */
 .project-details {
     max-height: 0;
     overflow: hidden;
@@ -1145,4 +1110,65 @@ body {
 .publication-equal-contrib sup {
     color: var(--accent1-color);
     font-weight: bold;
+}
+
+/* ========== レスポンシブデザイン ========== */
+@media (max-width: 768px) {
+    .biography-section {
+        margin: 1.5rem auto;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .profile-info {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .skills-education-grid, 
+    .qualification-grid, 
+    .externalpost-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-dot {
+        left: -1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .skills-section, 
+    .education-section, 
+    .experience-section, 
+    .qualification-section, 
+    .publication-section, 
+    .patent-section, 
+    .externalpost-section {
+        padding: 1.2rem;
+    }
+    
+    .experience-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
