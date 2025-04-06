@@ -120,6 +120,18 @@ body {
     border: 4px solid var(--primary-light);
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    position: relative;
+}
+
+.profile-image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
 }
 
 .profile-image-container:hover {
@@ -133,6 +145,17 @@ body {
     object-fit: cover;
     object-position: center;
     transition: transform 0.5s ease;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
 
 .profile-image-container:hover .profile-image {
