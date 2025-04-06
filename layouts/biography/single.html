@@ -1,203 +1,360 @@
 {{ define "main" }}
 
 <div class="biography-section">
-    <!-- Profile Image and Social Links -->
-    <div class="profile-container">
+    <!-- ヘッダーセクション - プロフィールと基本情報 -->
+    <div class="profile-header">
         <div class="profile-image-container">
-            <img src="{{ .Params.profile_image }}" alt="Profile Image" class="profile-image">
+            <img src="{{ .Params.profile_image }}" alt="{{ .Params.title }}" class="profile-image">
         </div>
-        <div class="social-links">
-            {{ if .Params.twitter }}<a href="{{ .Params.twitter }}"><i class="fa-brands fa-square-x-twitter"></i></a>{{ end }}
-            {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}"><i class="fab fa-linkedin"></i></a>{{ end }}
-            {{ if .Params.github }}<a href="{{ .Params.github }}"><i class="fab fa-github"></i></a>{{ end }}
-            {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}"><i class="fab fa-speaker-deck"></i></a>{{ end }}
-            {{ if .Params.facebook }}<a href="{{ .Params.facebook }}"><i class="fab fa-facebook"></i></a>{{ end }}
-            {{ if .Params.gscholar }}<a href="{{ .Params.gscholar}}"><i class="fas fa-graduation-cap"></i></a>{{ end }}
-            {{ if .Params.orcid }}<a href="{{ .Params.orcid }}"><i class="fab fa-orcid"></i></a>{{ end }}
-            {{ if .Params.researchgate }}<a href="{{ .Params.researchgate }}"><i class="fab fa-researchgate"></i></a>{{ end }}
-            {{ if .Params.academia }}<a href="{{ .Params.academia }}"><i class="fab fa-academia"></i></a>{{ end }}
-            {{ if .Params.slideshare }}<a href="{{ .Params.slideshare }}"><i class="fab fa-slideshare"></i></a>{{ end }}
-            {{ if .Params.youtube }}<a href="{{ .Params.youtube }}"><i class="fab fa-youtube"></i></a>{{ end }}
-            {{ if .Params.instagram }}<a href="{{ .Params.instagram }}"><i class="fab fa-instagram"></i></a>{{ end }}
-            {{ if .Params.resume }}<a href="{{ .Params.resume }}"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
-        </div>
-    </div>
-
-    <!-- Biography -->
-    <div class="info-row">
-        <h2>{{ .Params.title }}</h2>
-        <p>{{ .Params.biography }}</p>
-        <!-- Description -->
-        <p class="description">{{ .Params.description }}</p>
-    </div>
-
-    <!-- Skills and Education -->
-    <div class="additional-info">
-        <div class="skills">
-            <h3>Skills</h3>
-            <ul class="skills-list">
-                {{ range .Params.skills }}
-                <li>
-                    <div class="skills-indicator" style="--percentage: {{ .percentage }}">
-                        <span class="percentage-label">{{ .percentage }}</span>
-                    </div>
-                    <div class="skills-content">{{ .name }}</div>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-
-        <div class="education">
-            <h3>Education</h3>
-            <ul class="education-list">
-                {{ range .Params.education }}
-                <li>
-                    <i class="fas fa-graduation-cap education-icon"></i>
-                    <div class="education-content">
-                        <div class="course">{{ .course }}</div>
-                        <div class="university">{{ .university }}</div>
-                        <div class="years">{{ .years }}</div>
-                    </div>
-                </li>
-                {{ end }}
-            </ul>
+        <div class="profile-info">
+            <h1 class="profile-name">{{ .Params.title }}</h1>
+            <p class="profile-role">{{ .Params.biography }}</p>
+            <!-- 説明文 -->
+            {{ if .Params.description }}<p class="profile-description">{{ .Params.description }}</p>{{ end }}
+            
+            <!-- ソーシャルリンク -->
+            <div class="social-links">
+                {{ if .Params.twitter }}<a href="{{ .Params.twitter }}" target="_blank" title="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>{{ end }}
+                {{ if .Params.linkedin }}<a href="{{ .Params.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{{ end }}
+                {{ if .Params.github }}<a href="{{ .Params.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{{ end }}
+                {{ if .Params.speakerdeck }}<a href="{{ .Params.speakerdeck }}" target="_blank" title="Speaker Deck"><i class="fab fa-speaker-deck"></i></a>{{ end }}
+                {{ if .Params.facebook }}<a href="{{ .Params.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>{{ end }}
+                {{ if .Params.gscholar }}<a href="{{ .Params.gscholar}}" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{{ end }}
+                {{ if .Params.orcid }}<a href="{{ .Params.orcid }}" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>{{ end }}
+                {{ if .Params.researchgate }}<a href="{{ .Params.researchgate }}" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>{{ end }}
+                {{ if .Params.academia }}<a href="{{ .Params.academia }}" target="_blank" title="Academia"><i class="fab fa-academia"></i></a>{{ end }}
+                {{ if .Params.slideshare }}<a href="{{ .Params.slideshare }}" target="_blank" title="SlideShare"><i class="fab fa-slideshare"></i></a>{{ end }}
+                {{ if .Params.youtube }}<a href="{{ .Params.youtube }}" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>{{ end }}
+                {{ if .Params.instagram }}<a href="{{ .Params.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>{{ end }}
+                {{ if .Params.resume }}<a href="{{ .Params.resume }}" target="_blank" title="Resume" class="resume-link"><i class="fa-solid fa-file-pdf"></i></a>{{ end }}
+            </div>
         </div>
     </div>
 
-    {{ if .Params.experience }}
-    <div class="info-row">
-        <h3 class="experience-title">Experience</h3>
-        <div id="experience-wrapper">
-            <div class="experience-timeline">
-                {{ range $index, $element := .Params.experience }}
-                <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }} {{ if .hide }}hidden-experience{{ end }}">
-                    <div class="timeline-dot"></div>
-                    <div class="experience-card">
-                        <img src="{{ .logo }}" alt="Experience Logo" class="experience-logo">
-                        <div class="experience-details">
-                            <h4>{{ .institute }}</h4>
-                            <p class="role">{{ .role }}</p>
-                            <p class="time-location">
-                                <span class="duration">{{ .duration }}</span>,
-                                <span class="location">{{ .location }}</span>
-                            </p>
+    <div class="biography-content">
+        <!-- スキルと教育のグリッドレイアウト -->
+        <div class="skills-education-grid">
+            <!-- スキル -->
+            <div class="skills-section">
+                <h3><i class="fas fa-code"></i> スキル</h3>
+                <ul class="skills-list">
+                    {{ range .Params.skills }}
+                    <li>
+                        <div class="skill-info">
+                            <span class="skill-name">{{ .name }}</span>
+                            <span class="skill-level">{{ .percentage }}%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percentage="{{ .percentage }}"></div>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- 教育 -->
+            <div class="education-section">
+                <h3><i class="fas fa-graduation-cap"></i> 学歴</h3>
+                <ul class="education-list">
+                    {{ range .Params.education }}
+                    <li>
+                        <div class="education-info">
+                            <span class="education-course">{{ .course }}</span>
+                            <span class="education-university">{{ .university }}</span>
+                            <span class="education-years"><i class="far fa-calendar-alt"></i> {{ .years }}</span>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+        <!-- 経験 -->
+        {{ if .Params.experience }}
+        <div class="experience-section">
+            <h3><i class="fas fa-briefcase"></i> 経歴</h3>
+            <div id="experience-wrapper" class="experience-wrapper">
+                <div class="experience-timeline">
+                    {{ range $index, $element := .Params.experience }}
+                    <div class="experience-item {{ if .active }}active-item{{ end }} {{ if eq $index 0 }}first-item{{ else if eq $index (sub (len $.Params.experience) 1) }}last-item{{ end }} {{ if .hide }}hidden-experience{{ end }}">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card" {{ if .projects }}{{ if gt (len .projects) 0 }}onclick="toggleProjects(this)"{{ end }}{{ end }}>
+                            <div class="experience-header">
+                                <img src="{{ .logo }}" alt="{{ .institute }} Logo" class="experience-logo">
+                                <div class="experience-title">
+                                    <h4>{{ .institute }}</h4>
+                                    <p class="experience-role">{{ .role }}</p>
+                                </div>
+                                {{ if .projects }}
+                                {{ if gt (len .projects) 0 }}
+                                <div class="expand-button">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                            <div class="experience-meta">
+                                <span class="experience-duration"><i class="far fa-calendar-alt"></i> {{ .duration }}</span>
+                                <span class="experience-location"><i class="fas fa-map-marker-alt"></i> {{ .location }}</span>
+                            </div>
+                            {{ if .projects }}
+                            <div class="project-details">
+                                {{ range .projects }}
+                                <div class="project-item">
+                                    <h5 class="project-title">{{ .name }}</h5>
+                                    <p class="project-description">{{ .description }}</p>
+                                </div>
+                                {{ end }}
+                            </div>
+                            {{ end }}
                         </div>
                     </div>
-                </div>
-                {{ end }}
-                <div class="experience-item show-more last-item" onclick="toggleExperiences()">
-                    <div class="timeline-dot"></div>
-                    <div class="experience-card">
-                        <p class="show-more-text"><i class="fas fa-chevron-down"></i> Show more experiences</p>
+                    {{ end }}
+                    <div class="experience-item show-more last-item" onclick="toggleExperiences()">
+                        <div class="experience-card toggle-card">
+                            <p class="show-more-text"><i class="fas fa-chevron-down"></i> <span id="toggle-text">もっと見る</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    {{ end }}
-
-    {{ if .Params.qualification }}
-    <div class="info-row">
-        <h3 class="qualification-title">Qualification</h3>
-        {{ range .Params.qualification }}
-        <div class="qualification-item">
-            <p><strong>
-                {{ if .link }}<a href="{{ .link }}">{{ end }}
-                {{ .name }}
-                {{ if .link }}</a>{{ end }}
-            </strong></p>
-            <p>{{ .institute }}</p>
-            <p>{{ .date }}</p>
-            {{ if .number }}<p><span class="qualification-number">No. {{ .number }}</span></p>{{ end }}
-        </div>
         {{ end }}
-    </div>
-    {{ end }}
 
-    {{ if .Params.publication }}
-    <div class="info-row">
-        <h3 class="publication-title">Publications</h3>
-        {{ range $pub := .Params.publication }}
-        <div class="publication-item">
-            {{ if $pub.link }}
-            <a href="{{ $pub.link }}">
-            {{ end }}
-            <p>
-                {{ $boldAuthor := $pub.bold }}
-                {{ range $index, $author := $pub.authors }}
-                {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
-                {{ if lt $index (sub (len $pub.authors) 1) }}, {{ end }}
+        <!-- 資格 -->
+        {{ if .Params.qualification }}
+        <div class="qualification-section">
+            <h3><i class="fas fa-certificate"></i> 資格</h3>
+            <div class="qualification-grid">
+                {{ range .Params.qualification }}
+                <div class="qualification-card">
+                    <h4 class="qualification-name">
+                        {{ if .link }}<a href="{{ .link }}" target="_blank">{{ .name }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ .name }}{{ end }}
+                    </h4>
+                    <div class="qualification-details">
+                        <p class="qualification-institute"><i class="fas fa-university"></i> {{ .institute }}</p>
+                        <p class="qualification-date"><i class="far fa-calendar-check"></i> {{ .date }}</p>
+                        {{ if .number }}<p class="qualification-number"><i class="fas fa-hashtag"></i> {{ .number }}</p>{{ end }}
+                    </div>
+                </div>
                 {{ end }}
-                ,
-                "{{ $pub.title }}", <i>{{ $pub.conference }}</i>, {{ $pub.date }}
-            </p>
-            {{ if $pub.link }}</a>{{ end }}
+            </div>
         </div>
         {{ end }}
-    </div>
-    {{ end }}
 
-    {{ if .Params.patent }}
-    <div class="info-row">
-        <h3 class="patent-title">Patents</h3>
-        {{ range $pat := .Params.patent }}
-        <div class="patent-item">
-            <p>
-                {{ if $pat.link }}
-                <a href="{{ $pat.link}}">
+        <!-- 出版物 -->
+        {{ if .Params.publication }}
+        <div class="publication-section">
+            <h3><i class="fas fa-book"></i> 出版物</h3>
+            <div class="publication-list">
+                {{ range $pub := .Params.publication }}
+                <div class="publication-card">
+                    <h4 class="publication-title">
+                        {{ if $pub.link }}<a href="{{ $pub.link }}" target="_blank">{{ $pub.title }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ $pub.title }}{{ end }}
+                    </h4>
+                    
+                    <div class="publication-authors">
+                        {{ $boldAuthor := $pub.bold }}
+                        {{ $equalContribs := $pub.equal_contribution }}
+                        {{ if $equalContribs }}
+                        <div class="equal-contrib-badge">* Equal Contribution</div>
+                        {{ end }}
+                        {{ range $index, $author := $pub.authors }}
+                        <span class="author {{ if eq $author $boldAuthor }}author-self{{ end }}{{ if and $equalContribs (in $equalContribs $author) }} equal-author{{ end }}">
+                            {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
+                            {{ if and $equalContribs (in $equalContribs $author) }}<sup>*</sup>{{ end }}
+                            {{ if lt $index (sub (len $pub.authors) 1) }}, {{ end }}
+                        </span>
+                        {{ end }}
+                    </div>
+                    
+                    <div class="publication-meta">
+                        <span class="publication-venue"><i class="fas fa-university"></i> {{ if $pub.conferencelink }}<a href="{{ $pub.conferencelink }}" target="_blank" class="conference-link">{{ $pub.conference }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ $pub.conference }}{{ end }}</span>
+                        {{ if $pub.workshop }}
+                        <span class="publication-workshop">
+                            <i class="fas fa-users"></i> {{ if $pub.workshoplink }}<a href="{{ $pub.workshoplink }}" target="_blank">{{ $pub.workshop }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ $pub.workshop }}{{ end }}
+                        </span>
+                        {{ end }}
+                        <span class="publication-date"><i class="far fa-calendar-alt"></i> {{ $pub.date }}</span>
+                    </div>
+                </div>
                 {{ end }}
-                <strong>{{ .title }}</strong>
-                {{ if $pat.link }}</a>{{ end }}
-            </p>
-            {{ if .translation }}<p><span class="patent-translation">Translation: {{ .translation }}</span></p>{{ end }}
-            <p>Authors:
-                {{ $boldAuthor := $pat.bold }}
-                {{ range $index, $author := $pat.authors }}
-                {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
-                {{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
-                {{ end }}
-            </p>
-            {{ if .patent_number }}<p><span class="patent-number">Patent No. {{ .patent_number }}</span></p>{{ end }}
-            {{ if .application_number }}<p><span class="application-number">Application No. {{ .application_number }}</span></p>{{ end }}
+            </div>
         </div>
         {{ end }}
-    </div>
-    {{ end }}
 
-    {{ if .Params.post }}
-    <div class="info-row">
-        <h3 class="externalpost-title">External Post</h3>
-        {{ range .Params.post }}
-        <div class="externalpost-item">
-            <p>
-                <a href="{{ .postlink }}">{{ .title }}</a>
-            </p>
-            {{ if .eventlink }}
-            <p class="event-details">
-                <span class="event-at">@</span><a href="{{ .eventlink }}">{{ .event }}</a>
-            </p>
-            {{ else if .event }}
-            <p class="event-details">
-                <span class="event-at">@</span>{{ .event }}
-            </p>
-            {{ end }}
+        <!-- 特許 -->
+        {{ if .Params.patent }}
+        <div class="patent-section">
+            <h3><i class="fas fa-lightbulb"></i> 特許</h3>
+            <div class="patent-list">
+                {{ range $pat := .Params.patent }}
+                <div class="patent-card">
+                    <div class="patent-header">
+                        <h4 class="patent-title">
+                            {{ if $pat.link }}<a href="{{ $pat.link }}" target="_blank">{{ $pat.title }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ $pat.title }}{{ end }}
+                        </h4>
+                        
+                        <div class="patent-meta">
+                            {{ if .patent_number }}<span class="patent-number"><i class="fas fa-hashtag"></i> {{ .patent_number }}</span>{{ end }}
+                            {{ if .application_number }}<span class="patent-app-number"><i class="fas fa-file-alt"></i> {{ .application_number }}</span>{{ end }}
+                        </div>
+                    </div>
+                    
+                    {{ if .translation }}
+                    <div class="patent-translation">
+                        <i class="fas fa-language"></i> {{ .translation }}
+                    </div>
+                    {{ end }}
+                    
+                    <div class="patent-authors">
+                        <i class="fas fa-users"></i> 
+                        {{ $boldAuthor := $pat.bold }}
+                        {{ range $index, $author := $pat.authors }}
+                        <span class="author {{ if eq $author $boldAuthor }}author-self{{ end }}">
+                            {{ if eq $author $boldAuthor }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if lt $index (sub (len $pat.authors) 1) }}, {{ end }}
+                        </span>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- 外部投稿 -->
+        {{ if .Params.post }}
+        <div class="externalpost-section">
+            <h3><i class="fas fa-link"></i> 外部投稿</h3>
+            <div class="externalpost-grid">
+                {{ range .Params.post }}
+                <div class="externalpost-card">
+                    <h4 class="externalpost-title">
+                        {{ if .postlink }}<a href="{{ .postlink }}" target="_blank">{{ .title }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ .title }}{{ end }}
+                    </h4>
+                    
+                    {{ if or .event .eventlink }}
+                    <div class="externalpost-event">
+                        <i class="fas fa-bullhorn"></i> 
+                        {{ if .eventlink }}
+                        <a href="{{ .eventlink }}" target="_blank">{{ .event }} <i class="fas fa-external-link-alt"></i></a>
+                        {{ else if .event }}
+                        {{ .event }}
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
         </div>
         {{ end }}
     </div>
-    {{ end }}
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 非表示要素の数を確認
+            var hiddenExperiences = document.querySelectorAll('.hidden-experience');
+            console.log('Hidden experiences count:', hiddenExperiences.length);
+            
+            // 「もっと見る」ボタンが必要ない場合は非表示
+            if (hiddenExperiences.length === 0) {
+                var showMoreItem = document.querySelector('.show-more');
+                if (showMoreItem) {
+                    showMoreItem.style.display = 'none';
+                }
+            }
+            
+            // スタイルを初期化
+            hiddenExperiences.forEach(function(item) {
+                // デバッグ用にコンソールに表示
+                console.log('Initializing element:', item);
+                
+                // スタイルを設定
+                item.style.visibility = 'hidden';
+                item.style.opacity = '0';
+                item.style.height = '0';
+                item.style.transform = 'translateY(-10px)';
+                item.style.marginBottom = '0';
+            });
+        });
+
         function toggleExperiences() {
             var wrapper = document.getElementById('experience-wrapper');
-            var showMoreText = document.querySelector('.show-more-text');
-            var icon = showMoreText.querySelector('i');
-
-            if (wrapper.classList.contains('show-hidden-experiences')) {
-                wrapper.classList.remove('show-hidden-experiences');
-                showMoreText.innerHTML = '<i class="fas fa-chevron-down"></i> Show more experiences';
+            var toggleText = document.getElementById('toggle-text');
+            var toggleButton = document.querySelector('.show-more');
+            var hiddenExperiences = document.querySelectorAll('.hidden-experience');
+            
+            console.log('Toggle clicked. Hidden items:', hiddenExperiences.length);
+            
+            var isVisible = wrapper.classList.contains('show-hidden-experiences');
+            
+            // ボタンの状態を更新
+            toggleButton.classList.toggle('is-active');
+            
+            if (isVisible) {
+                // 閉じる処理
+                toggleText.textContent = 'もっと見る';
+                
+                // 各要素を段階的に非表示
+                hiddenExperiences.forEach(function(item, index) {
+                    setTimeout(function() {
+                        console.log('Hiding item:', index);
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(-10px)';
+                        item.style.marginBottom = '0';
+                        
+                        // 最後の要素のアニメーション後にクラスを削除
+                        if (index === hiddenExperiences.length - 1) {
+                            setTimeout(function() {
+                                wrapper.classList.remove('show-hidden-experiences');
+                                hiddenExperiences.forEach(function(el) {
+                                    el.style.visibility = 'hidden';
+                                    el.style.height = '0';
+                                });
+                            }, 300);
+                        }
+                    }, index * 50);
+                });
             } else {
+                // 開く処理
+                toggleText.textContent = '閉じる';
                 wrapper.classList.add('show-hidden-experiences');
-                showMoreText.innerHTML = '<i class="fas fa-chevron-down"></i> Show less experiences';
+                
+                // 各要素を段階的に表示
+                hiddenExperiences.forEach(function(item, index) {
+                    setTimeout(function() {
+                        console.log('Showing item:', index);
+                        item.style.visibility = 'visible';
+                        item.style.height = 'auto';
+                        
+                        // 少し遅延させてから不透明度とトランスフォームを変更
+                        setTimeout(function() {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                            item.style.marginBottom = '2rem';
+                        }, 50);
+                    }, 100 + (index * 100));
+                });
+            }
+        }
+        
+        function toggleProjects(element) {
+            // プロジェクト詳細を取得
+            var details = element.querySelector('.project-details');
+            if (!details) return; // プロジェクト詳細がなければ何もしない
+            
+            // プロジェクトが空の場合も何もしない
+            if (details.children.length === 0) return;
+            
+            // 詳細が表示されているか確認
+            var isExpanded = details.classList.contains('expanded');
+            
+            // カード全体のクラスを切り替え
+            if (isExpanded) {
+                element.classList.remove('expanded');
+                details.classList.remove('expanded');
+            } else {
+                element.classList.add('expanded');
+                details.classList.add('expanded');
             }
         }
     </script>
