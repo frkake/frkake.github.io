@@ -45,7 +45,7 @@ role = "Research Manager"
 duration = "2024.10 - 2025.2"
 location = "Remote"
 projects = [
-    {name = "Research and Development of LLM Multi-Agent System", description = "Built a multi-agent system for title-based content inference and explored higher-performance integration methods. The project aimed at co-authoring research papers and was accepted to ICLR2025 Workshop and JSAI2025."},
+    {name = "Research and development of multi-agent systems for LLM content inference", description = "Developed a multi-agent system to infer content from LLM titles. Aimed for co-authoring a paper, and the project was accepted at ICLR 2025 Workshop and JSAI 2025."}
 ]
 
 [[experience]]

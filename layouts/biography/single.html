@@ -36,7 +36,7 @@
         <div class="skills-education-grid">
             <!-- スキル -->
             <div class="skills-section">
-                <h3><i class="fas fa-code"></i> スキル</h3>
+                <h3><i class="fas fa-code"></i> {{ i18n "skills_title" }}</h3>
                 <ul class="skills-list">
                     {{ range .Params.skills }}
                     <li>
@@ -54,7 +54,7 @@
 
             <!-- 教育 -->
             <div class="education-section">
-                <h3><i class="fas fa-graduation-cap"></i> 学歴</h3>
+                <h3><i class="fas fa-graduation-cap"></i> {{ i18n "education_title" }}</h3>
                 <ul class="education-list">
                     {{ range .Params.education }}
                     <li>
@@ -72,7 +72,7 @@
         <!-- 経験 -->
         {{ if .Params.experience }}
         <div class="experience-section">
-            <h3><i class="fas fa-briefcase"></i> 経歴</h3>
+            <h3><i class="fas fa-briefcase"></i> {{ i18n "experience_title" }}</h3>
             <div id="experience-wrapper" class="experience-wrapper">
                 <div class="experience-timeline">
                     {{ range $index, $element := .Params.experience }}
@@ -112,7 +112,7 @@
                     {{ end }}
                     <div class="experience-item show-more last-item" onclick="toggleExperiences()">
                         <div class="experience-card toggle-card">
-                            <p class="show-more-text"><i class="fas fa-chevron-down"></i> <span id="toggle-text">もっと見る</span></p>
+                            <p class="show-more-text"><i class="fas fa-chevron-down"></i> <span id="toggle-text">{{ i18n "show_more_experiences" }}</span></p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
         <!-- 資格 -->
         {{ if .Params.qualification }}
         <div class="qualification-section">
-            <h3><i class="fas fa-certificate"></i> 資格</h3>
+            <h3><i class="fas fa-certificate"></i> {{ i18n "qualification_title" }}</h3>
             <div class="qualification-grid">
                 {{ range .Params.qualification }}
                 <div class="qualification-card">
@@ -144,7 +144,7 @@
         <!-- 出版物 -->
         {{ if .Params.publication }}
         <div class="publication-section">
-            <h3><i class="fas fa-book"></i> 出版物</h3>
+            <h3><i class="fas fa-book"></i> {{ i18n "publications_title" }}</h3>
             <div class="publication-list">
                 {{ range $pub := .Params.publication }}
                 <div class="publication-card">
@@ -185,7 +185,7 @@
         <!-- 特許 -->
         {{ if .Params.patent }}
         <div class="patent-section">
-            <h3><i class="fas fa-lightbulb"></i> 特許</h3>
+            <h3><i class="fas fa-lightbulb"></i> {{ i18n "patents_title" }}</h3>
             <div class="patent-list">
                 {{ range $pat := .Params.patent }}
                 <div class="patent-card">
@@ -224,7 +224,7 @@
         <!-- 外部投稿 -->
         {{ if .Params.post }}
         <div class="externalpost-section">
-            <h3><i class="fas fa-link"></i> 外部投稿</h3>
+            <h3><i class="fas fa-link"></i> {{ i18n "externalpost_title" }}</h3>
             <div class="externalpost-grid">
                 {{ range .Params.post }}
                 <div class="externalpost-card">
@@ -285,7 +285,7 @@
             
             if (isVisible) {
                 // 閉じる処理
-                toggleText.textContent = 'もっと見る';
+                toggleText.textContent = '{{ i18n "show_more_experiences" }}';
                 
                 // 各要素を段階的に非表示
                 hiddenExperiences.forEach(function(item, index) {
@@ -308,7 +308,7 @@
                 });
             } else {
                 // 開く処理
-                toggleText.textContent = '閉じる';
+                toggleText.textContent = '{{ i18n "show_less_experiences" }}';
                 experienceWrapper.classList.add('show-hidden-experiences');
                 
                 // 各要素を段階的に表示

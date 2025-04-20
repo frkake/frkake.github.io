@@ -1,0 +1,26 @@
+- id: skills_title
+  translation: "スキル"
+
+- id: education_title
+  translation: "学歴"
+
+- id: experience_title
+  translation: "経験"
+
+- id: qualification_title
+  translation: "資格"
+
+- id: publications_title
+  translation: "出版物"
+
+- id: patents_title
+  translation: "特許"
+
+- id: externalpost_title
+  translation: "外部投稿"
+
+- id: show_more_experiences
+  translation: "もっと表示する"
+
+- id: show_less_experiences
+  translation: "表示を減らす" 

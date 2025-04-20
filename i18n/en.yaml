@@ -1,0 +1,26 @@
+- id: skills_title
+  translation: "Skills"
+
+- id: education_title
+  translation: "Education"
+
+- id: experience_title
+  translation: "Experience"
+
+- id: qualification_title
+  translation: "Qualification"
+
+- id: publications_title
+  translation: "Publications"
+
+- id: patents_title
+  translation: "Patents"
+
+- id: externalpost_title
+  translation: "External Post"
+
+- id: show_more_experiences
+  translation: "Show more experiences"
+
+- id: show_less_experiences
+  translation: "Show less experiences" 
