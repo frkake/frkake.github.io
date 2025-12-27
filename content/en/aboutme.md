@@ -225,6 +225,16 @@ application_number = "CN202310868168.3"
 link = "https://www.patentguru.com/CN116935353A"
 
 [[post]]
+title = "OCR技術の変遷と日本語対応モデルの性能検証"
+postlink = "https://tech.layerx.co.jp/entry/2025/12/01/161913"
+
+[[post]]
+title = "Removing Reflections from RAW Photos"
+postlink = "https://speakerdeck.com/frkake/removing-reflections-from-raw-photos"
+event = "第64回 コンピュータビジョン勉強会＠関東（後編）"
+eventlink = "https://kantocv.connpass.com/event/360322/"
+
+[[post]]
 title = "衛星画像からの地上画像生成"
 postlink = "https://speakerdeck.com/elith/eccv2024du-mihui-wei-xing-hua-xiang-karanodi-shang-hua-xiang-sheng-cheng"
 event = "第62回 コンピュータビジョン勉強会＠関東"
@@ -259,5 +269,9 @@ postlink = "https://tech.sensetime.jp/?p=1080"
 [[post]]
 title = "CVPR2020でセンスタイムが発表した、仮想試着を行うACGPNの論文を紹介します"
 postlink = "https://tech.sensetime.jp/?p=596"
+
+[[post]]
+title = "GANについて概念から実装まで　～DCGANによるキルミーベイベー生成～"
+postlink = "https://qiita.com/frkake/items/0093a68bfae0b0ff879d"
 +++
 
