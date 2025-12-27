@@ -72,11 +72,20 @@
 {{- end }}
 
 <article class="{{ $class }}">
+  {{- if .Params.externalURL }}
+  <div class="entry-cover external-cover loading" data-external-url="{{ .Params.externalURL }}">
+    <div class="loading-spinner"></div>
+  </div>
+  {{- else }}
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  {{- end }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
       {{- .Title }}
+      {{- if .Params.externalURL }}
+      <i class="fas fa-external-link-alt external-link-icon"></i>
+      {{- end }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
@@ -97,7 +106,7 @@
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ if .Params.externalURL }}{{ .Params.externalURL }}{{ else }}{{ .Permalink }}{{ end }}"{{ if .Params.externalURL }} target="_blank" rel="noopener noreferrer"{{ end }}></a>
 </article>
 {{- end }}
 
