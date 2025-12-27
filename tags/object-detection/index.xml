@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 26 Jul 2021 00:47:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://frkake.com/tags/object-detection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ゼロショット物体検出の研究動向</title>
+      <link>https://frkake.com/posts/2021-12-03-%E3%82%BC%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/posts/2021-12-03-%E3%82%BC%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zero-Shot Detectionの研究まとめ</title>
+      <link>https://frkake.com/posts/2021-12-01-zero-shot-detection/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/posts/2021-12-01-zero-shot-detection/</guid>
+      <description></description>
+    </item>
     <item>
       <title>MultiBox</title>
       <link>https://frkake.com/posts/2021-07-25-multibox/</link>

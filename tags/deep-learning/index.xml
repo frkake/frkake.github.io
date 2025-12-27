@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Deep Learning on Less is more</title>
+    <link>https://frkake.com/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Less is more</description>
+    <image>
+      <title>Less is more</title>
+      <url>https://frkake.com/images/steamed_rice_brown.png</url>
+      <link>https://frkake.com/images/steamed_rice_brown.png</link>
+    </image>
+    <generator>Hugo -- 0.118.2</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 14 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://frkake.com/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GANについて概念から実装まで　～DCGANによるキルミーベイベー生成～</title>
+      <link>https://frkake.com/posts/2018-03-14-gan-dcgan/</link>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/posts/2018-03-14-gan-dcgan/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

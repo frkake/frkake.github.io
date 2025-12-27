@@ -2,17 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://frkake.com/tags/albumentations/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
-  </url><url>
-    <loc>https://frkake.com/posts/2024-06-14-albumentations/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
-  </url><url>
-    <loc>https://frkake.com/tags/data-augmentation/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <loc>https://frkake.com/tags/layerx/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -24,14 +18,17 @@
                 href="https://frkake.com/"
                 />
   </url><url>
-    <loc>https://frkake.com/posts/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <loc>https://frkake.com/tags/ocr/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://frkake.com/tags/python/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <loc>https://frkake.com/posts/2025-12-01-ocr%E6%8A%80%E8%A1%93%E3%81%AE%E5%A4%89%E9%81%B7/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/tags/</loc>
-    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -42,6 +39,54 @@
                 hreflang="ja-jp"
                 href="https://frkake.com/tags/"
                 />
+  </url><url>
+    <loc>https://frkake.com/tags/%E5%A4%96%E9%83%A8%E6%8A%95%E7%A8%BF/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/eccv2024/</loc>
+    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/%E8%A1%9B%E6%98%9F%E7%94%BB%E5%83%8F/</loc>
+    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2025-11-15-%E8%A1%9B%E6%98%9F%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%81%AE%E5%9C%B0%E4%B8%8A%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90/</loc>
+    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90/</loc>
+    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/image-processing/</loc>
+    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/reflection-removal/</loc>
+    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2025-08-24-removing-reflections/</loc>
+    <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2024-07-07-corrmlp/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/image-registration/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/medical-image/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/mlp/</loc>
+    <lastmod>2024-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/albumentations/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2024-06-14-albumentations/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/data-augmentation/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/python/</loc>
+    <lastmod>2024-06-13T23:06:34+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/tags/3d-gaussian-splatting/</loc>
     <lastmod>2023-11-13T12:53:11+00:00</lastmod>
@@ -97,13 +142,40 @@
     <loc>https://frkake.com/posts/2023-09-18-introduction/</loc>
     <lastmod>2023-09-18T18:04:19+09:00</lastmod>
   </url><url>
+    <loc>https://frkake.com/tags/foundation-model/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2023-07-20-intern/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/vision-language/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/hardware/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/lidar/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2021-12-22-okdo-lidar/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/object-detection/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/zero-shot-detection/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2021-12-03-%E3%82%BC%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2021-12-01-zero-shot-detection/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://frkake.com/tags/cvpr/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/posts/2021-07-25-multibox/</loc>
-    <lastmod>2021-07-26T00:47:15+00:00</lastmod>
-  </url><url>
-    <loc>https://frkake.com/tags/object-detection/</loc>
     <lastmod>2021-07-26T00:47:15+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/tags/region-proposal/</loc>
@@ -129,6 +201,27 @@
   </url><url>
     <loc>https://frkake.com/tags/svm/</loc>
     <lastmod>2021-07-24T04:08:08+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/cvpr2020/</loc>
+    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2021-03-01-acgpn/</loc>
+    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/gan/</loc>
+    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/virtual-try-on/</loc>
+    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/dcgan/</loc>
+    <lastmod>2018-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/tags/deep-learning/</loc>
+    <lastmod>2018-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://frkake.com/posts/2018-03-14-gan-dcgan/</loc>
+    <lastmod>2018-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://frkake.com/categories/</loc>
     <xhtml:link

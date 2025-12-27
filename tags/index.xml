@@ -11,8 +11,85 @@
     </image>
     <generator>Hugo -- 0.118.2</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 13 Jun 2024 23:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://frkake.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LayerX</title>
+      <link>https://frkake.com/tags/layerx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/layerx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OCR</title>
+      <link>https://frkake.com/tags/ocr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/ocr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>外部投稿</title>
+      <link>https://frkake.com/tags/%E5%A4%96%E9%83%A8%E6%8A%95%E7%A8%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/%E5%A4%96%E9%83%A8%E6%8A%95%E7%A8%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ECCV2024</title>
+      <link>https://frkake.com/tags/eccv2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/eccv2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>衛星画像</title>
+      <link>https://frkake.com/tags/%E8%A1%9B%E6%98%9F%E7%94%BB%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/%E8%A1%9B%E6%98%9F%E7%94%BB%E5%83%8F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>画像生成</title>
+      <link>https://frkake.com/tags/%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Image Processing</title>
+      <link>https://frkake.com/tags/image-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflection Removal</title>
+      <link>https://frkake.com/tags/reflection-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/reflection-removal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Image Registration</title>
+      <link>https://frkake.com/tags/image-registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/image-registration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Medical Image</title>
+      <link>https://frkake.com/tags/medical-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/medical-image/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MLP</title>
+      <link>https://frkake.com/tags/mlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/mlp/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Albumentations</title>
       <link>https://frkake.com/tags/albumentations/</link>
@@ -112,10 +189,31 @@
       <description></description>
     </item>
     <item>
-      <title>CVPR</title>
-      <link>https://frkake.com/tags/cvpr/</link>
+      <title>Foundation Model</title>
+      <link>https://frkake.com/tags/foundation-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://frkake.com/tags/cvpr/</guid>
+      <guid>https://frkake.com/tags/foundation-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vision-Language</title>
+      <link>https://frkake.com/tags/vision-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/vision-language/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>https://frkake.com/tags/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LiDAR</title>
+      <link>https://frkake.com/tags/lidar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/lidar/</guid>
       <description></description>
     </item>
     <item>
@@ -123,6 +221,20 @@
       <link>https://frkake.com/tags/object-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://frkake.com/tags/object-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zero-Shot Detection</title>
+      <link>https://frkake.com/tags/zero-shot-detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/zero-shot-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVPR</title>
+      <link>https://frkake.com/tags/cvpr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/cvpr/</guid>
       <description></description>
     </item>
     <item>
@@ -165,6 +277,41 @@
       <link>https://frkake.com/tags/svm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://frkake.com/tags/svm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVPR2020</title>
+      <link>https://frkake.com/tags/cvpr2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/cvpr2020/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GAN</title>
+      <link>https://frkake.com/tags/gan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/gan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtual Try-On</title>
+      <link>https://frkake.com/tags/virtual-try-on/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/virtual-try-on/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DCGAN</title>
+      <link>https://frkake.com/tags/dcgan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/dcgan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>https://frkake.com/tags/deep-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://frkake.com/tags/deep-learning/</guid>
       <description></description>
     </item>
   </channel>

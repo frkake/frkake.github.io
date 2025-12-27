@@ -1,0 +1,44 @@
+.external-link-icon {
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    opacity: 0.6;
+    vertical-align: middle;
+}
+
+/* External cover styles */
+.external-cover {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.external-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.external-cover.loading .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--secondary);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.external-cover.no-image {
+    display: none;
+}
