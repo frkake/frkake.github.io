@@ -227,22 +227,29 @@
             <h3><i class="fas fa-link"></i> {{ i18n "externalpost_title" }}</h3>
             <div class="externalpost-grid">
                 {{ range .Params.post }}
-                <div class="externalpost-card">
-                    <h4 class="externalpost-title">
-                        {{ if .postlink }}<a href="{{ .postlink }}" target="_blank">{{ .title }} <i class="fas fa-external-link-alt"></i></a>{{ else }}{{ .title }}{{ end }}
-                    </h4>
-                    
-                    {{ if or .event .eventlink }}
-                    <div class="externalpost-event">
-                        <i class="fas fa-bullhorn"></i> 
-                        {{ if .eventlink }}
-                        <a href="{{ .eventlink }}" target="_blank">{{ .event }} <i class="fas fa-external-link-alt"></i></a>
-                        {{ else if .event }}
-                        {{ .event }}
+                <a href="{{ .postlink }}" target="_blank" class="externalpost-card" data-url="{{ .postlink }}">
+                    <div class="externalpost-thumbnail">
+                        <div class="externalpost-thumbnail-placeholder">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </div>
+                    <div class="externalpost-content">
+                        <h4 class="externalpost-title">
+                            {{ .title }} <i class="fas fa-external-link-alt"></i>
+                        </h4>
+
+                        {{ if or .event .eventlink }}
+                        <div class="externalpost-event">
+                            <i class="fas fa-bullhorn"></i>
+                            {{ if .eventlink }}
+                            <span class="event-link" data-href="{{ .eventlink }}">{{ .event }} <i class="fas fa-external-link-alt"></i></span>
+                            {{ else if .event }}
+                            {{ .event }}
+                            {{ end }}
+                        </div>
                         {{ end }}
                     </div>
-                    {{ end }}
-                </div>
+                </a>
                 {{ end }}
             </div>
         </div>
@@ -348,6 +355,52 @@
                 projectDetails.classList.add('expanded');
             }
         }
+
+        // 外部投稿のサムネイル取得
+        async function fetchLinkPreviews() {
+            const cards = document.querySelectorAll('.externalpost-card[data-url]');
+
+            for (const card of cards) {
+                const url = card.dataset.url;
+                const thumbnailContainer = card.querySelector('.externalpost-thumbnail');
+
+                if (!url || !thumbnailContainer) continue;
+
+                try {
+                    const response = await fetch(`https://api.microlink.io?url=${encodeURIComponent(url)}`);
+                    const data = await response.json();
+
+                    if (data.status === 'success' && data.data.image) {
+                        const img = document.createElement('img');
+                        img.src = data.data.image.url;
+                        img.alt = data.data.title || '';
+                        img.loading = 'lazy';
+                        img.onerror = function() {
+                            thumbnailContainer.innerHTML = '<div class="externalpost-thumbnail-placeholder"><i class="fas fa-link"></i></div>';
+                        };
+                        thumbnailContainer.innerHTML = '';
+                        thumbnailContainer.appendChild(img);
+                    } else {
+                        thumbnailContainer.innerHTML = '<div class="externalpost-thumbnail-placeholder"><i class="fas fa-link"></i></div>';
+                    }
+                } catch (error) {
+                    console.error('Failed to fetch link preview:', error);
+                    thumbnailContainer.innerHTML = '<div class="externalpost-thumbnail-placeholder"><i class="fas fa-link"></i></div>';
+                }
+            }
+        }
+
+        // イベントリンクのクリック処理（親のaタグと分離）
+        document.querySelectorAll('.event-link[data-href]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(this.dataset.href, '_blank');
+            });
+        });
+
+        // ページ読み込み完了後にサムネイル取得を開始
+        fetchLinkPreviews();
     </script>
 </div>
 
