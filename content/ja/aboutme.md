@@ -31,10 +31,11 @@ years = "2014-2018"
 logo = "/images/LayerX_Logo_Vertical_RGB_Color.png"
 institute = "株式会社LayerX"
 role = "機械学習エンジニア"
-duration = "2025.3 - 現在"
+duration = "2025.3 - 2026.3"
 location = "リモート"
-active = true
+active = false
 projects = [
+    {name = "バクラク経費精算の領収書分割エージェントの開発", description = "画像中から領収書を検出して、一括経費精算を行う機能を開発", link = "https://bakuraku.jp/news/20251105/"},
 ]
 
 [[experience]]
@@ -44,7 +45,7 @@ role = "リサーチマネージャー"
 duration = "2024.10 - 2025.2"
 location = "リモート"
 projects = [
-    {name = "LLM のマルチエージェントシステムの研究開発", description = "タイトルから内容推定を行うマルチエージェントシステムを構築。論文の共同執筆を目標としており、ICLR2025 WorkshopとJSAI2025に採択。"},
+    {name = "LLM のマルチエージェントシステムの研究開発", description = "タイトルから内容推定を行うマルチエージェントシステムを構築。論文の共同執筆を目標としており、ICLR2025 WorkshopとJSAI2025に採択。", link = "https://openreview.net/forum?id=5XNYu4rBe4"},
 ]
 
 [[experience]]

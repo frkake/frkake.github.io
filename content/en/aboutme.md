@@ -32,10 +32,11 @@ years = "2014-2018"
 logo = "/images/LayerX_Logo_Vertical_RGB_Color.png"
 institute = "LayerX Inc."
 role = "Machine Learning Engineer"
-duration = "2025.3 - Present"
+duration = "2025.3 - 2026.3"
 location = "Remote"
-active = true
+active = false
 projects = [
+    {name = "Development of a receipt splitting agent for Bakuraku expense settlement", description = "Developed a function to detect receipts from images and perform lump-sum expense settlement.", link = "https://bakuraku.jp/news/20251105/"},
 ]
 
 [[experience]]
@@ -45,7 +46,7 @@ role = "Research Manager"
 duration = "2024.10 - 2025.2"
 location = "Remote"
 projects = [
-    {name = "Research and development of multi-agent systems for LLM content inference", description = "Developed a multi-agent system to infer content from LLM titles. Aimed for co-authoring a paper, and the project was accepted at ICLR 2025 Workshop and JSAI 2025."}
+    {name = "Research and development of multi-agent systems for LLM content inference", description = "Developed a multi-agent system to infer content from LLM titles. Aimed for co-authoring a paper, and the project was accepted at ICLR 2025 Workshop and JSAI 2025.", link = "https://openreview.net/forum?id=5XNYu4rBe4"},
 ]
 
 [[experience]]
