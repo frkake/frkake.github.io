@@ -36,7 +36,7 @@ duration = "2025.3 - 2026.3"
 location = "Remote"
 active = false
 projects = [
-    {name = "Development of a receipt splitting agent for Bakuraku expense settlement", description = "Developed a function to detect receipts from images and perform lump-sum expense settlement.", link = "https://bakuraku.jp/news/20251105/"},
+    {name = "Development of a receipt splitting agent for Bakuraku", description = "Developed a function to detect receipts from images and perform lump-sum expense settlement.", link = "https://bakuraku.jp/news/20251105/"},
 ]
 
 [[experience]]
